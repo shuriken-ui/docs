@@ -30,7 +30,9 @@ const { data } = await useAsyncData('home', () =>
     <!--Sidebar navigation-->
     <aside class="fixed top-0 start-0 h-full min-h-screen w-72 bg-muted-50 dark:bg-muted-950 border-e border-muted-200 dark:border-muted-800">
       <div class="flex items-center px-6 h-14">
-        <LogoText class="h-8 text-muted-950 dark:text-white" />
+        <NuxtLink to="/docs" class="text-muted-600 dark:text-muted-100 hover:text-primary-800 dark:hover:text-primary-500 transition-colors duration-300">
+          <LogoText class="h-8" />
+        </NuxtLink>
       </div>
       <div class="p-6 space-y-2">
         <!--Navigation links-->
