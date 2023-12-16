@@ -8,7 +8,7 @@ export default defineComponent({
       default: false,
     },
   },
-  setup(_, context) {
+  setup(props, context) {
     const expanded = ref(false)
     const activeTabIndex = ref(0)
     provide('code-group-context', true)
@@ -64,8 +64,8 @@ export default defineComponent({
                     {
                       class: [
                         'relative flex gap-2 bg-muted-50 dark:bg-muted-950 ',
-                        _.expandable && !expanded.value ? 'max-h-[220px]' : '',
-                        _.expandable && expanded.value ? 'max-h-full' : '',
+                        props.expandable && !expanded.value ? 'max-h-[220px]' : '',
+                        props.expandable && expanded.value ? 'max-h-full' : '',
                       ],
                       text: activeTabIndex.value,
                     },
@@ -73,7 +73,7 @@ export default defineComponent({
                       h(
                         'div',
                         {
-                          class: ['absolute -bottom-4 start-0 end-0 z-[2] w-full h-20 flex items-center justify-center ', _.expandable ? '' : 'hidden'],
+                          class: ['absolute -bottom-4 start-0 end-0 z-[2] w-full h-20 flex items-center justify-center ', props.expandable ? '' : 'hidden'],
                         },
                         [
                           h('div', {
@@ -105,7 +105,7 @@ export default defineComponent({
                           class: [
                             ' text-sm', 
                             previewSlot ? 'px-4' : 'px-3',
-                            _.expandable ? 'pt-4 pb-16' : 'py-4'
+                            props.expandable ? 'pt-4 pb-16' : 'py-4'
                           ],
                         },
                         // Map slots to content children
