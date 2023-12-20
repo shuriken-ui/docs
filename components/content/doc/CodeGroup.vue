@@ -63,7 +63,7 @@ export default defineComponent({
                     'div',
                     {
                       class: [
-                        'relative flex gap-2 bg-muted-50 dark:bg-muted-950 ',
+                        'relative flex gap-2 bg-muted-50 dark:bg-muted-950 overflow-x-auto overflow-y-hidden',
                         props.expandable && !expanded.value ? 'max-h-[220px]' : '',
                         props.expandable && expanded.value ? 'max-h-full' : '',
                       ],

@@ -20,7 +20,7 @@ const activeTab = computed(() => props.tabs[activeTabIndex.value])
 </script>
 
 <template>
-  <div class="flex gap-2 bg-white dark:bg-muted-800 border-b border-muted-300 dark:border-muted-800">
+  <div class="flex gap-2 bg-white border-b border-muted-300 dark:border-muted-800" :class="hasPreview ? 'dark:bg-muted-950' : 'dark:bg-muted-800'">
     <button
       v-for="(tab, index) in props.tabs"
       :key="index"
