@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -20,8 +20,8 @@ devDependencies:
     specifier: latest
     version: 1.0.6(nuxt@3.8.2)(vite@5.0.7)
   '@shuriken-ui/nuxt':
-    specifier: ^1.9.6
-    version: 1.9.6(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10)
+    specifier: ^2.0.0-next.3
+    version: 2.0.0-next.3(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10)
   nuxt:
     specifier: ^3.8.2
     version: 3.8.2(vite@5.0.7)
@@ -1747,15 +1747,15 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@shuriken-ui/nuxt@1.9.6(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10):
-    resolution: {integrity: sha512-f0f23BUnB7cfWNKBclZ78IiDEyX2YKgK89yD068VGMEp11tYks5aRHD+hXDZbscH3CaACJJ0uwDQtvJ/EH/gqg==}
+  /@shuriken-ui/nuxt@2.0.0-next.3(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10):
+    resolution: {integrity: sha512-oUm2XMIplj6lSAs7banwizCIBmOrSbd+6we13o9gyLFe4AkqrnLqNo9Mxmmp7ZT9LQtcs1aQbHaJgSadHGHe6w==}
     dependencies:
       '@headlessui-float/vue': 0.12.0(vue@3.3.10)
       '@headlessui/vue': 1.7.16(vue@3.3.10)
       '@iconify/vue': 4.1.1(vue@3.3.10)
       '@nuxtjs/color-mode': 3.3.2
       '@nuxtjs/tailwindcss': 6.10.1
-      '@shuriken-ui/tailwind': 1.5.3
+      '@shuriken-ui/tailwind': 2.0.0-next.8
       '@vueuse/nuxt': 10.7.0(nuxt@3.8.2)(vue@3.3.10)
       autoprefixer: 10.4.16(postcss@8.4.32)
       nuxt-icon: 0.6.7(nuxt@3.8.2)(vite@5.0.7)(vue@3.3.10)
@@ -1770,8 +1770,8 @@ packages:
       - vue
     dev: true
 
-  /@shuriken-ui/tailwind@1.5.3:
-    resolution: {integrity: sha512-qVL63VahXfgLDxzREdZJZPEFWy9ootI74ZPHycRgE3h58Tn9PjuU7SXIzNqB5CaJeR2ShGy3pWyph6yTfqZUjA==}
+  /@shuriken-ui/tailwind@2.0.0-next.8:
+    resolution: {integrity: sha512-iqPOfRmjm+wQ7UilYG7jXQdWSvlwPjlxFKWAfb8VlTAKRQMvej0WDG65UJjiE8/ZMrKNaD1pSDV/AjC2CHmlMw==}
     dependencies:
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.3.6)
       '@tailwindcss/typography': 0.5.10(tailwindcss@3.3.6)
@@ -3855,6 +3855,7 @@ packages:
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dependencies:
       safer-buffer: 2.1.2
     optional: true
@@ -6555,6 +6556,7 @@ packages:
 
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    requiresBuild: true
     optional: true
 
   /scule@1.1.1:
