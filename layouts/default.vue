@@ -26,16 +26,28 @@ const { data } = await useAsyncData('home', () =>
 
 //Handle UI
 const isSidebarOpenMobile = ref(false)
+const isTocOpenMobile = ref(false)
+
+const onOverlayClick = () => {
+  isSidebarOpenMobile.value = false
+  isTocOpenMobile.value = false
+}
 </script>
 
 <template>
   <div class="flex items-stretch min-h-screen bg-white dark:bg-muted-900">
     <!--Sidebar navigation-->
-    <aside class="fixed top-0 start-0 h-full min-h-screen w-72 bg-muted-50 dark:bg-muted-950 border-e border-muted-200 dark:border-muted-800">
+    <aside
+      class="fixed top-0 start-0 h-full min-h-screen ltablet:w-64 w-72 bg-muted-50 dark:bg-muted-950 border-e border-muted-200 dark:border-muted-800 transition-transform duration-300 ease-in-out"
+      :class="[isSidebarOpenMobile ? 'translate-x-0 z-[2]' : '-translate-x-full ltablet:translate-x-0 lg:translate-x-0']"
+    >
       <div class="flex items-center px-6 h-14">
         <NuxtLink to="/docs" class="text-muted-600 dark:text-muted-100 hover:text-primary-800 dark:hover:text-primary-500 transition-colors duration-300">
           <LogoText class="h-8" />
         </NuxtLink>
+        <BaseButtonIcon size="sm" rounded="md" class="ms-auto ltablet:hidden lg:hidden" @click="isSidebarOpenMobile = !isSidebarOpenMobile">
+          <Icon name="lucide:x" class="w-4 h-4" />
+        </BaseButtonIcon>
       </div>
       <div class="p-6 space-y-2">
         <!--Navigation links-->
@@ -72,14 +84,14 @@ const isSidebarOpenMobile = ref(false)
       </div>
     </aside>
     <!--Main content-->
-    <main class="w-full lg:w-[calc(100%_-_38rem)] lg:ms-72 lg:me-80">
-      <!-- <pre>
-        {{ links }}
-      </pre> -->
+    <main class="w-full ltablet:w-[calc(100%_-_16rem)] lg:w-[calc(100%_-_38rem)] ltablet:ms-64 lg:ms-72 lg:me-80">
       <div class="relative w-full">
         <div class="border-b border-muted-200 dark:border-muted-800">
           <div class="max-w-3xl mx-auto">
             <div class="flex items-center h-14 gap-10 px-6">
+              <BaseButtonIcon size="sm" rounded="md" class="ltablet:hidden lg:hidden" @click="isSidebarOpenMobile = !isSidebarOpenMobile">
+                <Icon name="lucide:menu" class="w-4 h-4" />
+              </BaseButtonIcon>
               <NuxtLink
                 v-for="tab in data"
                 :key="tab._path"
@@ -90,8 +102,11 @@ const isSidebarOpenMobile = ref(false)
                 ]"
               >
                 <Icon :name="tab.tabs.icon" class="w-5 h-5" />
-                <span class="text-sm font-medium text-muted-800 dark:text-muted-100">{{ tab.tabs.title }}</span>
+                <span class="hidden md:inline text-sm font-medium text-muted-800 dark:text-muted-100">{{ tab.tabs.title }}</span>
               </NuxtLink>
+              <BaseButtonIcon size="sm" rounded="md" class="ms-auto lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">
+                <Icon name="lucide:folder" class="w-4 h-4" />
+              </BaseButtonIcon>
             </div>
           </div>
         </div>
@@ -108,8 +123,14 @@ const isSidebarOpenMobile = ref(false)
       </div>
     </main>
     <!--Table of contents-->
-    <div class="fixed top-0 end-0 h-full w-80 bg-white dark:bg-muted-900 min-h-screen">
+    <div
+      class="fixed top-0 end-0 h-full w-80 bg-white dark:bg-muted-900 min-h-screen transition-transform duration-300 ease-in-out"
+      :class="[isTocOpenMobile ? 'translate-x-0 z-[2]' : 'translate-x-full lg:translate-x-0']"
+    >
       <div class="flex items-center gap-3 px-6 h-14 border-b" :class="[y === 0 ? 'border-muted-200 dark:border-muted-800' : 'border-transparent dark:border-transparent']">
+        <BaseButtonIcon size="sm" rounded="md" class="lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">
+          <Icon name="lucide:arrow-right" class="w-4 h-4" />
+        </BaseButtonIcon>
         <NuxtLink to="/" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
           <Icon name="fa6-brands:github" class="w-5 h-5" />
         </NuxtLink>
@@ -126,5 +147,12 @@ const isSidebarOpenMobile = ref(false)
         </div>
       </div>
     </div>
+    <!--Mobile overlay-->
+    <div
+      role="button"
+      class="fixed z-[1] top-0 start-0 h-full w-full bg-muted-950 transition-opacity duration-300"
+      :class="isSidebarOpenMobile || isTocOpenMobile ? 'opacity-70 pointer-events-auto' : 'opacity-0 pointer-events-none'"
+      @click="onOverlayClick"
+    ></div>
   </div>
 </template>
