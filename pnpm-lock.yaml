@@ -20,8 +20,8 @@ devDependencies:
     specifier: latest
     version: 1.0.6(nuxt@3.8.2)(vite@5.0.7)
   '@shuriken-ui/nuxt':
-    specifier: ^2.0.0-next.3
-    version: 2.0.0-next.3(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10)
+    specifier: ^2.0.0-next.4
+    version: 2.0.0-next.4(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10)
   nuxt:
     specifier: ^3.8.2
     version: 3.8.2(vite@5.0.7)
@@ -1747,15 +1747,15 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@shuriken-ui/nuxt@2.0.0-next.3(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10):
-    resolution: {integrity: sha512-oUm2XMIplj6lSAs7banwizCIBmOrSbd+6we13o9gyLFe4AkqrnLqNo9Mxmmp7ZT9LQtcs1aQbHaJgSadHGHe6w==}
+  /@shuriken-ui/nuxt@2.0.0-next.4(nuxt@3.8.2)(postcss@8.4.32)(vite@5.0.7)(vue@3.3.10):
+    resolution: {integrity: sha512-EIMbs/zUwQVtrNv9KjsBnUwGMjQPnJndxG6D1R01l0phlqsuaJbN8/Jx3lGtU4lhA1hefjVevi5c42/iUSeRkQ==}
     dependencies:
       '@headlessui-float/vue': 0.12.0(vue@3.3.10)
       '@headlessui/vue': 1.7.16(vue@3.3.10)
       '@iconify/vue': 4.1.1(vue@3.3.10)
       '@nuxtjs/color-mode': 3.3.2
       '@nuxtjs/tailwindcss': 6.10.1
-      '@shuriken-ui/tailwind': 2.0.0-next.8
+      '@shuriken-ui/tailwind': 2.0.0-next.9
       '@vueuse/nuxt': 10.7.0(nuxt@3.8.2)(vue@3.3.10)
       autoprefixer: 10.4.16(postcss@8.4.32)
       nuxt-icon: 0.6.7(nuxt@3.8.2)(vite@5.0.7)(vue@3.3.10)
@@ -1770,8 +1770,8 @@ packages:
       - vue
     dev: true
 
-  /@shuriken-ui/tailwind@2.0.0-next.8:
-    resolution: {integrity: sha512-iqPOfRmjm+wQ7UilYG7jXQdWSvlwPjlxFKWAfb8VlTAKRQMvej0WDG65UJjiE8/ZMrKNaD1pSDV/AjC2CHmlMw==}
+  /@shuriken-ui/tailwind@2.0.0-next.9:
+    resolution: {integrity: sha512-17PEXmZX22+GRN07zx7xLBJozGQZnSU1OtkjtDxw4pGxigc2PMsSZmC+crRQgjiNwRDB5WvpogZHLZAw5qUTcw==}
     dependencies:
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.3.6)
       '@tailwindcss/typography': 0.5.10(tailwindcss@3.3.6)
