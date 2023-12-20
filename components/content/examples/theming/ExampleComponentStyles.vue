@@ -13,7 +13,7 @@ import type { BaseSwitchBall } from '#build/components';
                 <BaseButton type="button" color="primary" rounded="full" class="w-full">
                   <span>Assign Tasks</span>
                 </BaseButton>
-                <BaseButton type="button" flavor="pastel" color="primary" rounded="full" class="w-full">
+                <BaseButton type="button" variant="pastel" color="primary" rounded="full" class="w-full">
                   <span>Settings</span>
                 </BaseButton>
               </div>
