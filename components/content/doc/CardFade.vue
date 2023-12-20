@@ -10,7 +10,7 @@ const props = defineProps<{
 
 <template>
   <div class="py-6">
-    <BaseCard color="white-contrast" shape="curved" class="relative flex flex-col overflow-hidden rounded-xl text-start !border-muted-300 dark:!border-muted-800">
+    <BaseCard color="white-contrast" rounded="md" class="relative flex flex-col overflow-hidden rounded-xl text-start !border-muted-300 dark:!border-muted-800">
       <div class="bg-muted-100 dark:bg-muted-900/40 relative">
         <img
           :src="props.src"

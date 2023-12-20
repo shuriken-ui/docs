@@ -5,7 +5,7 @@
         <BaseCard
           class="p-6 !border-muted-300 dark:!border-muted-800" 
           color="white-contrast" 
-          shape="smooth">
+          rounded="md">
           <div class="flex flex-col py-2">
             <BaseAvatar
               class="mx-auto"
@@ -45,8 +45,8 @@
                 </BaseText>
               </div>
               <div class="mt-6 flex items-center justify-between gap-2">
-                <BaseButton shape="smooth" class="w-full">Decline</BaseButton>
-                <BaseButton shape="smooth" color="primary" class="w-full">Accept</BaseButton>
+                <BaseButton rounded="md" class="w-full">Decline</BaseButton>
+                <BaseButton rounded="md" color="primary" class="w-full">Accept</BaseButton>
               </div>
             </div>
           </div>

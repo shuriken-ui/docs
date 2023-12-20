@@ -7,17 +7,17 @@ import colors from 'tailwindcss/colors'
 export default withShurikenUI({
   content: [],
   theme: {
-    /**
-     * Customize fonts
-     * 
-     * You must load them yourself
-     * (ex: with unplugin-fonts)
-     */
-    fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      heading: ['Inter', 'sans-serif'],
-    },
     extend: {
+      /**
+       * Customize fonts
+       * 
+       * You must load them yourself
+       * (ex: with unplugin-fonts)
+       */
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Inter', 'sans-serif'],
+      },
       /**
        * Customize colors 
        * 

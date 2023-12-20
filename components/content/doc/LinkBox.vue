@@ -10,7 +10,7 @@ const props = defineProps<{
   <NuxtLink :to="props.to" class="group/link">
     <BaseCard
       color="white-contrast"
-      shape="smooth"
+      rounded="md"
       class="flex gap-3 p-4 !border-muted-300 dark:!border-muted-800 group-hover/link:!border-muted-800 dark:group-hover/link:border-muted-100 group-hover/link:shadow-lg group-hover/link:shadow-muted-300/30 dark:group-hover/link:shadow-muted-800/20"
     >
       <div v-if="'icon' in $slots || props.icon">

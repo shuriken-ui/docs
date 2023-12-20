@@ -45,7 +45,7 @@ const activeTab = computed(() => props.tabs[activeTabIndex.value])
       class="absolute mt-12 z-[2] opacity-0 group-hover/code:opacity-100 pointer-events-none group-hover/code:pointer-events-auto transition-opacity duration-300"
       :class="hasPreview ? 'end-4' : 'end-2'"
     >
-      <BaseButtonIcon size="sm" shape="smooth" :data-nui-tooltip="copied ? 'Copied!' : 'Copy'" data-nui-tooltip-position="start" :aria-label="copied ? 'Copied!' : 'Copy'" @click="() => copy()">
+      <BaseButtonIcon size="sm" rounded="md" :data-nui-tooltip="copied ? 'Copied!' : 'Copy'" data-nui-tooltip-position="start" :aria-label="copied ? 'Copied!' : 'Copy'" @click="() => copy()">
         <Icon v-if="!copied" name="lucide:copy" class="w-4 h-4" />
         <Icon v-else name="lucide:check" class="w-4 h-4 text-success-500" />
       </BaseButtonIcon>

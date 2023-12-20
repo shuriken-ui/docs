@@ -3,17 +3,17 @@ import type { BaseSwitchBall } from '#build/components';
   <div class="py-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
-        <BaseCard shape="curved" class="p-6 h-full flex items-center justify-center border-none !bg-primary-900">
+        <BaseCard rounded="lg" class="p-6 h-full flex items-center justify-center border-none !bg-primary-900">
           <div class="flex flex-col items-center w-full">
             <BaseAvatar size="2xl" src="/img/avatars/15.svg" badge-src="/img/stacks/react.svg" />
             <div class="text-center mt-6 w-full max-w-xs mx-auto">
               <BaseHeading tag="h3" size="lg" weight="medium" class="text-white"> Josh Meyers </BaseHeading>
               <BaseParagraph size="sm" class="text-white"> has accepted to join the project </BaseParagraph>
               <div class="mt-4 flex flex-col gap-2">
-                <BaseButton type="button" color="primary" shape="full" class="w-full">
+                <BaseButton type="button" color="primary" rounded="full" class="w-full">
                   <span>Assign Tasks</span>
                 </BaseButton>
-                <BaseButton type="button" flavor="pastel" color="primary" shape="full" class="w-full">
+                <BaseButton type="button" flavor="pastel" color="primary" rounded="full" class="w-full">
                   <span>Settings</span>
                 </BaseButton>
               </div>
@@ -22,7 +22,7 @@ import type { BaseSwitchBall } from '#build/components';
         </BaseCard>
       </div>
       <div>
-        <BaseCard shape="smooth" color="white-contrast" class="p-6 !border-muted-300 dark:!border-muted-800">
+        <BaseCard rounded="md" color="white-contrast" class="p-6 !border-muted-300 dark:!border-muted-800">
           <div class="mb-4">
             <BaseHeading as="h3" size="md" weight="medium">
               <span>New Project</span>
@@ -37,7 +37,7 @@ import type { BaseSwitchBall } from '#build/components';
               <BaseSwitchBall label="Visibility" sublabel="Make this project public" checked />
             </div>
             <div>
-              <BaseButton type="submit" color="primary" shape="smooth" class="w-full">
+              <BaseButton type="submit" color="primary" rounded="md" class="w-full">
                 <span>Create Project</span>
               </BaseButton>
             </div>

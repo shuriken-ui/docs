@@ -7,7 +7,7 @@ const props = defineProps<{
 
 <template>
   <div class="py-6">
-    <BaseCard shape="smooth" color="muted-contrast" class="p-4 md:p-6 !border-muted-300 dark:!border-muted-800">
+    <BaseCard rounded="md" color="muted-contrast" class="p-4 md:p-6 !border-muted-300 dark:!border-muted-800">
       <div class="flex gap-3">
         <div v-if="'icon' in $slots || props.icon">
           <ContentSlot :use="$slots.icon" unwrap="p" >
