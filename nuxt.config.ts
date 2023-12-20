@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       },
     },
   },
-
+  css: ['~/assets/css/styles.css'],
   googleFonts: {
     display: 'swap',
     download: true,

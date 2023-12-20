@@ -28,14 +28,14 @@ const activeTab = computed(() => props.tabs[activeTabIndex.value])
       tabindex="0"
       class="group/button text-sm"
       :class="[
-        tabs.length > 1 ? 'border-b-2' : '',
+        tabs.length > 1 ? 'border-b-2' : 'cursor-default',
         tabs.length > 1 && index === activeTabIndex ? 'border-muted-800 dark:border-muted-100' : 'border-transparent',
         index === activeTabIndex ? 'font-medium text-muted-800 dark:text-muted-100' : 'text-muted-400 hover:text-muted-500 dark:hover:text-muted-300',
       ]"
       @click="() => (activeTabIndex = index)"
       @keydown.enter.prevent="() => (activeTabIndex = index)"
     >
-      <span v-if="tab.filename" class="block m-1 py-1 px-3 rounded-md group-hover/button:bg-muted-100 dark:group-hover/button:bg-muted-900">
+      <span v-if="tab.filename" class="block m-1 py-1 px-3 rounded-md" :class="[tabs.length > 1 ? 'group-hover/button:bg-muted-100 dark:group-hover/button:bg-muted-900' : '']">
         {{ tab.filename?.replaceAll('⦋', '[')?.replaceAll('⦌', ']') }}
       </span>
     </button>

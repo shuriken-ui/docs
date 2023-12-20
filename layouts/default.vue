@@ -23,6 +23,9 @@ const { data } = await useAsyncData('home', () =>
     .only(['tabs', '_path'])
     .find()
 )
+
+//Handle UI
+const isSidebarOpenMobile = ref(false)
 </script>
 
 <template>
