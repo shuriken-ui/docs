@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['@shuriken-ui/nuxt'],
-  modules: ['@nuxt/content', 'nuxt-icon', '@nuxtjs/google-fonts', '@vueuse/nuxt'],
+  modules: ['@nuxt/content', 'nuxt-icon', '@nuxtjs/google-fonts', '@vueuse/nuxt', 'nuxt-component-meta'],
   content: {
     documentDriven: true,
     markdown: {
@@ -30,6 +30,20 @@ export default defineNuxtConfig({
     families: {
       Inter: [400, 500, 600, 700],
     },
+  },
+  componentMeta: {
+    metaSources: ['@shuriken-ui/nuxt/component-meta'],
+    exclude: [
+      (component: any) => {
+        const hasExamplePrefix = component?.pascalName?.startsWith('Example')
+        const hasAddonPrefix = component?.pascalName?.startsWith('Addon')
+        const isBlacklisted = ['Welcome'].includes(component?.pascalName)
+
+        const isExcluded = !(hasExamplePrefix || hasAddonPrefix)
+
+        return isBlacklisted || isExcluded
+      },
+    ],
   },
   devtools: { enabled: true },
   // hooks: {
