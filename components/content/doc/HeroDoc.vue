@@ -23,8 +23,8 @@
     </div>
     <div class="pt-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center mb-6">
-        <h1 class="px-6 text-sm font-medium text-muted-600 dark:text-muted-400 uppercase">Documentation</h1>
-        <p class="mt-5 text-4xl font-light leading-tight text-muted-900 dark:text-muted-100 sm:leading-tight sm:text-4xl lg:text-4xl lg:leading-tight">Select a Framework</p>
+        <h1 class="text-4xl font-light leading-tight text-muted-900 dark:text-muted-100 sm:leading-tight sm:text-4xl lg:text-4xl lg:leading-tight">Documentation</h1>
+        <p class="mt-5 px-6 text-sm font-medium text-muted-600 dark:text-muted-400 uppercase">Select a Framework</p>
       </div>
 
       <div class="w-full py-10">
