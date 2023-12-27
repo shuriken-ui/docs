@@ -32,17 +32,17 @@ const breakpoints = [
   },
   {
     name: 'lg',
-    description: 'Tablet',
+    description: 'Desktop (small)',
     value: 'min: 1025px',
   },
   {
     name: 'xl',
-    description: 'Tablet',
+    description: 'Desktop (medium)',
     value: 'min: 1280px',
   },
   {
     name: '2xl',
-    description: 'Tablet',
+    description: 'Desktop (large)',
     value: 'min: 1536px',
   },
 ]
@@ -50,12 +50,12 @@ const breakpoints = [
 
 <template>
   <div class="py-6">
-    <div class="rounded-md border border-muted-200 dark:border-muted-800 overflow-x-auto">
+    <div class="bg-white dark:bg-muted-950 rounded-md border border-muted-200 dark:border-muted-800 overflow-x-auto">
       <table class="w-full">
         <thead>
           <tr>
-            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900 dark:text-muted-100">Size</th>
-            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900 dark:text-muted-100">Width</th>
+            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Size</th>
+            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Width</th>
           </tr>
         </thead>
         <tbody>

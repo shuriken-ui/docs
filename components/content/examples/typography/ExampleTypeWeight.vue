@@ -1,6 +1,6 @@
 <template>
   <div class="py-6">
-    <BaseCard contrast="default-contrast" rounded="md" class="p-6 space-y-1">
+    <BaseCard color="white-contrast" rounded="md" class="p-6 space-y-1">
       <BaseHeading as="h5" size="md" weight="light">Light text</BaseHeading>
       <BaseHeading as="h5" size="md" weight="normal">Normal text</BaseHeading>
       <BaseHeading as="h5" size="md" weight="medium">Medium text</BaseHeading>

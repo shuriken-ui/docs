@@ -19,12 +19,12 @@ const typefaces = [
 
 <template>
   <div class="py-6">
-    <div class="rounded-md border border-muted-200 dark:border-muted-800 overflow-x-auto">
+    <div class="bg-white dark:bg-muted-950 rounded-md border border-muted-200 dark:border-muted-800 overflow-x-auto">
       <table class="w-full">
         <thead>
           <tr>
-            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900 dark:text-muted-100">Type</th>
-            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900 dark:text-muted-100">Default Value</th>
+            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Type</th>
+            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Default Value</th>
           </tr>
         </thead>
         <tbody>
