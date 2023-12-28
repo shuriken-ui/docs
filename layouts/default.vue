@@ -49,7 +49,7 @@ const onOverlayClick = () => {
           <Icon name="lucide:x" class="w-4 h-4" />
         </BaseButtonIcon>
       </div>
-      <div class="p-6 space-y-2">
+      <div class="p-6 space-y-2 h-[calc(100%_-_3.5rem)] overflow-y-auto nui-slimscroll">
         <!--Navigation links-->
         <template v-for="item in links" :key="item._id">
           <div v-if="item.children" class="py-3">
