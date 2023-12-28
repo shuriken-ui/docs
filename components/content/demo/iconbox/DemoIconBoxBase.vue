@@ -1,0 +1,22 @@
+<template>
+  <div class="flex items-center p-4">
+    <div class="flex items-end gap-2">
+      <BaseIconBox
+        size="md"
+        rounded="lg"
+        color="default"
+        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-gray-500"
+      >
+        <Icon name="ph:nut-duotone" class="h-5 w-5" />
+      </BaseIconBox>
+      <BaseIconBox
+        size="md"
+        rounded="full"
+        color="default"
+        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-gray-500"
+      >
+        <Icon name="ph:nut-duotone" class="h-5 w-5" />
+      </BaseIconBox>
+    </div>
+  </div>
+</template>
