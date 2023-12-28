@@ -143,7 +143,7 @@ function wrapExternalLinks(string: string) {
           <table class="w-full">
             <thead>
               <tr>
-                <th class="w-32 bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Event</th>
+                <th class="w-48 bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Event</th>
                 <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Emitted Value Type</th>
               </tr>
             </thead>

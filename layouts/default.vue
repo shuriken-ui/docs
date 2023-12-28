@@ -39,7 +39,7 @@ const onOverlayClick = () => {
     <!--Sidebar navigation-->
     <aside
       class="fixed top-0 start-0 h-full min-h-screen ltablet:w-64 w-72 bg-muted-50 dark:bg-muted-950 border-e border-muted-200 dark:border-muted-800 transition-transform duration-300 ease-in-out"
-      :class="[isSidebarOpenMobile ? 'translate-x-0 z-[2]' : '-translate-x-full ltablet:translate-x-0 lg:translate-x-0']"
+      :class="[isSidebarOpenMobile ? 'translate-x-0 z-10' : '-translate-x-full ltablet:translate-x-0 lg:translate-x-0']"
     >
       <div class="flex items-center px-6 h-14">
         <NuxtLink to="/docs" class="text-muted-600 dark:text-muted-100 hover:text-primary-800 dark:hover:text-primary-500 transition-colors duration-300">
@@ -150,7 +150,7 @@ const onOverlayClick = () => {
     <!--Mobile overlay-->
     <div
       role="button"
-      class="fixed z-[1] top-0 start-0 h-full w-full bg-muted-950 transition-opacity duration-300"
+      class="fixed z-[9] top-0 start-0 h-full w-full bg-muted-950 transition-opacity duration-300"
       :class="isSidebarOpenMobile || isTocOpenMobile ? 'opacity-70 pointer-events-auto' : 'opacity-0 pointer-events-none'"
       @click="onOverlayClick"
     ></div>

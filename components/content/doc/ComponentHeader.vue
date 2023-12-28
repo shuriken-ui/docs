@@ -17,17 +17,17 @@ const issueUrl = computed(() => {
 
 <template>
   <div class="pb-6">
-    <div class="flex items-center gap-4">
+    <div class="flex flex-wrap md:flex-nowrap md:items-center gap-4">
       <BaseTag rounded="full">Category: <span class="capitalize">{{ props.category }}</span></BaseTag>
       <NuxtLink :to="sourceUrl" target="_blank" rel="noopener" class="group/link">
-        <BaseTag rounded="full" class="inline-flex items-center gap-1 group-hover/link:!border-primary-500 group-hover/link:!text-primary-500">
+        <BaseTag rounded="full" class="w-full inline-flex items-center gap-1 group-hover/link:!border-primary-500 group-hover/link:!text-primary-500">
           <Icon name="fa6-brands:github" class="w-3 h-3" />
           <span>View Source</span>  
           <Icon name="lucide:external-link" class="w-3 h-3" />
         </BaseTag>
       </NuxtLink>
       <NuxtLink :to="issueUrl" target="_blank" rel="noopener" class="group/link">
-        <BaseTag rounded="full" class="inline-flex items-center gap-1 group-hover/link:!border-primary-500 group-hover/link:!text-primary-500">
+        <BaseTag rounded="full" class="w-full inline-flex items-center gap-1 group-hover/link:!border-primary-500 group-hover/link:!text-primary-500">
           <Icon name="fa6-brands:github" class="w-3 h-3" />
           <span>Open Issue</span>  
           <Icon name="lucide:external-link" class="w-3 h-3" />
