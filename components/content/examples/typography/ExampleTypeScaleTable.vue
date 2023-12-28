@@ -83,7 +83,7 @@ const scales = [
 
 <template>
   <div class="py-6">
-    <div class="bg-white dark:bg-muted-950 rounded-md border border-muted-200 dark:border-muted-800 overflow-x-auto">
+    <div class="bg-white dark:bg-muted-950 rounded-md border border-muted-300 dark:border-muted-800 overflow-x-auto">
       <table class="w-full">
         <thead>
           <tr>
@@ -95,7 +95,7 @@ const scales = [
         </thead>
         <tbody>
           <!--Row-->
-          <tr v-for="scale in scales" :key="scale.step" class="border-t border-muted-200 dark:border-muted-800 text-sm">
+          <tr v-for="scale in scales" :key="scale.step" class="border-t border-muted-300 dark:border-muted-800 text-sm">
             <td class="px-4 py-3">
               <div class="flex items-center gap-1">{{ scale.step }}</div>
             </td>

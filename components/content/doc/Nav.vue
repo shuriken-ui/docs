@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const { prev, next } = useContent()
+const editUrl = computed(() => {
+  const url = `${process.env.SHURIKEN_UI_DOCS_GITHUB_URL}`
+  return url
+})
 </script>
 
 <template>
@@ -33,7 +37,9 @@ const { prev, next } = useContent()
     <hr class="my-8 border-t border-muted-200 dark:border-muted-800" />
 
     <div>
-      <a href="#" class="tracking-wide text-sm text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 hover:underline underline-offset-4">Edit this page on Github</a>
+      <NuxtLink :to="editUrl" target="_blank" rel="noopener" class="tracking-wide text-sm text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 hover:underline underline-offset-4"
+        >Edit this page on Github</NuxtLink
+      >
     </div>
   </div>
 </template>
