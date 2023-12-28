@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   extends: ['@shuriken-ui/nuxt'],
   modules: ['@nuxt/content', 'nuxt-icon', '@nuxtjs/google-fonts', '@vueuse/nuxt'],
+  components: {
+    global: true,
+    dirs: ['~/components'],
+  },
   content: {
     documentDriven: true,
     markdown: {
