@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: true,
       toc: { depth: 4, searchDepth: 4 },
-      // tags: {
-      //   code: 'ProseCode'
-      // }
     },
     highlight: {
       // Theme used in all color schemes.
@@ -36,17 +33,4 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  // hooks: {
-  //   'components:dirs': (dirs) => {
-  //     console.log(dirs)
-  //     const base = dirs.find((dir) => typeof dir ===  'object' && dir.path.endsWith('@shuriken-ui/nuxt/components/base'))
-  //     const form = dirs.find((dir) => typeof dir ===  'object' && dir.path.endsWith('@shuriken-ui/nuxt/components/form'))
-  //     if (typeof base === 'object') {
-  //       base.global = true
-  //     }
-  //     if (typeof form === 'object') {
-  //       form.global = true
-  //     }
-  //   },
-  // },
 })
