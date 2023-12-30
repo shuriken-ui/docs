@@ -169,7 +169,7 @@ function wrapExternalLinks(string: string) {
                 <td class="px-4 py-3">
                   <div class="flex items-center gap-1">
                     <ComponentMetaCode>
-                      {{ (event.type.startsWith('[') ? event.type.slice(1, -1) : event.type).replace('value?: ', '') }}
+                      {{ event.type }}
                     </ComponentMetaCode>
                   </div>
                 </td>
