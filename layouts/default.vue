@@ -38,7 +38,7 @@ const onOverlayClick = () => {
   <div class="flex items-stretch min-h-screen bg-white dark:bg-muted-900">
     <!--Sidebar navigation-->
     <aside
-      class="fixed top-0 start-0 h-full min-h-screen ltablet:w-64 w-72 bg-muted-50 dark:bg-muted-950 border-e border-muted-200 dark:border-muted-800 transition-transform duration-300 ease-in-out"
+      class="fixed top-0 start-0 h-full min-h-screen ltablet:w-64 w-64 bg-muted-50 dark:bg-muted-950 border-e border-muted-200 dark:border-muted-800 transition-transform duration-300 ease-in-out"
       :class="[isSidebarOpenMobile ? 'translate-x-0 z-10' : '-translate-x-full ltablet:translate-x-0 lg:translate-x-0']"
     >
       <div class="flex items-center px-6 h-14">
@@ -84,7 +84,7 @@ const onOverlayClick = () => {
       </div>
     </aside>
     <!--Main content-->
-    <main class="w-full ltablet:w-[calc(100%_-_16rem)] lg:w-[calc(100%_-_38rem)] ltablet:ms-64 lg:ms-72 lg:me-80">
+    <main class="w-full ltablet:w-[calc(100%_-_16rem)] lg:w-[calc(100%_-_34rem)] ltablet:ms-64 lg:ms-64 lg:me-72">
       <div class="relative w-full">
         <div class="border-b border-muted-200 dark:border-muted-800">
           <div class="max-w-3xl mx-auto">
@@ -124,7 +124,7 @@ const onOverlayClick = () => {
     </main>
     <!--Table of contents-->
     <div
-      class="fixed top-0 end-0 h-full w-80 bg-white dark:bg-muted-900 min-h-screen transition-transform duration-300 ease-in-out"
+      class="fixed top-0 end-0 h-full w-72 bg-white dark:bg-muted-900 min-h-screen transition-transform duration-300 ease-in-out"
       :class="[isTocOpenMobile ? 'translate-x-0 z-[2]' : 'translate-x-full lg:translate-x-0']"
     >
       <div class="flex items-center gap-3 px-6 h-14 border-b" :class="[y === 0 ? 'border-muted-200 dark:border-muted-800' : 'border-transparent dark:border-transparent']">
