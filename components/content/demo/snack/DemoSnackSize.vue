@@ -1,0 +1,7 @@
+<template>
+  <div class="flex items-end gap-4 p-4">
+    <BaseSnack label="Label" color="default" size="xs" />
+    <BaseSnack label="Label" color="default" size="sm" />
+    <BaseSnack label="Label" color="default" size="md" />
+  </div>
+</template>
