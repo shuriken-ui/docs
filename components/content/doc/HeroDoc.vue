@@ -32,8 +32,8 @@
           <div class="group/stack relative p-0.5">
             <span class="bg-gradient-to-r from-primary-500 to-info-400 blur-lg filter opacity-0 group-hover/stack:opacity-30 w-full h-full absolute inset-0 transition-opacity duration-500"></span>
             <NuxtLink to="/docs/nuxt">
-              <BaseCard color="white-contrast" rounded="md" class="p-6 !border-muted-300 dark:!border-muted-800">
-                <DiagramNuxt class="grayscale opacity-40 group-hover/stack:grayscale-0 group-hover/stack:opacity-100 transition-all duration-300" />
+              <BaseCard color="white-contrast" rounded="lg" class="p-6 !border-muted-300 dark:!border-muted-800">
+                <DiagramNuxt class="opacity-40 group-hover/stack:opacity-100 transition-all duration-300" />
                 <div class="mt-4">
                   <h3 class="font-sans font-medium text-lg mb-1 text-muted-800 dark:text-muted-100">Nuxt</h3>
                   <p class="font-alt text-sm ltablet:text-xs text-muted-500 dark:text-muted-400">
@@ -46,8 +46,8 @@
           <div class="group/stack relative p-0.5">
             <span class="bg-gradient-to-r from-primary-500 to-info-400 blur-lg filter opacity-0 group-hover/stack:opacity-30 w-full h-full absolute inset-0 transition-opacity duration-500"></span>
             <NuxtLink to="/docs/next">
-              <BaseCard color="white-contrast" rounded="md" class="p-6 !border-muted-300 dark:!border-muted-800">
-                <DiagramNext class="grayscale opacity-40 group-hover/stack:grayscale-0 group-hover/stack:opacity-100 transition-all duration-300" />
+              <BaseCard color="white-contrast" rounded="lg" class="p-6 !border-muted-300 dark:!border-muted-800">
+                <DiagramNext class="opacity-40 group-hover/stack:opacity-100 transition-all duration-300" />
                 <div class="mt-4">
                   <h3 class="font-sans font-medium text-lg mb-1 text-muted-800 dark:text-muted-100">Next.js</h3>
                   <p class="font-alt text-sm ltablet:text-xs text-muted-500 dark:text-muted-400">
@@ -60,8 +60,8 @@
           <div class="group/stack relative p-0.5">
             <span class="bg-gradient-to-r from-primary-500 to-info-400 blur-lg filter opacity-0 group-hover/stack:opacity-30 w-full h-full absolute inset-0 transition-opacity duration-500"></span>
             <NuxtLink to="/docs/tailwind">
-              <BaseCard color="white-contrast" rounded="md" class="p-6 !border-muted-300 dark:!border-muted-800">
-                <DiagramTailwind class="grayscale opacity-40 group-hover/stack:grayscale-0 group-hover/stack:opacity-100 transition-all duration-300" />
+              <BaseCard color="white-contrast" rounded="lg" class="p-6 !border-muted-300 dark:!border-muted-800">
+                <DiagramTailwind class="opacity-40 group-hover/stack:opacity-100 transition-all duration-300" />
                 <div class="mt-4">
                   <h3 class="font-sans font-medium text-lg mb-1 text-muted-800 dark:text-muted-100">Tailwind CSS</h3>
                   <p class="font-alt text-sm ltablet:text-xs text-muted-500 dark:text-muted-400">

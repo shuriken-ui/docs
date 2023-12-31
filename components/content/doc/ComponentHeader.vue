@@ -4,14 +4,14 @@ const props = defineProps<{
   fileName: string
 }>()
 
-const sourceUrl = computed(() => {
-  const url = `${process.env.NUXT_COMPONENTS_GITHUB_URL}/${props.category}/${props.fileName}`
-  return url
-})
+const sourceUrl = ref(`${process.env.NUXT_COMPONENTS_GITHUB_URL}/${props.category}/${props.fileName}`)
+const issueUrl = ref(`${process.env.NUXT_ISSUES_GITHUB_URL}`)
 
-const issueUrl = computed(() => {
-  const url = `${process.env.NUXT_ISSUES_GITHUB_URL}`
-  return url
+const route = useRoute()
+// Refresh computed properties on route change
+watch(() => route.path, () => {
+  sourceUrl.value = `${process.env.NUXT_COMPONENTS_GITHUB_URL}/${props.category}/${props.fileName}`
+  issueUrl.value = `${process.env.NUXT_ISSUES_GITHUB_URL}`
 })
 </script>
 
