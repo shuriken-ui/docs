@@ -1,19 +1,3 @@
----
-title: 'Checkbox Headless'
-description: 'A headless checkbox component.'
-layout: 'default'
----
-
-# Checkbox Headless
-
-`<BaseCheckboxHeadless />` · A headless checkbox component.
-
-::component-header{category="form" fileName="BaseCheckboxHeadless.vue" }
-::
-
-::code-group{expandable}
-
-```js [DemoCheckboxHeadlessBase.vue]
 <template>
   <div class="flex items-center justify-center px-4 pt-4 pb-0">
     <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-4">
@@ -73,16 +57,8 @@ layout: 'default'
 
 <script setup lang="ts">
 const value = ref(['team_member_1'])
+
+function reset() {
+  value.value = []
+}
 </script>
-
-```
-
-#preview
-:demo-checkbox-headless-base
-::
-
-## API Reference
-
-This component has props that you can use to modify its behavior.
-
-:component-meta{name="BaseCheckboxHeadless"}
