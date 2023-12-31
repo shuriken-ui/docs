@@ -1,0 +1,123 @@
+<template>
+  <div class="flex items-center justify-center px-4 pt-4 pb-0">
+    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-4">
+      <div class="flex items-center w-full">
+        <div class="w-full flex flex-wrap items-end gap-3">
+          <div class="flex-1">
+            <BaseSelect
+              v-model="first"
+              size="sm"
+              rounded="md"
+              label="Size: sm"
+              :classes="{
+                wrapper: 'w-full',
+              }"
+            >
+              <option value="">
+                Select a hero
+              </option>
+
+              <option value="Superman">
+                Superman
+              </option>
+
+              <option value="Batman">
+                Batman
+              </option>
+
+              <option value="Iron man">
+                Iron man
+              </option>
+
+              <option value="Magneto">
+                Magneto
+              </option>
+
+              <option value="Cyclops">
+                Cyclops
+              </option>
+            </BaseSelect>
+          </div>
+
+          <div class="flex-1">
+            <BaseSelect
+              v-model="second"
+              size="md"
+              rounded="md"
+              label="Size: md"
+              :classes="{
+                wrapper: 'w-full',
+              }"
+            >
+              <option value="">
+                Select a hero
+              </option>
+
+              <option value="Superman">
+                Superman
+              </option>
+
+              <option value="Batman">
+                Batman
+              </option>
+
+              <option value="Iron man">
+                Iron man
+              </option>
+
+              <option value="Magneto">
+                Magneto
+              </option>
+
+              <option value="Cyclops">
+                Cyclops
+              </option>
+            </BaseSelect>
+          </div>
+
+          <div class="flex-1">
+            <BaseSelect
+              v-model="third"
+              size="lg"
+              rounded="md"
+              label="Size: lg"
+              :classes="{
+                wrapper: 'w-full',
+              }"
+            >
+              <option value="">
+                Select a hero
+              </option>
+
+              <option value="Superman">
+                Superman
+              </option>
+
+              <option value="Batman">
+                Batman
+              </option>
+
+              <option value="Iron man">
+                Iron man
+              </option>
+
+              <option value="Magneto">
+                Magneto
+              </option>
+
+              <option value="Cyclops">
+                Cyclops
+              </option>
+            </BaseSelect>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+const first = ref('')
+const second = ref('')
+const third = ref('')
+</script>
