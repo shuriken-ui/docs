@@ -6,5 +6,6 @@ const { data } = await useAsyncData('home', () => queryContent().where({ 'tabs.t
   <div>
     <!-- <pre>{{ data }}</pre> -->
     <slot />
+    <ThemeSwitcher />
   </div>
 </template>

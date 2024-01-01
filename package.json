@@ -12,14 +12,16 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@shuriken-ui/nuxt": "^2.0.0-next.7",
+    "chroma-js": "^2.4.2",
     "nuxt": "^3.8.2",
-    "nuxt-icon": "^0.6.7",
     "nuxt-component-meta": "0.6.0",
+    "nuxt-icon": "^0.6.7",
     "vue-component-meta": "1.8.24"
   },
   "dependencies": {
     "@nuxt/content": "^2.9.0",
     "@nuxtjs/google-fonts": "^3.1.1",
+    "@types/chroma-js": "^2.4.3",
     "@vueuse/nuxt": "^10.7.0"
   }
 }

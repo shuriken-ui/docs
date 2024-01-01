@@ -40,6 +40,14 @@ const { x, y } = useWindowScroll()
           >
             Changelog
           </a>
+          <a
+            href="#"
+            title=""
+            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+            :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
+          >
+            Playground
+          </a>
         </div>
         <div class="hidden ml-auto sm:flex lg:ml-0 justify-end gap-2 w-1/4">
           <BaseDropdown variant="button" label="Dropdown" orientation="end" size="md">
@@ -65,13 +73,23 @@ const { x, y } = useWindowScroll()
               </template>
             </BaseDropdownItem>
           </BaseDropdown>
-          <BaseButtonIcon size="sm" rounded="lg" class="hidden lg:flex">
-            <Icon name="mingcute:drop-line" class="w-4 h-4" />
+          <BaseButtonIcon
+            size="sm"
+            rounded="lg"
+            class="hidden lg:flex"
+            @click="
+              () => {
+                const isOpen = useState('switcher-open', () => false)
+                isOpen.value = true
+              }
+            "
+          >
+            <Icon name="mingcute:drop-fill" class="w-4 h-4 text-primary-500" />
           </BaseButtonIcon>
           <BaseButtonIcon size="sm" rounded="lg" class="hidden lg:flex">
             <Icon name="lucide:search" class="w-4 h-4" />
           </BaseButtonIcon>
-          <BaseButtonIcon size="sm" rounded="lg" class="hidden lg:flex">
+          <BaseButtonIcon to="https://github.com/shuriken-ui" target="_blank" rel="noopener" size="sm" rounded="lg" class="hidden lg:flex">
             <Icon name="fa6-brands:github" class="w-4 h-4" />
           </BaseButtonIcon>
           <div class="scale-90 hidden lg:flex">
@@ -102,7 +120,7 @@ const { x, y } = useWindowScroll()
         <!--Mobile menu-->
         <div
           class="z-20 block lg:hidden fixed top-16 start-0 w-full border-y border-muted-200 bg-white dark:bg-muted-950 transition-all duration-300 shadow-xl shadow-muted-300/30 dark:shadow-muted-800/20"
-          :class="[mobileOpen ? 'h-[406px] opacity-100' : 'h-0 opacity-0']"
+          :class="[mobileOpen ? 'h-[460px] opacity-100' : 'h-0 opacity-0']"
         >
           <div class="w-full max-w-[240px] mx-auto flex flex-col text-center py-6 transition-opacity duration-300" :class="[mobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none']">
             <div class="flex flex-col gap-2">
@@ -114,8 +132,13 @@ const { x, y } = useWindowScroll()
               <NuxtLink
                 to="/"
                 class="inline-flex items-center justify-center px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
-                >Changelog</NuxtLink
-              >
+                >Changelog
+              </NuxtLink>
+              <NuxtLink
+                to="/"
+                class="inline-flex items-center justify-center px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+                >Playground
+              </NuxtLink>
             </div>
             <hr class="my-6 border-t border-muted-200 dark:border-muted-800" />
             <div class="flex flex-col gap-2">
@@ -123,11 +146,13 @@ const { x, y } = useWindowScroll()
                 type="button"
                 class="inline-flex items-center justify-center gap-2 px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
-                <Icon name="mingcute:drop-line" class="w-5 h-5" />
+                <Icon name="mingcute:drop-fill" class="w-5 h-5 text-primary-500" />
                 <span>Customize</span>
               </button>
               <NuxtLink
-                to="/"
+                to="https://github.com/shuriken-ui"
+                target="_blank"
+                rel="noopener"
                 class="inline-flex items-center justify-center gap-2 px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
               >
                 <Icon name="fa6-brands:github" class="w-5 h-5" />
