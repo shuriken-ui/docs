@@ -5,7 +5,7 @@
         size="md"
         rounded="lg"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-gray-500"
+        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
       >
         <Icon name="ph:nut-duotone" class="h-5 w-5" />
       </BaseIconBox>
@@ -13,7 +13,7 @@
         size="md"
         rounded="full"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-gray-500"
+        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
       >
         <Icon name="ph:nut-duotone" class="h-5 w-5" />
       </BaseIconBox>
