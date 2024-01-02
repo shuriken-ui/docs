@@ -51,8 +51,8 @@ const customers = [
   <Section>
     <div class="grid grid-cols-1 ltablet:grid-cols-7 lg:grid-cols-7 ltablet:gap-x-16 gap-x-20 gap-y-12">
       <div class="grid overflow-hidden ltablet:col-span-4 lg:col-span-3 rounded-3xl place-items-end">
-        <div class="flex items-end justify-center h-full w-full px-3 pt-3 ptablet:pt-6 bg-muted-100 dark:bg-muted-800/40">
-          <div class="group/ui w-full max-w-sm mx-auto flex flex-col gap-6">
+        <div class="group/ui flex items-end justify-center h-full w-full px-3 pt-3 ptablet:pt-6 bg-muted-100 dark:bg-muted-800/40">
+          <div class="w-full max-w-sm mx-auto flex flex-col gap-6">
             <BaseCard color="none" rounded="lg" shadow="flat" class="relative bg-muted-900 dark:bg-muted-950 p-4 z-10 group-hover/ui:-translate-x-4">
               <div class="flex justify-between items-center gap-4">
                 <div class="flex items-center space-x-2">
