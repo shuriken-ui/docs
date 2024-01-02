@@ -27,6 +27,7 @@ const swicthBall = ref(true)
         <!-- Switch -->
         <BaseSwitchThin v-model="swicthThin" />
         <BaseSwitchBall v-model="swicthBall" />
+        <BaseCheckbox color="primary" />
       </div>
     </div>
     <!-- Row -->

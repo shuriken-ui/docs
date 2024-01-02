@@ -27,7 +27,7 @@ const { x, y } = useWindowScroll()
           <NuxtLink
             to="/docs"
             title=""
-            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Documentation
@@ -35,7 +35,7 @@ const { x, y } = useWindowScroll()
           <a
             href="#"
             title=""
-            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Changelog
@@ -43,7 +43,7 @@ const { x, y } = useWindowScroll()
           <a
             href="#"
             title=""
-            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Playground
@@ -52,7 +52,7 @@ const { x, y } = useWindowScroll()
         <div class="hidden ml-auto sm:flex lg:ml-0 justify-end gap-2 w-1/4">
           <BaseDropdown variant="button" label="Dropdown" orientation="end" size="md">
             <template #button>
-              <div role="button" class="h-8 px-3 flex items-center gap-1 rounded-full hover:bg-muted-100 dark:hover:bg-muted-900">
+              <div role="button" tabindex="0" class="nui-focus h-8 px-3 flex items-center gap-1 rounded-full hover:bg-muted-100 dark:hover:bg-muted-900">
                 <Icon name="lucide:git-commit" class="w-5 h-5 shrink-0" />
                 <BaseText size="xs" weight="medium" class="">Versions</BaseText>
               </div>
