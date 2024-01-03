@@ -1,8 +1,3 @@
-
-import type { ColorScheme } from '#build/components';
-
-import type { Style } from '#build/components';
-import type { BaseTextarea } from '#build/components';
 <script setup lang="ts">
 const team = [
   {
@@ -155,7 +150,7 @@ const team = [
 
         <div class="mt-10 mx-auto md:mx-0 w-full h-72 rounded-xl bg-muted-100 dark:bg-muted-800/40 group-hover/ui:!bg-muted-900 dark:group-hover/ui:!bg-muted-100 transition-colors duration-300 overflow-hidden">
           <div class="h-full w-full flex items-end px-4 pt-4 overflow-hidden">
-            <div class="relative flex flex-col w-full w-[420px] shrink-0 mx-auto ltablet:mx-0 lg:mx-0 ltablet:start-8 lg:start-8">
+            <div class="relative flex flex-col w-full max-w-[420px] shrink-0 mx-auto ltablet:mx-0 lg:mx-0 ltablet:start-8 lg:start-8">
               <!--Regular card-->
               <BaseCard
                 color="white-contrast"

@@ -8,8 +8,8 @@ const { x, y } = useWindowScroll()
   <header
     class="fixed z-40 top-0 start-0 w-full px-4 md:px-6 border-b transition-all duration-300"
     :class="[
-      y > 60 ? 'bg-white/90 dark:bg-muted-950 !border-muted-200 dark:!border-muted-800' : 'border-transparent',
-      mobileOpen ? '!bg-white/90 dark:!bg-muted-950 !border-muted-200 dark:!border-muted-800' : 'border-transparent',
+      y > 60 ? 'bg-white/95 dark:bg-muted-950 !border-muted-200 dark:!border-muted-800' : 'border-transparent',
+      mobileOpen ? '!bg-white/95 dark:!bg-muted-950 !border-muted-200 dark:!border-muted-800' : 'border-transparent',
     ]"
   >
     <div class="mx-auto max-w-7xl">
@@ -62,7 +62,7 @@ const { x, y } = useWindowScroll()
                 <Icon name="logos:nuxt-icon" class="w-5 h-5" />
               </template>
             </BaseDropdownItem>
-            <BaseDropdownItem to="#" title="@shuriken-ui/next" text="0.0.0-alpha.1" color="default" rounded="sm">
+            <BaseDropdownItem to="#" title="@shuriken-ui/react" text="0.0.0-alpha.1" color="default" rounded="sm">
               <template #start>
                 <Icon name="logos:react" class="w-5 h-5" />
               </template>
