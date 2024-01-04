@@ -61,12 +61,12 @@
         </div>
       </div>
     </div>
-    <div class="relative z-[2] pt-28 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="relative z-[2] pt-16 md:pt-28 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="grid grid cols-1 md:grid-cols-2 gap-6">
         <div class="h-full flex items-center">
           <div class="max-w-lg lg:max-w-none">
             <BaseParagraph size="md" weight="semibold" class="text-primary-600">Changelogs</BaseParagraph>
-            <BaseHeading as="h2" size="3xl" weight="semibold" class="my-4 sm:!text-4xl lg:my-6 lg:!text-5xl lg:pe-8 tracking-light text-muted-900 dark:text-white"
+            <BaseHeading as="h2" size="3xl" weight="semibold" class="my-4 sm:!text-4xl lg:my-6 lg:!text-5xl lg:pe-8 tracking-light xs:!leading-snug text-muted-900 dark:text-white"
               >Keep up with the most recent changes and improvements.</BaseHeading
             >
             <BaseParagraph size="md" class="max-w-sm text-muted-500 dark:text-muted-400">
