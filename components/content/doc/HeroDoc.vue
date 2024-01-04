@@ -51,7 +51,7 @@
           </NuxtLink>
         </div>
         <div class="grow flex items-center justify-center">
-          <NuxtLink to="/" class="text-muted-600 dark:text-muted-100 hover:text-primary-800 dark:hover:text-primary-500 transition-colors duration-300">
+          <NuxtLink to="/" class="text-muted-600 dark:text-muted-100 hover:text-primary-600 dark:hover:text-primary-500 transition-colors duration-300">
             <LogoText class="h-8 w-auto hidden md:block" />
             <Logo class="h-10 w-auto block md:hidden" />
           </NuxtLink>

@@ -18,7 +18,7 @@ const { x, y } = useWindowScroll()
           <NuxtLink to="/" title="" class="">
             <LogoText
               class="w-auto h-8 transition-colors duration-300"
-              :class="[y > 60 ? 'text-primary-600 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500', mobileOpen ? '!text-primary-600 dark:!text-primary-400' : '']"
+              :class="[y > 60 ? 'text-primary-600 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500 hover:!text-primary-600', mobileOpen ? '!text-primary-600 dark:!text-primary-400' : '']"
             />
           </NuxtLink>
         </div>
