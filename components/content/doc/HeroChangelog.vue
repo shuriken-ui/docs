@@ -61,52 +61,60 @@
         </div>
       </div>
     </div>
-    <div class="relative z-[2] pt-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="max-w-2xl mx-auto text-center mb-6">
-        <h1 class="text-4xl font-light leading-tight text-muted-900 dark:text-muted-100 sm:leading-tight sm:text-4xl lg:text-4xl lg:leading-tight">Documentation</h1>
-        <p class="mt-5 px-6 text-sm font-medium text-muted-600 dark:text-muted-400 uppercase">Select a Framework</p>
-      </div>
-
-      <div class="w-full py-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-5">
-          <div class="group/stack relative p-0.5">
-            <span class="bg-gradient-to-r from-primary-500 to-info-400 blur-lg filter opacity-0 group-hover/stack:opacity-30 w-full h-full absolute inset-0 transition-opacity duration-500"></span>
-            <NuxtLink to="/docs/nuxt">
-              <BaseCard color="white-contrast" rounded="lg" class="p-6 !border-muted-300 dark:!border-muted-800">
-                <DiagramNuxt class="opacity-40 group-hover/stack:opacity-100 transition-all duration-300" />
-                <div class="mt-4">
-                  <h3 class="font-sans font-medium text-lg mb-1 text-muted-800 dark:text-muted-100">Nuxt</h3>
-                  <p class="font-alt text-sm ltablet:text-xs text-muted-500 dark:text-muted-400">
-                    Shuriken UI/Nuxt is a layer on top of Shuriken/Tailwind that provides a set of components and directives to work with Nuxt.
-                  </p>
+    <div class="relative z-[2] pt-28 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid grid cols-1 md:grid-cols-2 gap-6">
+        <div class="h-full flex items-center">
+          <div class="max-w-lg lg:max-w-none">
+            <BaseParagraph size="md" weight="semibold" class="text-primary-600">Changelogs</BaseParagraph>
+            <BaseHeading as="h2" size="3xl" weight="semibold" class="my-4 sm:!text-4xl lg:my-6 lg:!text-5xl lg:pe-8 tracking-light text-muted-900 dark:text-white"
+              >Keep up with the most recent changes and improvements.</BaseHeading
+            >
+            <BaseParagraph size="md" class="max-w-sm text-muted-500 dark:text-muted-400">
+              Select one of the following changelogs to see what's new in the latest version.
+            </BaseParagraph>
+          </div>
+        </div>
+        <div class="h-full">
+          <div class="flex flex-col gap-4">
+            <NuxtLink to="/changelog/nuxt" class="group/link block w-full max-w-sm mx-auto">
+              <BaseCard color="white-contrast" rounded="lg" shadow="hover" class="p-6 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100">
+                <div class="flex items-center gap-5">
+                  <Icon name="logos:nuxt-icon" class="w-8 h-8" />
+                  <div>
+                    <BaseHeading as="h3" size="md" weight="semibold" lead="tight" class="text-muted-800 dark:text-muted-100">Nuxt</BaseHeading>
+                    <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-400">@shuriken-ui/nuxt</BaseParagraph>
+                  </div>
+                  <div class="ms-auto">
+                    <BaseTag size="sm" rounded="full" color="muted">v2.0.0</BaseTag>
+                  </div>
                 </div>
               </BaseCard>
             </NuxtLink>
-          </div>
-          <div class="group/stack relative p-0.5">
-            <span class="bg-gradient-to-r from-primary-500 to-info-400 blur-lg filter opacity-0 group-hover/stack:opacity-30 w-full h-full absolute inset-0 transition-opacity duration-500"></span>
-            <NuxtLink to="/docs/react">
-              <BaseCard color="white-contrast" rounded="lg" class="p-6 !border-muted-300 dark:!border-muted-800">
-                <DiagramNext class="opacity-40 group-hover/stack:opacity-100 transition-all duration-300" />
-                <div class="mt-4">
-                  <h3 class="font-sans font-medium text-lg mb-1 text-muted-800 dark:text-muted-100">React</h3>
-                  <p class="font-alt text-sm ltablet:text-xs text-muted-500 dark:text-muted-400">
-                    Shuriken UI/React is a plugin built on top of Shuriken/Tailwind that provides a set of components and directives to work with React and Next.js.
-                  </p>
+            <NuxtLink to="/changelog/react" class="group/link block w-full max-w-sm mx-auto">
+              <BaseCard color="white-contrast" rounded="lg" shadow="hover" class="p-6 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100">
+                <div class="flex items-center gap-5">
+                  <Icon name="logos:react" class="w-8 h-8" />
+                  <div>
+                    <BaseHeading as="h3" size="md" weight="semibold" lead="tight" class="text-muted-800 dark:text-muted-100">React</BaseHeading>
+                    <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-400">@shuriken-ui/react</BaseParagraph>
+                  </div>
+                  <div class="ms-auto">
+                    <BaseTag size="sm" rounded="full" color="muted">v0.0.0-alpha.0</BaseTag>
+                  </div>
                 </div>
               </BaseCard>
             </NuxtLink>
-          </div>
-          <div class="group/stack relative p-0.5">
-            <span class="bg-gradient-to-r from-primary-500 to-info-400 blur-lg filter opacity-0 group-hover/stack:opacity-30 w-full h-full absolute inset-0 transition-opacity duration-500"></span>
-            <NuxtLink to="/docs/tailwind">
-              <BaseCard color="white-contrast" rounded="lg" class="p-6 !border-muted-300 dark:!border-muted-800">
-                <DiagramTailwind class="opacity-40 group-hover/stack:opacity-100 transition-all duration-300" />
-                <div class="mt-4">
-                  <h3 class="font-sans font-medium text-lg mb-1 text-muted-800 dark:text-muted-100">Tailwind CSS</h3>
-                  <p class="font-alt text-sm ltablet:text-xs text-muted-500 dark:text-muted-400">
-                    Shuriken/Tailwind is built on top of Tailwind CSS and made to work everywhere. You don't need anything than the default Tailwind setup.
-                  </p>
+            <NuxtLink to="/changelog/tailwind" class="group/link block w-full max-w-sm mx-auto">
+              <BaseCard color="white-contrast" rounded="lg" shadow="hover" class="p-6 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100">
+                <div class="flex items-center gap-5">
+                  <Icon name="logos:tailwindcss-icon" class="w-8 h-8" />
+                  <div>
+                    <BaseHeading as="h3" size="md" weight="semibold" lead="tight" class="text-muted-800 dark:text-muted-100">Tailwind</BaseHeading>
+                    <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-400">@shuriken-ui/tailwind</BaseParagraph>
+                  </div>
+                  <div class="ms-auto">
+                    <BaseTag size="sm" rounded="full" color="muted">v2.0.0</BaseTag>
+                  </div>
                 </div>
               </BaseCard>
             </NuxtLink>

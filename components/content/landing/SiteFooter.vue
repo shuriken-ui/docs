@@ -57,7 +57,7 @@ const date = new Date().getFullYear()
                   to="/docs/next"
                   class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200"
                 >
-                  Next.js version
+                  React version
                 </NuxtLink>
               </li>
               <li>

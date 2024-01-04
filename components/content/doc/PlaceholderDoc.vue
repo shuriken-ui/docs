@@ -16,7 +16,7 @@ const props = defineProps<{
 
       <div class="mt-6 flex flex-col md:flex-row justify-center gap-2">
         <BaseInput icon="lucide:mail" rounded="md" placeholder="Email Address" />
-        <BaseButton color="primary" rounded="md" class="w-full md:w-28"> Notify Me </BaseButton>
+        <BaseButton color="none" rounded="md" class="w-full md:w-28 bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white"> Notify Me </BaseButton>
       </div>
     </BasePlaceholderPage>
   </div>

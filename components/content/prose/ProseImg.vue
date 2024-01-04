@@ -1,11 +1,7 @@
 <template>
-  <img
-    :src="refinedSrc"
-    :alt="alt"
-    :width="width"
-    :height="height"
-    class="rounded-xl shadow-xl shadow-muted-300/30 dark:shadow-muted-800/20"
-  >
+  <div class="py-6">
+    <img :src="refinedSrc" :alt="alt" :width="width" :height="height" class="rounded-xl shadow-xl shadow-muted-300/30 dark:shadow-muted-800/20 border border-muted-300 dark:border-muted-800" />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -15,20 +11,20 @@ import { useRuntimeConfig, computed } from '#imports'
 const props = defineProps({
   src: {
     type: String,
-    default: ''
+    default: '',
   },
   alt: {
     type: String,
-    default: ''
+    default: '',
   },
   width: {
     type: [String, Number],
-    default: undefined
+    default: undefined,
   },
   height: {
     type: [String, Number],
-    default: undefined
-  }
+    default: undefined,
+  },
 })
 
 const refinedSrc = computed(() => {

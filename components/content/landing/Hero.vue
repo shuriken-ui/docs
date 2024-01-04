@@ -43,7 +43,7 @@
     </div>
 
     <div class="pt-40 relative z-10 max-w-2xl mx-auto text-center">
-      <h1 class="px-6 text-xs text-muted-500 dark:text-muted-300 uppercase font-medium tracking-wider">Designed components for Nuxt / Next.js</h1>
+      <h1 class="px-6 text-xs text-muted-500 dark:text-muted-300 uppercase font-medium tracking-wider">Components for Nuxt / React / Next.js</h1>
       <p class="mt-5 text-4xl font-bold leading-tight text-muted-900 dark:text-white sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
         Beautiful, Responsive UI
         <span class="relative inline-flex sm:inline">

@@ -15,12 +15,12 @@ const { x, y } = useWindowScroll()
     <div class="mx-auto max-w-7xl">
       <div class="flex items-center justify-between h-16">
         <div class="shrink-0 w-1/4">
-          <a href="#" title="" class="">
+          <NuxtLink to="/" title="" class="">
             <LogoText
               class="w-auto h-8 transition-colors duration-300"
               :class="[y > 60 ? 'text-primary-600 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500', mobileOpen ? '!text-primary-600 dark:!text-primary-400' : '']"
             />
-          </a>
+          </NuxtLink>
         </div>
         <!--Desktop menu-->
         <div class="hidden grow lg:flex lg:items-center lg:space-x-4 lg:justify-center">
@@ -32,22 +32,23 @@ const { x, y } = useWindowScroll()
           >
             Documentation
           </NuxtLink>
-          <a
-            href="#"
+          <NuxtLink
+            to="/changelog"
             title=""
+            exact-active-class="!text-muted-900 dark:!text-muted-100 !bg-muted-100 dark:!bg-muted-900"
             class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Changelog
-          </a>
-          <a
-            href="#"
+          </NuxtLink>
+          <NuxtLink
+            to="/playground"
             title=""
             class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Playground
-          </a>
+          </NuxtLink>
         </div>
         <div class="hidden ml-auto sm:flex lg:ml-0 justify-end gap-2 w-1/4">
           <BaseDropdown variant="button" label="Dropdown" orientation="end" size="md">
@@ -130,12 +131,12 @@ const { x, y } = useWindowScroll()
                 >Documentation</NuxtLink
               >
               <NuxtLink
-                to="/"
+                to="/changelog"
                 class="inline-flex items-center justify-center px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
                 >Changelog
               </NuxtLink>
               <NuxtLink
-                to="/"
+                to="/playground"
                 class="inline-flex items-center justify-center px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
                 >Playground
               </NuxtLink>
