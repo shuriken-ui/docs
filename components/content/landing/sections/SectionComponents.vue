@@ -35,8 +35,8 @@ const url = computed(() => {
         <button
           type="button"
           class="flex items-center gap-2 py-4 pe-2 border-b-2 transition-all duration-300"
-          :class="activeTab === 'next' ? 'border-muted-900 dark:border-white' : 'border-transparent opacity-60 grayscale'"
-          @click="handleTabs('next')"
+          :class="activeTab === 'react' ? 'border-muted-900 dark:border-white' : 'border-transparent opacity-60 grayscale'"
+          @click="handleTabs('react')"
         >
           <Icon name="logos:react" class="w-6 h-6" />
           <BaseText size="sm" weight="medium">React</BaseText>
@@ -52,7 +52,7 @@ const url = computed(() => {
         </button>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <NuxtLink v-for="component in components" :key="component.name" :to="`${url}${component.url}`" class="block group/link">
+        <NuxtLink v-for="component in components" :key="component.name" :to="`${url}${component.url}`" class="block group/link" :class="component.availableIn.includes(activeTab) ? '' : 'hidden'">
           <BaseCard color="white-contrast" rounded="lg" shadow="hover" class="relative p-4 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100">
             <div class="bg-muted-100 dark:bg-muted-800/50 rounded-xl">
               <img :src="component.image.light" alt="" class="w-full block dark:hidden" />
@@ -65,10 +65,10 @@ const url = computed(() => {
             <div class="mt-3 flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <Icon v-if="activeTab === 'nuxt'" name="logos:nuxt-icon" class="w-4 h-4" />
-                <Icon v-else-if="activeTab === 'next'" name="logos:react" class="w-4 h-4" />
+                <Icon v-else-if="activeTab === 'react'" name="logos:react" class="w-4 h-4" />
                 <Icon v-else-if="activeTab === 'tailwind'" name="logos:tailwindcss-icon" class="w-4 h-4" />
                 <BaseText v-if="activeTab === 'nuxt'" size="xs" weight="medium" class="text-muted-600 dark:text-muted-400">Nuxt</BaseText>
-                <BaseText v-else-if="activeTab === 'next'" size="xs" weight="medium" class="text-muted-600 dark:text-muted-400">React/Next.js</BaseText>
+                <BaseText v-else-if="activeTab === 'react'" size="xs" weight="medium" class="text-muted-600 dark:text-muted-400">React/Next.js</BaseText>
                 <BaseText v-else-if="activeTab === 'tailwind'" size="xs" weight="medium" class="text-muted-600 dark:text-muted-400">Tailwind</BaseText>
               </div>
               <BaseTag size="sm" rounded="full">{{ component.category }}</BaseTag>

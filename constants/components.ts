@@ -6,7 +6,8 @@ interface Component {
   image: {
     light: string,
     dark: string,
-  }
+  },
+  availableIn: string[],
 }
 
 export const components: Component[] = [
@@ -18,7 +19,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-avatar.svg',
       dark: '/img/illustrations/components/icon-avatar-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'avatar group',
@@ -28,7 +30,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-avatar-group.svg',
       dark: '/img/illustrations/components/icon-avatar-group-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'accordion',
@@ -38,7 +41,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-accordion.svg',
       dark: '/img/illustrations/components/icon-accordion-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'card',
@@ -48,7 +52,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-card.svg',
       dark: '/img/illustrations/components/icon-card-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'icon box',
@@ -58,7 +63,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-icon-box.svg',
       dark: '/img/illustrations/components/icon-icon-box-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'list',
@@ -68,7 +74,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-list.svg',
       dark: '/img/illustrations/components/icon-list-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'message',
@@ -78,7 +85,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-message.svg',
       dark: '/img/illustrations/components/icon-message-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'placeholder',
@@ -88,7 +96,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-placeholder.svg',
       dark: '/img/illustrations/components/icon-placeholder-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'placeload',
@@ -98,7 +107,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-placeload.svg',
       dark: '/img/illustrations/components/icon-placeload-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'tag',
@@ -108,7 +118,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-tag.svg',
       dark: '/img/illustrations/components/icon-tag-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'breadcrumb',
@@ -118,7 +129,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-breadcrumb.svg',
       dark: '/img/illustrations/components/icon-breadcrumb-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'button',
@@ -128,7 +140,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-button.svg',
       dark: '/img/illustrations/components/icon-button-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'button action',
@@ -138,7 +151,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-button-action.svg',
       dark: '/img/illustrations/components/icon-button-action-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'button close',
@@ -148,7 +162,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-button-close.svg',
       dark: '/img/illustrations/components/icon-button-close-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'button icon',
@@ -158,7 +173,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-button-icon.svg',
       dark: '/img/illustrations/components/icon-button-icon-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'dropdown',
@@ -168,7 +184,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-dropdown.svg',
       dark: '/img/illustrations/components/icon-dropdown-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'focus loop',
@@ -178,7 +195,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-focus-loop.svg',
       dark: '/img/illustrations/components/icon-focus-loop-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react']
   },
   {
     name: 'pagination',
@@ -188,7 +206,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-pagination.svg',
       dark: '/img/illustrations/components/icon-pagination-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'progress',
@@ -198,7 +217,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-progress.svg',
       dark: '/img/illustrations/components/icon-progress-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'progress circle',
@@ -208,7 +228,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-progress-circle.svg',
       dark: '/img/illustrations/components/icon-progress-circle-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'snack',
@@ -218,7 +239,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-snack.svg',
       dark: '/img/illustrations/components/icon-snack-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'tab slider',
@@ -228,7 +250,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-tab-slider.svg',
       dark: '/img/illustrations/components/icon-tab-slider-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'tabs',
@@ -238,7 +261,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-tabs.svg',
       dark: '/img/illustrations/components/icon-tabs-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'theme toggle',
@@ -248,7 +272,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-theme-toggle.svg',
       dark: '/img/illustrations/components/icon-theme-toggle-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'autocomplete',
@@ -258,7 +283,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-autocomplete.svg',
       dark: '/img/illustrations/components/icon-autocomplete-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'checkbox',
@@ -268,7 +294,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-checkbox.svg',
       dark: '/img/illustrations/components/icon-checkbox-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'checkbox headless',
@@ -278,7 +305,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-checkbox-headless.svg',
       dark: '/img/illustrations/components/icon-checkbox-headless-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react']
   },
   {
     name: 'checkbox animated',
@@ -288,7 +316,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-checkbox-animated.svg',
       dark: '/img/illustrations/components/icon-checkbox-animated-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react']
   },
   {
     name: 'input',
@@ -298,7 +327,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-input.svg',
       dark: '/img/illustrations/components/icon-input-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'listbox',
@@ -308,7 +338,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-listbox.svg',
       dark: '/img/illustrations/components/icon-listbox-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'radio',
@@ -318,7 +349,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-radio.svg',
       dark: '/img/illustrations/components/icon-radio-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'radio headless',
@@ -328,7 +360,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-radio-headless.svg',
       dark: '/img/illustrations/components/icon-radio-headless-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react']
   },
   {
     name: 'select',
@@ -338,7 +371,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-select.svg',
       dark: '/img/illustrations/components/icon-select-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'switch thin',
@@ -348,7 +382,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-switch-thin.svg',
       dark: '/img/illustrations/components/icon-switch-thin-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'switch ball',
@@ -358,7 +393,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-switch-ball.svg',
       dark: '/img/illustrations/components/icon-switch-ball-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'treeselect',
@@ -368,7 +404,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-treeselect.svg',
       dark: '/img/illustrations/components/icon-treeselect-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react']
   },
   {
     name: 'heading',
@@ -378,7 +415,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-heading.svg',
       dark: '/img/illustrations/components/icon-heading-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'paragraph',
@@ -388,7 +426,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-paragraph.svg',
       dark: '/img/illustrations/components/icon-paragraph-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'text',
@@ -398,7 +437,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-typography.svg',
       dark: '/img/illustrations/components/icon-typography-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'link',
@@ -408,7 +448,8 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-link.svg',
       dark: '/img/illustrations/components/icon-link-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   },
   {
     name: 'kbd',
@@ -418,6 +459,7 @@ export const components: Component[] = [
     image: {
       light: '/img/illustrations/components/icon-kbd.svg',
       dark: '/img/illustrations/components/icon-kbd-dark.svg',
-    }
+    },
+    availableIn: ['nuxt', 'react', 'tailwind']
   }
 ]
