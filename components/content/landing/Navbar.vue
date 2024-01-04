@@ -44,6 +44,7 @@ const { x, y } = useWindowScroll()
           <NuxtLink
             to="/playground"
             title=""
+            exact-active-class="!text-muted-900 dark:!text-muted-100 !bg-muted-100 dark:!bg-muted-900"
             class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >

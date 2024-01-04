@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="mt-8 lg:-mt-16 pb-12 w-full max-w-7xl mx-auto px-4">
+    <div class="relative z-[9] mt-8 lg:-mt-16 pb-12 w-full max-w-7xl mx-auto px-4">
       <ExampleShurikenComponents />
     </div>
   </div>
