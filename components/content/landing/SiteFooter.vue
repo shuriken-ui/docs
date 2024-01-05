@@ -3,7 +3,7 @@ const date = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="group/footer relative overflow-hidden w-full px-4 pt-16 font-sans bg-muted-50 dark:bg-muted-950">
+  <footer class="group/footer relative z-0 overflow-hidden w-full px-4 pt-16 font-sans bg-muted-50 dark:bg-muted-950">
     <div class="absolute -top-6 -left-6 h-14 w-0 group-hover/footer:w-72 origin-top-left rotate-45 bg-muted-200/60 dark:bg-muted-900 rounded-full transition-all duration-300 delay-[25ms]"></div>
     <div class="absolute -top-12 left-20 h-14 w-0 group-hover/footer:w-48 origin-top-left rotate-45 bg-muted-200/60 dark:bg-muted-900 rounded-full transition-all duration-300 delay-75"></div>
     <div class="absolute top-24 -left-7 h-14 w-0 group-hover/footer:w-40 origin-top-left rotate-45 bg-muted-200/60 dark:bg-muted-900 rounded-full transition-all duration-300 delay-150"></div>

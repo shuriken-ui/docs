@@ -29,6 +29,12 @@ const primaryPresets = [
     class: 'bg-sky-500',
   },
   {
+    name: 'fuchsia',
+    label: 'Fuchsia',
+    shades: colors.fuchsia,
+    class: 'bg-fuchsia-500',
+  },
+  {
     name: 'purple',
     label: 'Purple',
     shades: colors.purple,
@@ -190,7 +196,7 @@ function switchMuted(color: (typeof mutedPresets)[number]) {
             </BaseParagraph>
           </div>
           <div class="space-y-1">
-            <div class="grid grid-cols-1 gap-x-4 gap-y-1 sm:grid-cols-2">
+            <div class="grid grid-cols-1 gap-x-4 gap-y-0 sm:grid-cols-2">
               <div v-for="color in primaryPresets" :key="color.name">
                 <button
                   type="button"
