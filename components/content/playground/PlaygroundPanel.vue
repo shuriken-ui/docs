@@ -4,6 +4,7 @@ import colors from 'tailwindcss/colors'
 
 const props = defineProps<{
   open?: boolean
+  loading?: boolean
 }>()
 
 const { rounded } = usePlayground()
@@ -161,16 +162,18 @@ const mutedPresets = [
   },
 ] as const
 
+const emit = defineEmits(['close', 'generate', 'primaryChanged', 'mutedChanged'])
+
 function switchPrimary(color: (typeof primaryPresets)[number]) {
   currentPrimary.value = color.name
   switchColorShades('primary', color.shades)
+  emit('primaryChanged', color.name)
 }
 function switchMuted(color: (typeof mutedPresets)[number]) {
   currentMuted.value = color.name
   switchColorShades('muted', color.shades)
+  emit('mutedChanged', color.name)
 }
-
-const emit = defineEmits(['close'])
 </script>
 
 <template>
@@ -271,7 +274,7 @@ const emit = defineEmits(['close'])
       </button>
     </div>
     <div>
-      <BaseButton color="none" size="md" class="w-full bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white">Generate Configuration</BaseButton>
+      <BaseButton :loading="props.loading" :color="props.loading ? 'default' : 'none'" size="md" class="w-full bg-muted-900 hover:bg-muted-800 dark:bg-muted-900 dark:hover:bg-muted-800 text-white" @click="emit('generate')">Generate Configuration</BaseButton>
     </div>
   </BaseCard>
 </template>
