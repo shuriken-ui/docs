@@ -67,7 +67,7 @@ const isPanelOpen = ref(false)
                 <SampleButtonIcon />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Dropdown" component="Dropdown" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample title="Dropdown" component="Dropdown" category="interaction" :available-in="['nuxt', 'react', 'tailwind']" class="relative z-[2]">
                 <SampleDropdown />
               </PlaygroundSample>
 
@@ -95,7 +95,7 @@ const isPanelOpen = ref(false)
                 <SampleTabs />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Autocomplete" component="Autocomplete" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample title="Autocomplete" component="Autocomplete" category="form" :available-in="['nuxt', 'react', 'tailwind']" class="relative z-[2]">
                 <SampleAutocomplete />
               </PlaygroundSample>
 

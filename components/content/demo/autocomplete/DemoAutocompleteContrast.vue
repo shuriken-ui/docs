@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-const value = reactive('')
+const value = ref('')
 
 const frameworks = ref(['Javascript', 'Nuxt', 'Vue.js', 'React.js', 'Angular', 'Alpine.js'])
 </script>

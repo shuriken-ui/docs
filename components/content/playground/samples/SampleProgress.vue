@@ -15,14 +15,69 @@ const { rounded } = usePlayground()
     <template #tab="{ activeValue }">
       <div v-if="activeValue === 'colors'" class="relative pb-4">
         <div class="space-y-4">
+          <PlaygroundSampleRow label="Primary" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Primary progress bar" size="sm" :value="85" color="primary" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Success" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Success progress bar" size="sm" :value="85" color="success" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Info" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Info progress bar" size="sm" :value="85" color="info" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Warning" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Warning progress bar" size="sm" :value="85" color="warning" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Danger" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Danger progress bar" size="sm" :value="85" color="danger" />
+            </div>
+          </PlaygroundSampleRow>
         </div>
       </div>
       <div v-if="activeValue === 'sizes'" class="relative pb-4">
         <div class="space-y-4">
+          <PlaygroundSampleRow label="Xs" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Primary progress bar" size="xs" :value="85" color="primary" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Sm" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Primary progress bar" size="sm" :value="85" color="primary" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Md" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Primary progress bar" size="md" :value="85" color="primary" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Lg" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Primary progress bar" size="lg" :value="85" color="primary" />
+            </div>
+          </PlaygroundSampleRow>
         </div>
       </div>
       <div v-if="activeValue === 'contrast'" class="relative pb-4">
         <div class="space-y-4">
+          <PlaygroundSampleRow label="Default" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Primary progress bar" size="sm" contrast="default" :value="50" color="primary" />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Contrast" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress title="Primary progress bar" size="sm" contrast="contrast" :value="50" color="primary" />
+            </div>
+          </PlaygroundSampleRow>
         </div>
       </div>
     </template>
