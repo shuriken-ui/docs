@@ -41,7 +41,7 @@ const { rounded } = usePlayground()
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Badge">
-            <div class="flex flex-wrap items-end gap-3">
+            <div class="flex flex-wrap items-end gap-3 pb-4">
               <BaseAvatar src="/img/photo/avatars/51.jpg" :rounded="rounded" size="sm" badge-src="/img/stacks/javascript.svg" />
               <BaseAvatar src="/img/photo/avatars/19.jpg" :rounded="rounded" size="sm" badge-src="/img/stacks/javascript.svg" />
               <BaseAvatar src="/img/photo/avatars/25.jpg" :rounded="rounded" size="sm" badge-src="/img/stacks/javascript.svg" />

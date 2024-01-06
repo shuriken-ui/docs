@@ -22,6 +22,18 @@ const isPanelOpen = ref(false)
               <PlaygroundSample title="Accordion" component="Accordion" category="display" :available-in="['nuxt', 'react', 'tailwind']">
                 <SampleAccordion />
               </PlaygroundSample>
+
+              <PlaygroundSample title="Card" component="Card" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+                <SampleCard />
+              </PlaygroundSample>
+
+              <PlaygroundSample title="Icon Box" component="Iconbox" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+                <SampleIconBox />
+              </PlaygroundSample>
+
+              <PlaygroundSample title="List" component="List" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+                <SampleList />
+              </PlaygroundSample>
             </div>
           </div>
         </div>
@@ -30,11 +42,7 @@ const isPanelOpen = ref(false)
             <div class="sticky top-24">
               <PlaygroundPanel :open="isPanelOpen" @close="isPanelOpen = false" />
               <div class="fixed top-24 end-5 md:end-7 z-50 lg:hidden transition-transform duration-300" :class="!isPanelOpen ? 'translate-x-0' : 'translate-x-16'">
-                <BaseButtonIcon
-                  size="sm"
-                  rounded="lg"
-                  @click="() => isPanelOpen = true"
-                >
+                <BaseButtonIcon size="sm" rounded="lg" @click="() => (isPanelOpen = true)">
                   <Icon name="mingcute:drop-fill" class="w-4 h-4 text-primary-500" />
                 </BaseButtonIcon>
               </div>
