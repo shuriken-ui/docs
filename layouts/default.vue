@@ -42,7 +42,7 @@ const onOverlayClick = () => {
       :class="[isSidebarOpenMobile ? 'translate-x-0 z-10' : '-translate-x-full ltablet:translate-x-0 lg:translate-x-0']"
     >
       <div class="flex items-center px-6 h-14">
-        <NuxtLink to="/" class="text-muted-600 dark:text-muted-100 hover:text-primary-800 dark:hover:text-primary-500 transition-colors duration-300">
+        <NuxtLink to="/" class="text-muted-600 dark:text-muted-100 hover:text-primary-600 dark:hover:text-primary-500 transition-colors duration-300">
           <LogoText class="h-8" />
         </NuxtLink>
         <BaseButtonIcon size="sm" rounded="md" class="ms-auto ltablet:hidden lg:hidden" @click="isSidebarOpenMobile = !isSidebarOpenMobile">
