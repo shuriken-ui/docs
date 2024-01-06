@@ -14,7 +14,7 @@ const { rounded } = usePlayground()
   >
     <template #tab="{ activeValue }">
       <div v-if="activeValue === 'basic'" class="relative pb-4">
-        <div class="space-y-4">
+        <div class="space-y-8">
           <PlaygroundSampleRow label="Bullet" label-align="start">
             <div class="flex flex-wrap items-end gap-3">
               <BaseList class="ps-4">
