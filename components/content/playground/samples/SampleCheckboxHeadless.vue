@@ -16,7 +16,7 @@ function reset() {
           <BaseCheckboxHeadless v-model="value" value="team_member_1">
             <BaseCard :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" class="peer-checked:!border-primary-500 peer-checked:[&_.child]:!text-primary-500 border-2 p-4 opacity-50 peer-checked:opacity-100">
               <div class="flex w-full items-center gap-2">
-                <BaseAvatar size="xs" :rounded="rounded" src="/img/avatars/10.svg" />
+                <BaseAvatar size="xs" :rounded="rounded" src="/img/photo/avatars/21.jpg" />
                 <div>
                   <BaseHeading as="h4" size="sm" weight="medium" lead="none"> Kendra Wilson </BaseHeading>
                   <BaseText size="xs" class="text-muted-400"> Software Engineer </BaseText>
@@ -30,7 +30,7 @@ function reset() {
           <BaseCheckboxHeadless v-model="value" value="team_member_2">
             <BaseCard :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" class="peer-checked:!border-primary-500 peer-checked:[&_.child]:!text-primary-500 border-2 p-4 opacity-50 peer-checked:opacity-100">
               <div class="flex w-full items-center gap-2">
-                <BaseAvatar size="xs" :rounded="rounded" src="/img/avatars/16.svg" />
+                <BaseAvatar size="xs" :rounded="rounded" src="/img/photo/avatars/55.jpg" />
                 <div>
                   <BaseHeading as="h4" size="sm" weight="medium" lead="none"> Hermann Mayer </BaseHeading>
                   <BaseText size="xs" class="text-muted-400"> Sales Manager </BaseText>
@@ -44,7 +44,7 @@ function reset() {
           <BaseCheckboxHeadless v-model="value" value="team_member_3">
             <BaseCard :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" class="peer-checked:!border-primary-500 peer-checked:[&_.child]:!text-primary-500 border-2 p-4 opacity-50 peer-checked:opacity-100">
               <div class="flex w-full items-center gap-2">
-                <BaseAvatar size="xs" :rounded="rounded" src="/img/avatars/25.svg" />
+                <BaseAvatar size="xs" :rounded="rounded" src="/img/photo/avatars/42.jpg" />
                 <div>
                   <BaseHeading as="h4" size="sm" weight="medium" lead="none"> Melany Lawright </BaseHeading>
                   <BaseText size="xs" class="text-muted-400"> HR Manager </BaseText>

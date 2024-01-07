@@ -35,7 +35,7 @@ const date = new Date().getFullYear()
             <BaseHeading as="h4" size="sm" weight="medium" class="uppercase">Shuriken UI</BaseHeading>
             <ul class="flex flex-col gap-3 font-normal">
               <li>
-                <NuxtLink to="/home" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
+                <NuxtLink to="/" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
                   Home
                 </NuxtLink>
               </li>
@@ -54,7 +54,7 @@ const date = new Date().getFullYear()
               </li>
               <li>
                 <NuxtLink
-                  to="/docs/next"
+                  to="/docs/react"
                   class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200"
                 >
                   React version
@@ -69,7 +69,7 @@ const date = new Date().getFullYear()
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
+                <NuxtLink to="https://github.com/shuriken-ui/nuxt/blob/main/LICENSE.md" target="_blank" rel="noopener" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
                   Licensing
                 </NuxtLink>
               </li>
@@ -174,7 +174,7 @@ const date = new Date().getFullYear()
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
+                <NuxtLink to="https://656a098589ac31a8b917519a-ejjinpgpck.chromatic.com/?path=/docs/shuriken-ui-base-accordion--docs" target="_blank" rel="noopener" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
                   Storybook UI
                 </NuxtLink>
               </li>

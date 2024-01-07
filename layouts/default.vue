@@ -104,9 +104,32 @@ const onOverlayClick = () => {
                 <Icon :name="tab.tabs.icon" class="w-5 h-5" />
                 <span class="hidden md:inline text-sm font-medium text-muted-800 dark:text-muted-100">{{ tab.tabs.title }}</span>
               </NuxtLink>
-              <BaseButtonIcon size="sm" rounded="md" class="ms-auto lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">
-                <Icon name="lucide:folder" class="w-4 h-4" />
-              </BaseButtonIcon>
+              <div class="flex items-center gap-2 ms-auto">
+                <BaseInput
+                  icon="lucide:search"
+                  size="sm"
+                  rounded="md"
+                  placeholder="Search"
+                  readonly
+                  :classes="{
+                    wrapper: 'w-44 cursor-pointer',
+                    input: 'cursor-pointer',
+                  }"
+                >
+                  <template #action>
+                    <div class="absolute top-1 end-1 flex items-center justify-end gap-1">
+                      <BaseKbd size="xs" color="default" rounded="md">Ctrl</BaseKbd>
+                      <span>+</span>
+                      <BaseKbd size="xs" color="default" rounded="md">
+                        <span class="px-1">K</span>
+                      </BaseKbd>
+                    </div>
+                  </template>
+                </BaseInput>
+                <BaseButtonIcon size="sm" rounded="md" class="lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">
+                  <Icon name="lucide:folder" class="w-4 h-4" />
+                </BaseButtonIcon>
+              </div>
             </div>
           </div>
         </div>
@@ -131,10 +154,10 @@ const onOverlayClick = () => {
         <BaseButtonIcon size="sm" rounded="md" class="lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">
           <Icon name="lucide:arrow-right" class="w-4 h-4" />
         </BaseButtonIcon>
-        <NuxtLink to="/" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
+        <NuxtLink to="https://github.com/shuriken-ui" target="_blank" rel="noopener" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
           <Icon name="fa6-brands:github" class="w-5 h-5" />
         </NuxtLink>
-        <NuxtLink to="/" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
+        <NuxtLink to="https://twitter.com/cssninjaStudio" target="_blank" rel="noopener" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
           <Icon name="ri:twitter-x-fill" class="w-4 h-4" />
         </NuxtLink>
         <div class="ms-auto">

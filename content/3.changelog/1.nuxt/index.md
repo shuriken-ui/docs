@@ -11,6 +11,8 @@ section.title: 'Nuxt'
 Follow the latest updates and improvements of Shuriken UI.
 
 ::changelog-block{version="2.0.0-beta.0" releaseDate="December 4, 2023" breaking}
+## 2.0.0 release
+
 :::info-block{icon='simple-icons:nuxtdotjs'}
 This version includes breaking changes. Follow the instructions to update your project after installing the latest version of shuriken-ui/nuxt. To ensure a smooth experience with the latest version and avoid any unwanted behaviors, please make sure the following dependencies are up to date:
 * [nuxt](https://github.com/nuxt/nuxt/releases/tag/v3.9.0): `3.9.0`

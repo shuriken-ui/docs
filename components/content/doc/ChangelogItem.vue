@@ -8,7 +8,7 @@ const props = defineProps<{
 
 <template>
   <li
-    class="relative flex items-center before:content-[''] before:flex before:h-2 before:w-2 before:rounded-full before:border-2 before:shrink-0 before:me-3"
+    class="relative flex before:mt-2 before:content-[''] before:flex before:h-2 before:w-2 before:rounded-full before:border-2 before:shrink-0 before:me-3"
     :class="[
       props.heading ? 'font-medium' : '', 
       props.spaced ? 'pt-3' : '',

@@ -43,10 +43,10 @@
     <div class="relative z-[2] w-full px-4">
       <div class="h-16 w-full max-w-7xl mx-auto flex items-center justify-between lg:px-6">
         <div class="w-1/5 shrink-0 flex items-center gap-2">
-          <NuxtLink to="/" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
+          <NuxtLink to="https://github.com/shuriken-ui" target="_blank" rel="noopener" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
             <Icon name="fa6-brands:github" class="w-5 h-5" />
           </NuxtLink>
-          <NuxtLink to="/" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
+          <NuxtLink to="https://twitter.com/cssninjaStudio" target="_blank" rel="noopener" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
             <Icon name="ri:twitter-x-fill" class="w-4 h-4" />
           </NuxtLink>
         </div>
