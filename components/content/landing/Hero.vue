@@ -55,8 +55,6 @@
       <div class="px-8 sm:items-center sm:justify-center sm:px-0 gap-3 sm:gap-5 flex flex-col sm:flex-row mt-6">
         <BaseButton
           to="/docs"
-          target="_blank"
-          rel="noopener"
           size="lg"
           color="none"
           rounded="lg"
