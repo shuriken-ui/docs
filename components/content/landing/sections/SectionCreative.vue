@@ -102,7 +102,7 @@ const customers = [
             >Create modern web interfaces with limitless possibilities.</BaseHeading
           >
           <div class="mt-8">
-            <BaseButton size="lg" color="none" rounded="lg" class="group/button w-full sm:w-64 bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white">
+            <BaseButton to="/docs" size="lg" color="none" rounded="lg" class="group/button w-full sm:w-64 bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white">
               <span>Get Started</span>
               <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover/button:translate-x-2 transition-transform duration-300" />
             </BaseButton>
