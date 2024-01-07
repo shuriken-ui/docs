@@ -8,6 +8,7 @@ interface Component {
     dark: string,
   },
   availableIn: string[],
+  requiresTailwind?: boolean,
 }
 
 export const components: Component[] = [
@@ -20,7 +21,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-avatar.svg',
       dark: '/img/illustrations/components/icon-avatar-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'avatar group',
@@ -31,7 +33,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-avatar-group.svg',
       dark: '/img/illustrations/components/icon-avatar-group-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'accordion',
@@ -42,7 +45,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-accordion.svg',
       dark: '/img/illustrations/components/icon-accordion-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'card',
@@ -53,7 +57,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-card.svg',
       dark: '/img/illustrations/components/icon-card-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'icon box',
@@ -64,7 +69,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-icon-box.svg',
       dark: '/img/illustrations/components/icon-icon-box-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'list',
@@ -75,7 +81,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-list.svg',
       dark: '/img/illustrations/components/icon-list-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'message',
@@ -86,7 +93,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-message.svg',
       dark: '/img/illustrations/components/icon-message-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'placeholder',
@@ -97,7 +105,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-placeholder.svg',
       dark: '/img/illustrations/components/icon-placeholder-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'placeload',
@@ -108,7 +117,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-placeload.svg',
       dark: '/img/illustrations/components/icon-placeload-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'tag',
@@ -119,7 +129,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-tag.svg',
       dark: '/img/illustrations/components/icon-tag-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'breadcrumb',
@@ -130,7 +141,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-breadcrumb.svg',
       dark: '/img/illustrations/components/icon-breadcrumb-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'button',
@@ -141,7 +153,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-button.svg',
       dark: '/img/illustrations/components/icon-button-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'button action',
@@ -152,7 +165,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-button-action.svg',
       dark: '/img/illustrations/components/icon-button-action-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'button close',
@@ -163,7 +177,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-button-close.svg',
       dark: '/img/illustrations/components/icon-button-close-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'button icon',
@@ -174,7 +189,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-button-icon.svg',
       dark: '/img/illustrations/components/icon-button-icon-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'dropdown',
@@ -185,7 +201,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-dropdown.svg',
       dark: '/img/illustrations/components/icon-dropdown-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'focus loop',
@@ -207,7 +224,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-pagination.svg',
       dark: '/img/illustrations/components/icon-pagination-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'progress',
@@ -218,7 +236,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-progress.svg',
       dark: '/img/illustrations/components/icon-progress-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'progress circle',
@@ -229,7 +248,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-progress-circle.svg',
       dark: '/img/illustrations/components/icon-progress-circle-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'snack',
@@ -240,7 +260,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-snack.svg',
       dark: '/img/illustrations/components/icon-snack-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'tab slider',
@@ -251,7 +272,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-tab-slider.svg',
       dark: '/img/illustrations/components/icon-tab-slider-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'tabs',
@@ -262,7 +284,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-tabs.svg',
       dark: '/img/illustrations/components/icon-tabs-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'theme toggle',
@@ -273,7 +296,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-theme-toggle.svg',
       dark: '/img/illustrations/components/icon-theme-toggle-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'autocomplete',
@@ -284,7 +308,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-autocomplete.svg',
       dark: '/img/illustrations/components/icon-autocomplete-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'checkbox',
@@ -295,7 +320,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-checkbox.svg',
       dark: '/img/illustrations/components/icon-checkbox-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'checkbox headless',
@@ -328,7 +354,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-input.svg',
       dark: '/img/illustrations/components/icon-input-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'listbox',
@@ -339,7 +366,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-listbox.svg',
       dark: '/img/illustrations/components/icon-listbox-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'radio',
@@ -350,7 +378,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-radio.svg',
       dark: '/img/illustrations/components/icon-radio-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'radio headless',
@@ -372,7 +401,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-select.svg',
       dark: '/img/illustrations/components/icon-select-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'switch thin',
@@ -383,7 +413,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-switch-thin.svg',
       dark: '/img/illustrations/components/icon-switch-thin-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'switch ball',
@@ -394,7 +425,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-switch-ball.svg',
       dark: '/img/illustrations/components/icon-switch-ball-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'treeselect',
@@ -416,7 +448,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-heading.svg',
       dark: '/img/illustrations/components/icon-heading-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'paragraph',
@@ -427,7 +460,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-paragraph.svg',
       dark: '/img/illustrations/components/icon-paragraph-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'text',
@@ -438,7 +472,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-typography.svg',
       dark: '/img/illustrations/components/icon-typography-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'link',
@@ -449,7 +484,8 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-link.svg',
       dark: '/img/illustrations/components/icon-link-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   },
   {
     name: 'kbd',
@@ -460,6 +496,7 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-kbd.svg',
       dark: '/img/illustrations/components/icon-kbd-dark.svg',
     },
-    availableIn: ['nuxt', 'react', 'tailwind']
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   }
 ]

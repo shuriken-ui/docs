@@ -52,10 +52,25 @@
         </span>
       </p>
 
-      <div class="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-6">
-        <BaseButton size="lg" color="none" rounded="lg" class="group/button w-full sm:w-72 bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white">
-          <span>Learn Shuriken UI</span>
+      <div class="px-8 sm:items-center sm:justify-center sm:px-0 gap-3 sm:gap-5 flex flex-col sm:flex-row mt-6">
+        <BaseButton
+          to="/docs"
+          target="_blank"
+          rel="noopener"
+          size="lg"
+          color="none"
+          rounded="lg"
+          class="group/button w-full sm:w-52 gap-2 bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white"
+        >
+          <span>Learn Shuriken</span>
           <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover/button:translate-x-2 transition-transform duration-300" />
+        </BaseButton>
+        <BaseButton to="https://github.com/shuriken-ui" target="_blank" rel="noopener" size="lg" color="default" rounded="lg" class="group/button w-full sm:w-52 gap-2 font-medium">
+          <span class="relative">
+            <Icon name="fa6-brands:github" class="w-4 h-4 group-hover/button:opacity-0 transition-opacity duration-300" />
+            <Icon name="fa:star" class="absolute top-1 start-0 opacity-0 w-4 h-4 group-hover/button:!opacity-100 -rotate-180 group-hover/button:!rotate-0 transition-all duration-300" />
+          </span>
+          <span>Star on Github</span>
         </BaseButton>
       </div>
 

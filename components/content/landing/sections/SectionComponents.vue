@@ -71,7 +71,12 @@ const url = computed(() => {
                 <BaseText v-else-if="activeTab === 'react'" size="xs" weight="medium" class="text-muted-600 dark:text-muted-400">React/Next.js</BaseText>
                 <BaseText v-else-if="activeTab === 'tailwind'" size="xs" weight="medium" class="text-muted-600 dark:text-muted-400">Tailwind</BaseText>
               </div>
-              <BaseTag size="sm" rounded="full">{{ component.category }}</BaseTag>
+              <div class="flex items-center gap-2">
+                <BaseTag v-if="component.requiresTailwind && activeTab !== 'tailwind'" size="sm" rounded="full" data-nui-tooltip="requires @shuriken-ui/tailwind">
+                  <Icon name="logos:tailwindcss-icon" class="w-4 h-4" />
+                </BaseTag>
+                <BaseTag size="sm" rounded="full">{{ component.category }}</BaseTag>
+              </div>
             </div>
           </BaseCard>
         </NuxtLink>
