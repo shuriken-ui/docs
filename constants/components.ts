@@ -498,5 +498,17 @@ export const components: Component[] = [
     },
     availableIn: ['nuxt', 'react', 'tailwind'],
     requiresTailwind: true,
+  },
+  {
+    name: 'prose',
+    description: 'A prestyled block of text that can be used to render user generated content.',
+    category: 'typography',
+    url: '/typography/prose',
+    image: {
+      light: '/img/illustrations/components/icon-prose.svg',
+      dark: '/img/illustrations/components/icon-prose-dark.svg',
+    },
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
   }
 ]
