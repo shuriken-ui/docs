@@ -193,6 +193,18 @@ export const components: Component[] = [
     requiresTailwind: true,
   },
   {
+    name: 'button group',
+    description: 'A flexible container made to group buttons and form controls together.',
+    category: 'interaction',
+    url: '/interaction/button-group',
+    image: {
+      light: '/img/illustrations/components/icon-button-group.svg',
+      dark: '/img/illustrations/components/icon-button-group-dark.svg',
+    },
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
+  },
+  {
     name: 'dropdown',
     description: 'A dropdown menu that can be used as a any type of menu or filter.',
     category: 'interaction',
@@ -509,6 +521,54 @@ export const components: Component[] = [
       dark: '/img/illustrations/components/icon-prose-dark.svg',
     },
     availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
+  },
+  {
+    name: 'focus',
+    description: 'A utility that allows to display a visual indicator when an element is focused.',
+    category: 'utilities',
+    url: '/utilities/focus',
+    image: {
+      light: '/img/illustrations/components/icon-focus.svg',
+      dark: '/img/illustrations/components/icon-focus-dark.svg',
+    },
+    availableIn: ['tailwind'],
+    requiresTailwind: true,
+  },
+  {
+    name: 'mark',
+    description: 'A utility that allows to highlight a chunk of text, useful for autocompletion.',
+    category: 'utilities',
+    url: '/utilities/mark',
+    image: {
+      light: '/img/illustrations/components/icon-mark.svg',
+      dark: '/img/illustrations/components/icon-mark-dark.svg',
+    },
+    availableIn: ['tailwind'],
+    requiresTailwind: true,
+  },
+  {
+    name: 'mask',
+    description: 'A utility that allows to create hexagonal and various other svg masks.',
+    category: 'utilities',
+    url: '/utilities/mask',
+    image: {
+      light: '/img/illustrations/components/icon-mask.svg',
+      dark: '/img/illustrations/components/icon-mask-dark.svg',
+    },
+    availableIn: ['tailwind'],
+    requiresTailwind: true,
+  },
+  {
+    name: 'slimscroll',
+    description: 'A utility that allows to restyle the scrollbar in scrollable containers.',
+    category: 'utilities',
+    url: '/utilities/slimscroll',
+    image: {
+      light: '/img/illustrations/components/icon-slimscroll.svg',
+      dark: '/img/illustrations/components/icon-slimscroll-dark.svg',
+    },
+    availableIn: ['tailwind'],
     requiresTailwind: true,
   }
 ]
