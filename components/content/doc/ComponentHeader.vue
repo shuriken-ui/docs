@@ -5,6 +5,7 @@ const props = withDefaults(defineProps<{
   framework?: 'nuxt' | 'react' | 'tailwind'
   storybook?: string
 }>(), {
+  category: 'base',
   framework: 'nuxt'
 })
 
@@ -22,7 +23,7 @@ const part = computed(() => {
 
 const sourceUrl = ref(`${part.value}/${props.category}/${props.fileName}`)
 const issueUrl = ref(`https://github.com/shuriken-ui/${props.framework}/issues`)
-const storybookUrl = ref(`https://656a098589ac31a8b917519a-ejjinpgpck.chromatic.com/?path=/docs/${props.storybook ?? 'shuriken-ui-base-avatar'}--docs/`)
+const storybookUrl = ref(`https://656a098589ac31a8b917519a-ejjinpgpck.chromatic.com/?path=/docs/${props.storybook ?? `shuriken-ui-base-avatar`}--docs/`)
 </script>
 
 <template>
