@@ -109,10 +109,9 @@ const onOverlayClick = () => {
                   icon="lucide:search"
                   size="sm"
                   rounded="md"
-                  placeholder="Search"
                   readonly
                   :classes="{
-                    wrapper: 'w-44 cursor-pointer',
+                    wrapper: 'w-28 cursor-pointer',
                     input: 'cursor-pointer',
                   }"
                 >
