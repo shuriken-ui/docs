@@ -168,11 +168,11 @@ const date = new Date().getFullYear()
                   Changelog
                 </NuxtLink>
               </li>
-              <li>
+              <!--li>
                 <NuxtLink to="#" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
                   Figma UI Kit
                 </NuxtLink>
-              </li>
+              </li-->
               <li>
                 <NuxtLink to="https://656a098589ac31a8b917519a-ejjinpgpck.chromatic.com/?path=/docs/shuriken-ui-base-accordion--docs" target="_blank" rel="noopener" class="text-muted-500 dark:text-muted-400 hover:text-primary-600 dark:hover:text-primary-400 hover:underline underline-offset-4 transition-colors duration-200">
                   Storybook UI

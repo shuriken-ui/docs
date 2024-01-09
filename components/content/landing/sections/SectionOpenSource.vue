@@ -131,13 +131,13 @@
 
       <div class="lg:col-span-3 lg:pl-8 xl:pl-24">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-6">
-          <NuxtLink to="https://github.com/shuriken-ui/nuxt/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="group/link">
+          <NuxtLink to="https://github.com/sponsors/cssninjaStudio" target="_blank" rel="noopener" class="group/link">
             <BaseCard color="white-contrast" rounded="lg" shadow="flat" class="group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100">
               <div class="px-8 py-6">
-                <Icon name="system-uicons:terminal" class="w-12 h-12 mx-auto text-muted-900 dark:text-muted-100 lg:mx-0" />
-                <BaseHeading as="h3" size="lg" weight="semibold" class="mt-8 lg:mt-12 text-muted-900 dark:text-white">Contribution guide</BaseHeading>
+                <Icon name="system-uicons:coffee" class="w-12 h-12 mx-auto text-muted-900 dark:text-muted-100 lg:mx-0" />
+                <BaseHeading as="h3" size="lg" weight="semibold" class="mt-8 lg:mt-12 text-muted-900 dark:text-white">Sponsor Us</BaseHeading>
                 <BaseParagraph size="md" lead="relaxed" class="mt-4 ltablet:max-w-xs ltablet:mx-auto text-muted-700 dark:text-muted-400"
-                  >Read the guidelines to contribute to Shuriken UI on Github.</BaseParagraph
+                  >Help us make Shuriken UI even better and earn a few perks.</BaseParagraph
                 >
               </div>
             </BaseCard>

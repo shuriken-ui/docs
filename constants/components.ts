@@ -370,6 +370,52 @@ export const components: Component[] = [
     requiresTailwind: true,
   },
   {
+    name: 'input file',
+    description: 'A classic input file upload component for regular forms.',
+    category: 'form',
+    url: '/form/input-file',
+    image: {
+      light: '/img/illustrations/components/icon-input-file.svg',
+      dark: '/img/illustrations/components/icon-input-file-dark.svg',
+    },
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
+  },
+  {
+    name: 'input file headless',
+    description: 'A headless file upload input that allows custom designs.',
+    category: 'form',
+    url: '/form/input-file-headless',
+    image: {
+      light: '/img/illustrations/components/icon-upload.svg',
+      dark: '/img/illustrations/components/icon-upload-dark.svg',
+    },
+    availableIn: ['nuxt', 'react'],
+  },
+  {
+    name: 'input dropfile',
+    description: 'An abstract component that detects file drops all over the screen.',
+    category: 'form',
+    url: '/form/input-dropfile',
+    image: {
+      light: '/img/illustrations/components/icon-upload.svg',
+      dark: '/img/illustrations/components/icon-upload-dark.svg',
+    },
+    availableIn: ['nuxt', 'react'],
+  },
+  {
+    name: 'input number',
+    description: 'A custom ecommerce oriented input with incremental control buttons.',
+    category: 'form',
+    url: '/form/input-number',
+    image: {
+      light: '/img/illustrations/components/icon-input-number.svg',
+      dark: '/img/illustrations/components/icon-input-number-dark.svg',
+    },
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
+  },
+  {
     name: 'listbox',
     description: 'A customizable select component that can be used to display enhanced results.',
     category: 'form',
@@ -521,6 +567,18 @@ export const components: Component[] = [
       dark: '/img/illustrations/components/icon-prose-dark.svg',
     },
     availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
+  },
+  {
+    name: 'tooltip',
+    description: 'A very simple and minimalistic CSS tooltip to use with HTML attributes.',
+    category: 'interaction',
+    url: '/interaction/tooltip',
+    image: {
+      light: '/img/illustrations/components/icon-tooltip.svg',
+      dark: '/img/illustrations/components/icon-tooltip-dark.svg',
+    },
+    availableIn: ['tailwind'],
     requiresTailwind: true,
   },
   {
