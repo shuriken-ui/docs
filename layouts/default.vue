@@ -86,9 +86,9 @@ const onOverlayClick = () => {
     <!--Main content-->
     <main class="w-full ltablet:w-[calc(100%_-_16rem)] lg:w-[calc(100%_-_34rem)] ltablet:ms-64 lg:ms-64 lg:me-72">
       <div class="relative w-full">
-        <div class="border-b border-muted-200 dark:border-muted-800">
+        <div class="fixed top-0 start-0 z-[5] w-full ltablet:static lg:static bg-white dark:bg-muted-900 border-b border-muted-200 dark:border-muted-800">
           <div class="max-w-3xl mx-auto">
-            <div class="flex items-center h-14 gap-10 px-6">
+            <div class="flex items-center h-14 gap-8 md:gap-10 px-6">
               <BaseButtonIcon size="sm" rounded="md" class="ltablet:hidden lg:hidden" @click="isSidebarOpenMobile = !isSidebarOpenMobile">
                 <Icon name="lucide:menu" class="w-4 h-4" />
               </BaseButtonIcon>
@@ -105,13 +105,16 @@ const onOverlayClick = () => {
                 <span class="hidden md:inline text-sm font-medium text-muted-800 dark:text-muted-100">{{ tab.tabs.title }}</span>
               </NuxtLink>
               <div class="flex items-center gap-2 ms-auto">
+                <BaseButtonIcon size="sm" rounded="lg" class="md:hidden">
+                  <Icon name="lucide:search" class="w-4 h-4" />
+                </BaseButtonIcon>
                 <BaseInput
                   icon="lucide:search"
                   size="sm"
                   rounded="md"
                   readonly
                   :classes="{
-                    wrapper: 'w-28 cursor-pointer',
+                    wrapper: 'w-28 cursor-pointer md:block hidden',
                     input: 'cursor-pointer',
                   }"
                 >
@@ -133,7 +136,7 @@ const onOverlayClick = () => {
           </div>
         </div>
         <div class="relative">
-          <div class="max-w-3xl mx-auto px-6 pt-6 pb-12">
+          <div class="max-w-3xl mx-auto px-6 pt-20 ltablet:pt-6 lg:pt-6 pb-12">
             <slot />
           </div>
         </div>
@@ -147,7 +150,7 @@ const onOverlayClick = () => {
     <!--Table of contents-->
     <div
       class="fixed top-0 end-0 h-full w-72 bg-white dark:bg-muted-900 min-h-screen transition-transform duration-300 ease-in-out"
-      :class="[isTocOpenMobile ? 'translate-x-0 z-[2]' : 'translate-x-full lg:translate-x-0']"
+      :class="[isTocOpenMobile ? 'translate-x-0 z-[10]' : 'translate-x-full lg:translate-x-0']"
     >
       <div class="flex items-center gap-3 px-6 h-14 border-b" :class="[y === 0 ? 'border-muted-200 dark:border-muted-800' : 'border-transparent dark:border-transparent']">
         <BaseButtonIcon size="sm" rounded="md" class="lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">

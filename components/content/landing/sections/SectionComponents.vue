@@ -13,7 +13,7 @@ const url = computed(() => {
 </script>
 
 <template>
-  <Section overflow-hidden>
+  <Section>
     <div class="max-w-2xl mx-auto text-center">
       <BaseParagraph size="md" weight="semibold" class="text-primary-600">Component Library</BaseParagraph>
       <BaseHeading as="h2" size="3xl" weight="semibold" class="mt-4 sm:!text-4xl lg:!text-5xl tracking-light text-muted-900 dark:text-white"
@@ -21,8 +21,8 @@ const url = computed(() => {
       </BaseHeading>
     </div>
 
-    <div class="mt-12">
-      <div class="flex justify-center gap-10 mb-8 border-b border-muted-200 dark:border-muted-800">
+    <div class="relative mt-12">
+      <div class="sticky top-16 z-10 bg-white dark:bg-muted-900 flex justify-center gap-10 mb-8 border-b border-muted-200 dark:border-muted-800">
         <button
           type="button"
           class="flex items-center gap-2 py-4 pe-2 border-b-2 transition-all duration-300"
