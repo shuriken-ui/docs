@@ -1,8 +1,8 @@
 
 <template>
   <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-8">
-      <div class="flex items-end gap-4">
+    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-6 md:p-8">
+      <div class="flex items-end gap-2 md:gap-4">
         <BaseAvatar src="/img/avatars/24.svg" size="xxs" />
         <BaseAvatar src="/img/avatars/8.svg" size="xs" />
         <BaseAvatar src="/img/avatars/25.svg" size="sm" />

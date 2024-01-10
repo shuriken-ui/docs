@@ -1,6 +1,6 @@
 <template>
   <div class="py-6">
-    <div class="flex w-full rounded-xl overflow-hidden">
+    <div class="flex flex-col md:flex-row w-full rounded-xl overflow-hidden">
       <div class="w-full p-6 bg-muted-50 dark:bg-muted-950">
         <BaseCard color="white" class="p-6 flex flex-col items-center !border-muted-300 dark:!border-muted-700">
           <BaseAvatar src="/img/avatars/11.svg" size="xl" badge-src="/img/stacks/react.svg" />

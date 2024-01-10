@@ -3,7 +3,7 @@ import type { BaseSwitchBall } from '#build/components';
   <div class="py-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
-        <BaseCard rounded="lg" class="p-6 h-full flex items-center justify-center border-none !bg-primary-900">
+        <BaseCard rounded="lg" class="p-6 xs:py-16 h-full flex items-center justify-center border-none !bg-primary-900">
           <div class="flex flex-col items-center w-full">
             <BaseAvatar size="2xl" src="/img/avatars/15.svg" badge-src="/img/stacks/react.svg" />
             <div class="text-center mt-6 w-full max-w-xs mx-auto">

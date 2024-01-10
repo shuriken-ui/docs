@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-end gap-3 p-4">
+  <div class="flex flex-wrap items-end gap-3 p-4">
     <BaseButton variant="solid" color="primary" rounded="md" size="sm">
       <span>Get Started</span>
     </BaseButton>

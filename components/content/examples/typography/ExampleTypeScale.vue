@@ -1,6 +1,6 @@
 <template>
   <div class="py-6">
-    <div class="flex items-end w-full">
+    <div class="flex items-end w-full overflow-x-auto">
       <div class="flex flex-col flex-1">
         <div class="w-full flex items-center justify-center text-center border-b border-dashed border-muted-300 dark:border-muted-800">
           <BaseText size="xs" weight="semibold" lead="none"> Aa </BaseText>
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <div class="flex items-end w-full">
+    <div class="flex items-end w-full overflow-x-auto">
       <div class="flex flex-col flex-1">
         <div class="w-full flex items-center justify-center text-center border-b border-dashed border-muted-300 dark:border-muted-800">
           <BaseText size="6xl" weight="semibold" lead="none"> Aa </BaseText>

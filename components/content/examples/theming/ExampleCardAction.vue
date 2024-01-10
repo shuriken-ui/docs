@@ -1,9 +1,9 @@
 <template>
   <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl py-8">
+    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl px-4 py-4 md:py-8">
       <div class="mx-auto w-full max-w-md ">
         <BaseCard
-          class="p-6 !border-muted-300 dark:!border-muted-800" 
+          class="p-4 md:p-6 !border-muted-300 dark:!border-muted-800" 
           color="white-contrast" 
           rounded="md">
           <div class="flex flex-col py-2">
