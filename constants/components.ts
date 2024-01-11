@@ -246,7 +246,7 @@ export const components: Component[] = [
     url: '/interaction/progress',
     image: {
       light: '/img/illustrations/components/icon-progress.svg',
-      dark: '/img/illustrations/components/icon-progress-dark.svg',
+      dark: '/img/illustrations/components/icon-progress-dark-2.svg',
     },
     availableIn: ['nuxt', 'react', 'tailwind'],
     requiresTailwind: true,
@@ -318,7 +318,7 @@ export const components: Component[] = [
     url: '/form/autocomplete',
     image: {
       light: '/img/illustrations/components/icon-autocomplete.svg',
-      dark: '/img/illustrations/components/icon-autocomplete-dark.svg',
+      dark: '/img/illustrations/components/icon-autocomplete-dark-2.svg',
     },
     availableIn: ['nuxt', 'react', 'tailwind'],
     requiresTailwind: true,

@@ -41,7 +41,7 @@
               size="lg"
               color="none"
               rounded="lg"
-              class="group/button w-full mt-8 gap-2 bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white"
+              class="group/button w-full mt-8 gap-2 bg-muted-900 hover:bg-muted-800 dark:bg-muted-900 dark:hover:bg-muted-800 text-white"
             >
               <span>Follow on Github</span>
               <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover/button:translate-x-2 transition-transform duration-300" />
@@ -82,7 +82,7 @@
               size="lg"
               color="none"
               rounded="lg"
-              class="group/button w-full mt-8 gap-2 bg-muted-900 hover:bg-muted-800 dark:bg-muted-950 dark:hover:bg-muted-800 text-white"
+              class="group/button w-full mt-8 gap-2 bg-muted-900 hover:bg-muted-800 dark:bg-muted-900 dark:hover:bg-muted-800 text-white"
             >
               <span>Contribution Guide</span>
               <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover/button:translate-x-2 transition-transform duration-300" />
