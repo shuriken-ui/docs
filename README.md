@@ -1,75 +1,11 @@
-# Nuxt 3 Minimal Starter
+## Shuriken UI / Docs
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![docs-overview](https://github.com/shuriken-ui/docs/assets/86636408/41630613-6eed-4eb6-abb4-78c745014325)
 
-## Setup
+This is the documentation website of Shuriken UI. It holds the documentation for:
 
-Make sure to install the dependencies:
+- @shuriken-ui/tailwind
+- @shuriken-ui/nuxt
+- @shuriken-ui/react
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Shuriken UI is a customizable component library for Tailwind, Nuxt and React/Next.js made and maintained by [cssninja.io](https://cssninja.io).
