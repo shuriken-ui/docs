@@ -321,6 +321,10 @@ export default defineAppConfig({
                 <SampleInput />
               </PlaygroundSample>
 
+              <PlaygroundSample title="Input Number" component="Input-Number" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+                <SampleInputNumber />
+              </PlaygroundSample>
+
               <PlaygroundSample title="Listbox" component="Listbox" category="form" :available-in="['nuxt', 'react', 'tailwind']">
                 <SampleListbox />
               </PlaygroundSample>
