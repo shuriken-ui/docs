@@ -3,6 +3,12 @@ import exposeColors from './tailwind/plugin-expose-colors'
 export default defineNuxtConfig({
   extends: ['@shuriken-ui/nuxt'],
   modules: ['@nuxt/content', 'nuxt-icon', '@nuxtjs/google-fonts', '@vueuse/nuxt', 'nuxt-component-meta'],
+  app: {
+    head: {
+      titleTemplate: '%s | Shuriken UI',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
+    },
+  },
   components: {
     global: true,
     dirs: ['~/components'],
