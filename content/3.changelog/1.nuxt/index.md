@@ -10,7 +10,7 @@ section.title: 'Nuxt'
 
 Follow the latest updates and improvements of Shuriken UI.
 
-::changelog-block{version="2.0.0-beta.0" releaseDate="December 4, 2023" breaking}
+::changelog-block{version="2.0.0" releaseDate="January 15, 2023" breaking}
 ## 2.0.0 release
 
 :::info-block{icon='simple-icons:nuxtdotjs'}
@@ -113,11 +113,83 @@ We've added a new `<BaseKbd />` component for keyboard keys and shortcuts.
 
 We added a new documentation website to help you get started with Shuriken UI. This website is built with Nuxt and Tailwind CSS. It is available at [https://shuriken-ui.github.io/docs](https://shuriken-ui.github.io/docs).
 
-![A Cool Image](/img/content/changelog/nuxt/docs-overview.png)
+![Shuriken UI docs](/img/content/changelog/nuxt/docs-overview.png)
 
 ## Storybook update
 
 We updated the Shuriken UI Storybook to the latest version of Storybook 6.3.0. This update brings a lot of new features and improvements to the Storybook experience.
 
-![A Cool Image](/img/content/changelog/tailwind/storybook-gradient.png)
+![Shuriken Storybook](/img/content/changelog/tailwind/storybook-gradient.png)
 ::
+
+
+::changelog-block{version="1.8.0" releaseDate="November 16, 2023"}
+## 1.8.0 release
+
+:::info-block{icon='simple-icons:nuxtdotjs'}
+Follow the instructions to update your project after installing the latest version of shuriken-ui/nuxt. To ensure a smooth experience with the latest version and avoid any unwanted behaviors, please make sure the following dependencies are up to date:
+* [nuxt](https://github.com/nuxt/nuxt/releases/tag/v3.7.0): `3.7.0`
+* [@shuriken-ui/nuxt](https://github.com/shuriken-ui/nuxt): `1.8.0`
+#title
+Dependencies
+:::
+
+## Introducting Floating UI
+
+We improved the components that have a dropdown menu, like `<BaseDropdown />`, `<BaseAutocomplete />` and `<BaseListbox />`. You now have a `fixed` option to make the dropdown menu float above the other elements. This option is implemented with the `floating-ui` [library](https://floating-ui.com/).
+
+![Shuriken UI docs](/img/content/changelog/nuxt/floating-ui.png)
+
+### Features
+
+This release contains updates that improves some form elements consistency, giving them better defaults and more flexibility. Floating UI has been added to reposition dropdowns automatically when they are too close to the viewport edges.
+
+* add portal and more generic `<BaseAutocompleteItem />` component
+* add portal to `<BaseListbox />` component
+* add portal to `<BaseDropdown />` component
+* add some useful defaults for display and filter
+* improve consistency of listbox and `<BaseListbox />` and `<BaseAutocomplete />` with better defaults
+
+### Bug fixes
+
+* Fix `<BaseDropdown />` condition accidentally removed
+* Fix page jumping to top by unmounting portal
+* Fix `<BaseListbox />` and `<BaseAutocomplete />` `properties` to be undefined by default
+* Fix spacing and visibility of `<BaseAutocomplete />` clear icon
+* Switch from `portal` to `fixed` property
+
+
+::
+
+
+::changelog-block{version="1.0.0" releaseDate="August 28, 2023"}
+## 1.0.0 release
+
+:::info-block{icon='simple-icons:nuxtdotjs'}
+Follow the instructions to update your project after installing the latest version of shuriken-ui/nuxt. To ensure a smooth experience with the latest version and avoid any unwanted behaviors, please make sure the following dependencies are up to date:
+* [nuxt](https://github.com/nuxt/nuxt/releases/tag/v3.5.0): `3.5.0`
+* [@shuriken-ui/nuxt](https://github.com/shuriken-ui/nuxt): `1.0.0`
+#title
+Dependencies
+:::
+
+This release includes a consequent refactor to use the new (shuriken-ui/tailwind)[https://github.com/shuriken-ui/tailwind] plugins.
+
+![Shuriken UI docs](/img/content/changelog/tailwind/tailwind-plugins-code.png)
+
+### Unique source of truth
+
+`@shuriken-ui/tailwind` now acts as the unique source of truth for derived packages, like `@shuriken-ui/nuxt` and `@shuriken-ui/react`. Derived packages pull styles from the tailwind package and should follow the types, props and variants guidelines defined in the Tailwind package. Each component now has its own folder, and is composed of the following files:
+
+* `index.ts`: the component CSS definition, using a combination of Tailwind CSS classes and custom CSS classes.
+* `component.types.ts`: the component typescript definition, including the component props, events and slots.
+* `component.variants.ts`: the component variants definition, including the component variants, and their respective CSS classes.
+* `component.component.ts`: the component javascript definition written using [Lit-html](https://lit.dev/docs/libraries/standalone-templates/), including the component logic, and the component template.
+* `component.config.ts`: the component configuration, including the component default styles, for each one of its parts and its variants.
+* `component.stories.ts`: the component storybook definition, including the component stories, and its variants.
+* `component.docs.mdx`: the component documentation, including the component description, examples, and more.
+* `component.test.ts`: the component test file, including the component unit tests.
+
+### Consistency improvements
+
+A lot of changes have been made to ensure of a better consistency across the framework. This includes getting rid of the `small` and `condensed` unconsistent props and replacing them with a `size` prop. The `size` prop accepts `xs`, `sm`, `md`, `lg` as values most of the time. This also relates to orphan colors that have been removed and rearranged inside a color prop for each component that accepts different colors.

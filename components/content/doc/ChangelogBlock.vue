@@ -14,8 +14,8 @@ const props = defineProps<{
           <div class="relative h-full flex flex-col mt-6">
             <div class="ltablet:sticky lg:sticky top-36 flex items-center justify-between ltablet:flex-col ltablet:items-start ltablet:justify-between lg:flex-col lg:items-start">
               <div class="flex items-center gap-2">
-                <BaseTag variant="pastel" color="primary" rounded="full">{{ props.version }}</BaseTag>
-                <span v-if="props.breaking" class="flex h-2 w-2" data-nui-tooltip="This version has breaking changes" data-nui-tooltip-position="end">
+                <BaseTag variant="pastel" color="primary" rounded="full" class="font-medium min-w-[4rem] text-center">{{ props.version }}</BaseTag>
+                <span v-if="props.breaking" class="flex h-2 w-2" data-nui-tooltip="This release has breaking changes" data-nui-tooltip-position="end">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-danger-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-danger-500"></span>
                 </span>
