@@ -52,7 +52,7 @@ const onOverlayClick = () => {
       <div class="p-6 space-y-2 h-[calc(100%_-_3.5rem)] overflow-y-auto nui-slimscroll">
         <!--Navigation links-->
         <template v-for="item in links" :key="item._id">
-          <div v-if="item.children" class="py-3">
+          <div v-if="item?.children" class="py-3">
             <div class="mb-3 px-3">
               <BaseHeading as="h5" size="xs" weight="medium" class="uppercase text-muted-400 dark:text-muted-500">
                 {{ item.title }}

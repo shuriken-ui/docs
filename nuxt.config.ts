@@ -2,16 +2,27 @@ import exposeColors from './tailwind/plugin-expose-colors'
 
 export default defineNuxtConfig({
   extends: ['@shuriken-ui/nuxt'],
-  modules: ['@nuxt/content', 'nuxt-icon', '@nuxtjs/google-fonts', '@vueuse/nuxt', 'nuxt-component-meta'],
-  app: {
-    head: {
-      titleTemplate: '%s | Shuriken UI',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
+  modules: [
+    '@nuxt/content',
+    'nuxt-icon',
+    '@nuxtjs/fontaine',
+    '@nuxtjs/google-fonts',
+    '@vueuse/nuxt',
+    'nuxt-component-meta',
+  ],
+
+  routeRules: {
+    '/**': {
+      isr: 60,
     },
   },
-  components: {
-    global: true,
-    dirs: ['~/components'],
+
+  componentMeta: {
+    metaSources: ['@shuriken-ui/nuxt/component-meta'],
+    exclude: [
+      // Disable parsing components in the project, only use static ones.
+      () => true,
+    ],
   },
   tailwindcss: {
     config: {
@@ -25,23 +36,30 @@ export default defineNuxtConfig({
       toc: { depth: 4, searchDepth: 4 },
     },
     highlight: {
-      // Theme used in all color schemes.
       theme: {
-        // Default theme (same as single string)
         default: 'github-light',
-        // Theme used if `html.dark`
         dark: 'github-dark',
-        // Theme used if `html.sepia`
-        sepia: 'monokai',
       },
     },
   },
   css: ['~/assets/css/styles.css'],
+  fontMetrics: {
+    fonts: ['Inter']
+  },
   googleFonts: {
     display: 'swap',
     download: true,
     families: {
       Inter: [400, 500, 600, 700],
+    },
+  },
+  experimental: {
+    viewTransition: true,
+    writeEarlyHints: true,
+    defaults: {
+      useAsyncData: {
+        deep: false,
+      },
     },
   },
   devtools: { enabled: true },

@@ -1,5 +1,5 @@
 <script lang="ts">
-import CodeGroupHeader from './CodeGroupHeader.vue'
+import { CodeGroupHeader } from '#components'
 
 export default defineComponent({
   props: {

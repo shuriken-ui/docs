@@ -95,7 +95,7 @@ const { x, y } = useWindowScroll()
             <Icon name="fa6-brands:github" class="w-4 h-4" />
           </BaseButtonIcon>
           <div class="relative -top-0.5 scale-90 hidden lg:flex">
-            <BaseThemeToggle />
+            <BaseThemeToggle disable-transitions />
           </div>
         </div>
         <!--Mobile menu button-->
