@@ -12,7 +12,7 @@ const props = defineProps<{
   <div class="py-6">
     <BaseCard color="white-contrast" rounded="md" class="relative flex flex-col overflow-hidden rounded-xl text-start !border-muted-300 dark:!border-muted-800">
       <div class="bg-muted-100 dark:bg-muted-900/40 relative">
-        <img
+        <NuxtImg
           :src="props.src"
           class="block w-full dark:hidden"
           alt="Tairo - Multipurpose Nuxt/Tailwind UI Kit"
@@ -21,7 +21,7 @@ const props = defineProps<{
           loading="lazy"
           decoding="async"
         />
-        <img v-if="props.srcDark"
+        <NuxtImg v-if="props.srcDark"
           :src="props.srcDark"
           class="hidden w-full dark:block"
           alt="Tairo - Multipurpose Nuxt/Tailwind UI Kit"

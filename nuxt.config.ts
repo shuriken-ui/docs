@@ -4,12 +4,28 @@ export default defineNuxtConfig({
   extends: ['@shuriken-ui/nuxt'],
   modules: [
     '@nuxt/content',
-    'nuxt-icon',
+    '@nuxt/image',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
+    'nuxt-icon',
     'nuxt-component-meta',
   ],
+  css: [
+    '~/assets/css/root.css',
+    '~/assets/css/colors.css',
+    '~/assets/css/gridlines.css',
+  ],
+  fontMetrics: {
+    fonts: ['Inter']
+  },
+  googleFonts: {
+    display: 'swap',
+    download: true,
+    families: {
+      Inter: [400, 500, 600, 700],
+    },
+  },
 
   routeRules: {
     '/**': {
@@ -40,17 +56,6 @@ export default defineNuxtConfig({
         default: 'github-light',
         dark: 'github-dark',
       },
-    },
-  },
-  css: ['~/assets/css/styles.css'],
-  fontMetrics: {
-    fonts: ['Inter']
-  },
-  googleFonts: {
-    display: 'swap',
-    download: true,
-    families: {
-      Inter: [400, 500, 600, 700],
     },
   },
   experimental: {

@@ -3,8 +3,8 @@ import type { BaseParagraph } from '#build/components';
 <template>
   <BaseCard rounded="lg" color="white-contrast" shadow="flat" class="w-64 shrink-0 hidden md:flex flex-col px-6 py-8">
     <div class="flex justify-center items-center relative w-20 h-20 mx-auto rounded-full">
-      <img src="/img/photo/avatars/56.jpg" class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm" alt="Avatar image" />
-      <img
+      <NuxtImg  loading="lazy" decoding="async" format="webp" src="/img/photo/avatars/56.jpg" class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm" alt="Avatar image" />
+      <NuxtImg  loading="lazy" decoding="async"
         src="/img/stacks/javascript.svg"
         class="block absolute right-0 bottom-0 w-8 h-8 bg-muted-100 dark:bg-muted-800 rounded-full border-2 border-white dark:border-muted-800"
         alt="Avatar badge"

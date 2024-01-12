@@ -7,7 +7,7 @@
         >Wether you go with the Nuxt/React version, or the HTML version, Shuriken UI is able to seamlessly blend in your development environment.
       </BaseParagraph>
     </div>
-    <img class="block dark:hidden w-full min-w-full mx-auto mt-12 scale-150 max-w-7xl lg:min-w-0 lg:mt-0 lg:scale-100" src="/img/illustrations/stacks.svg" alt="" />
-    <img class="dark:block hidden w-full min-w-full mx-auto mt-12 scale-150 max-w-7xl lg:min-w-0 lg:mt-0 lg:scale-100" src="/img/illustrations/stacks-dark.svg" alt="" />
+    <NuxtImg  loading="lazy" decoding="async" class="block dark:hidden w-full min-w-full mx-auto mt-12 scale-150 max-w-7xl lg:min-w-0 lg:mt-0 lg:scale-100" src="/img/illustrations/stacks.svg" alt="" />
+    <NuxtImg  loading="lazy" decoding="async" class="dark:block hidden w-full min-w-full mx-auto mt-12 scale-150 max-w-7xl lg:min-w-0 lg:mt-0 lg:scale-100" src="/img/illustrations/stacks-dark.svg" alt="" />
   </Section>
 </template>

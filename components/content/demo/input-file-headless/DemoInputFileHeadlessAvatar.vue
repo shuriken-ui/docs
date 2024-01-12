@@ -3,14 +3,14 @@
     <form action="" method="POST" @submit.prevent="">
       <BaseInputFileHeadless v-slot="{ open, remove, preview, files }" v-model="inputFile" accept="image/*">
         <div class="relative h-20 w-20">
-          <img
+          <NuxtImg  loading="lazy" decoding="async"
             v-if="files?.length && files.item(0)"
             :src="preview(files.item(0)!).value"
             alt="Upload preview"
             class="bg-muted-200 dark:bg-muted-700/60 h-20 w-20 rounded-full object-cover object-center"
           />
 
-          <img v-else :src="currentAvatar" alt="Upload preview" class="bg-muted-200 dark:bg-muted-700/60 h-20 w-20 rounded-full object-cover object-center" />
+          <NuxtImg  loading="lazy" decoding="async" v-else :src="currentAvatar" alt="Upload preview" class="bg-muted-200 dark:bg-muted-700/60 h-20 w-20 rounded-full object-cover object-center" />
 
           <div v-if="files?.length && files.item(0)" class="absolute bottom-0 end-0 z-20">
             <BaseButtonIcon size="sm" rounded="full" data-nui-tooltip="Remove image" class="scale-90" @click="remove(files.item(0)!)">

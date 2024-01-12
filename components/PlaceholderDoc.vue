@@ -11,7 +11,7 @@ const props = defineProps<{
   <div class="py-6">
     <BasePlaceholderPage :image-size="props.imageSize" :title="props.title" :subtitle="props.subtitle" >
       <template #image>
-        <img class="dark:invert" :src="props.image" alt="placeholder-image" />
+        <NuxtImg  loading="lazy" decoding="async" class="dark:invert" :src="props.image" alt="placeholder-image" />
       </template>
 
       <div class="mt-6 flex flex-col md:flex-row justify-center gap-2">

@@ -58,9 +58,9 @@
               <div class="border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative flex items-center justify-end gap-2 rounded-xl border bg-white p-3">
                 <div class="flex items-center gap-2">
                   <div class="shrink-0">
-                    <img v-if="file.type.startsWith('image')" class="h-14 w-14 rounded-xl object-cover object-center" :src="preview(file).value" alt="Image preview" />
+                    <NuxtImg  loading="lazy" decoding="async" v-if="file.type.startsWith('image')" class="h-14 w-14 rounded-xl object-cover object-center" :src="preview(file).value" alt="Image preview" />
 
-                    <img v-else class="h-14 w-14 rounded-xl object-cover object-center" src="/img/avatars/placeholder-file.png" alt="Image preview" />
+                    <NuxtImg  loading="lazy" decoding="async" format="webp" v-else class="h-14 w-14 rounded-xl object-cover object-center" src="/img/avatars/placeholder-file.png" alt="Image preview" />
                   </div>
 
                   <div class="font-sans">
@@ -69,7 +69,7 @@
                     </span>
 
                     <span class="text-muted-400 block text-xs">
-                      {{ formatFileSize(file.size) }}
+                      {{ file.size }}
                     </span>
                   </div>
                 </div>

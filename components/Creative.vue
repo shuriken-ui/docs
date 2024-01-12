@@ -3,7 +3,7 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-7 gap-x-20 gap-y-12">
         <div class="grid overflow-hidden bg-blue-100 lg:col-span-3 rounded-3xl place-items-end">
-          <img class="w-full -mb-8" src="https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png" alt="" />
+          <NuxtImg  loading="lazy" decoding="async" class="w-full -mb-8" format="webp" src="https://landingfoliocom.imgix.net/store/collection/saasui/images/features/9/feature-9.png" alt="" />
         </div>
 
         <div class="lg:col-span-4 xl:pr-24">

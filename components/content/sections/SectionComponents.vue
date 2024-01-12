@@ -55,8 +55,8 @@ const url = computed(() => {
         <NuxtLink v-for="component in components" :key="component.name" :to="`${url}${component.url}`" class="block group/link" :class="component.availableIn.includes(activeTab) ? '' : 'hidden'">
           <BaseCard color="white-contrast" rounded="lg" shadow="hover" class="relative p-4 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100">
             <div class="bg-muted-100 dark:bg-muted-800/50 rounded-xl">
-              <img :src="component.image.light" alt="" class="w-full block dark:hidden" />
-              <img :src="component.image.dark" alt="" class="w-full hidden dark:block" />
+              <NuxtImg  loading="lazy" decoding="async" :src="component.image.light" alt="" class="w-full block dark:hidden" />
+              <NuxtImg  loading="lazy" decoding="async" :src="component.image.dark" alt="" class="w-full hidden dark:block" />
             </div>
             <div class="mt-3">
               <BaseHeading as="h3" size="md" weight="semibold" class="capitalize text-muted-900 dark:text-white">{{ component.name }}</BaseHeading>

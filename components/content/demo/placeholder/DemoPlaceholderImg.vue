@@ -3,7 +3,7 @@
     <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-4 md:p-6">
       <BasePlaceholderPage image-size="md" title="Starting Soon!" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat enim Polemonis. Duo Reges.">
         <template #image>
-          <img class="dark:invert" src="/img/illustrations/placeholders/placeholder-2.svg" alt="placeholder-image" />
+          <NuxtImg  loading="lazy" decoding="async" class="dark:invert" src="/img/illustrations/placeholders/placeholder-2.svg" alt="placeholder-image" />
         </template>
 
         <div class="mt-2 flex justify-center gap-2">

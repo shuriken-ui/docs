@@ -1,6 +1,6 @@
 <template>
   <div class="py-6">
-    <img :src="refinedSrc" :alt="alt" :width="width" :height="height" class="rounded-xl shadow-xl shadow-muted-300/30 dark:shadow-muted-800/20 border border-muted-300 dark:border-muted-800" />
+    <NuxtImg  loading="lazy" decoding="async" :src="refinedSrc" :alt="alt" :width="width" :height="height" class="rounded-xl shadow-xl shadow-muted-300/30 dark:shadow-muted-800/20 border border-muted-300 dark:border-muted-800" />
   </div>
 </template>
 
