@@ -211,169 +211,371 @@ export default defineAppConfig({
 </script>
 
 <template>
-  <div class="relative pt-32 pb-16 bg-white dark:bg-muted-900">
-    <div class="w-full max-w-7xl mx-auto px-4">
+  <div class="relative bg-white pb-16 pt-32 dark:bg-muted-900">
+    <div class="mx-auto w-full max-w-7xl px-4">
       <div class="grid grid-cols-12 gap-8">
         <div class="col-span-12 lg:col-span-8">
           <div class="mt-3">
             <div class="space-y-20">
-              <PlaygroundSample title="Avatar" component="Avatar" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Avatar"
+                component="Avatar"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleAvatar />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Avatar Group" component="Avatar-Group" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Avatar Group"
+                component="Avatar-Group"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleAvatarGroup />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Accordion" component="Accordion" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Accordion"
+                component="Accordion"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleAccordion />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Card" component="Card" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Card"
+                component="Card"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleCard />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Icon Box" component="Iconbox" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Icon Box"
+                component="Iconbox"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleIconBox />
               </PlaygroundSample>
 
-              <PlaygroundSample title="List" component="List" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="List"
+                component="List"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleList />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Message" component="Message" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Message"
+                component="Message"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleMessage />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Placeload" component="Placeload" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Placeload"
+                component="Placeload"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SamplePlaceload />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Tag" component="Tag" category="display" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Tag"
+                component="Tag"
+                category="display"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleTag />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Breadcrumb" component="Breadcrumb" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Breadcrumb"
+                component="Breadcrumb"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleBreadcrumb />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Button" component="Button" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Button"
+                component="Button"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleButton />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Button Action" component="Button-Action" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Button Action"
+                component="Button-Action"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleButtonAction />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Button Close" component="Button-Close" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Button Close"
+                component="Button-Close"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleButtonClose />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Button Icon" component="Button-Icon" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Button Icon"
+                component="Button-Icon"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleButtonIcon />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Dropdown" component="Dropdown" category="interaction" :available-in="['nuxt', 'react', 'tailwind']" class="relative z-[2]">
+              <PlaygroundSample
+                title="Dropdown"
+                component="Dropdown"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+                class="relative z-[2]"
+              >
                 <SampleDropdown />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Pagination" component="Pagination" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Pagination"
+                component="Pagination"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SamplePagination />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Progress" component="Progress" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Progress"
+                component="Progress"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleProgress />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Progress Circle" component="Progress-Circle" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Progress Circle"
+                component="Progress-Circle"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleProgressCircle />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Snack" component="Snack" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Snack"
+                component="Snack"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleSnack />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Tab Slider" component="Tab-Slider" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Tab Slider"
+                component="Tab-Slider"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleTabSlider />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Tabs" component="Tabs" category="interaction" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Tabs"
+                component="Tabs"
+                category="interaction"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleTabs />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Autocomplete" component="Autocomplete" category="form" :available-in="['nuxt', 'react', 'tailwind']" class="relative z-[2]">
+              <PlaygroundSample
+                title="Autocomplete"
+                component="Autocomplete"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+                class="relative z-[2]"
+              >
                 <SampleAutocomplete />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Checkbox" component="Checkbox" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Checkbox"
+                component="Checkbox"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleCheckbox />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Checkbox Headless" component="Checkbox-Headless" category="form" :available-in="['nuxt', 'react']">
+              <PlaygroundSample
+                title="Checkbox Headless"
+                component="Checkbox-Headless"
+                category="form"
+                :available-in="['nuxt', 'react']"
+              >
                 <SampleCheckboxHeadless />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Checkbox Animated" component="Checkbox-Animated" category="form" :available-in="['nuxt', 'react']">
+              <PlaygroundSample
+                title="Checkbox Animated"
+                component="Checkbox-Animated"
+                category="form"
+                :available-in="['nuxt', 'react']"
+              >
                 <SampleCheckboxAnimated />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Input" component="Input" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Input"
+                component="Input"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleInput />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Input Number" component="Input-Number" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Input Number"
+                component="Input-Number"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleInputNumber />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Listbox" component="Listbox" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Listbox"
+                component="Listbox"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleListbox />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Radio" component="Radio" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Radio"
+                component="Radio"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleRadio />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Radio Headless" component="Radio-Headless" category="form" :available-in="['nuxt', 'react']">
+              <PlaygroundSample
+                title="Radio Headless"
+                component="Radio-Headless"
+                category="form"
+                :available-in="['nuxt', 'react']"
+              >
                 <SampleRadioHeadless />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Select" component="Select" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Select"
+                component="Select"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleSelect />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Switch Ball" component="Switch-Ball" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Switch Ball"
+                component="Switch-Ball"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleSwitchBall />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Switch Thin" component="Switch-Thin" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Switch Thin"
+                component="Switch-Thin"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleSwitchThin />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Textarea" component="Textarea" category="form" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Textarea"
+                component="Textarea"
+                category="form"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleTextarea />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Tree Select" component="Treeselect" category="form" :available-in="['nuxt', 'react']">
+              <PlaygroundSample
+                title="Tree Select"
+                component="Treeselect"
+                category="form"
+                :available-in="['nuxt', 'react']"
+              >
                 <SampleTreeSelect />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Heading" component="Heading" category="typography" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Heading"
+                component="Heading"
+                category="typography"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleHeading />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Paragraph" component="Paragraph" category="typography" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Paragraph"
+                component="Paragraph"
+                category="typography"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleParagraph />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Text" component="Text" category="typography" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Text"
+                component="Text"
+                category="typography"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleText />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Link" component="Link" category="typography" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Link"
+                component="Link"
+                category="typography"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleLink />
               </PlaygroundSample>
 
-              <PlaygroundSample title="Kbd" component="Kbd" category="typography" :available-in="['nuxt', 'react', 'tailwind']">
+              <PlaygroundSample
+                title="Kbd"
+                component="Kbd"
+                category="typography"
+                :available-in="['nuxt', 'react', 'tailwind']"
+              >
                 <SampleKbd />
               </PlaygroundSample>
             </div>
@@ -390,9 +592,13 @@ export default defineAppConfig({
                 @primary-changed="(color) => (currentPrimary = color)"
                 @muted-changed="(color) => (currentMuted = color)"
               />
-              <div class="fixed top-24 end-5 md:end-7 z-50 lg:hidden transition-transform duration-300" :class="!isPanelOpen ? 'translate-x-0' : 'translate-x-16'">
-                <BaseButtonIcon size="sm" rounded="lg" @click="() => (isPanelOpen = true)">
-                  <Icon name="mingcute:drop-fill" class="w-4 h-4 text-primary-500" />
+              <div class="fixed end-5 top-24 z-50 transition-transform duration-300 md:end-7 lg:hidden" :class="!isPanelOpen ? 'translate-x-0' : 'translate-x-16'">
+                <BaseButtonIcon
+                  size="sm"
+                  rounded="lg"
+                  @click="() => (isPanelOpen = true)"
+                >
+                  <Icon name="mingcute:drop-fill" class="h-4 w-4 text-primary-500" />
                 </BaseButtonIcon>
               </div>
             </div>
@@ -401,18 +607,30 @@ export default defineAppConfig({
       </div>
     </div>
 
-    <Modal :open="isModalOpen" rounded="lg" size="xl" @close="isModalOpen = false">
+    <Modal
+      :open="isModalOpen"
+      rounded="lg"
+      size="xl"
+      @close="isModalOpen = false"
+    >
       <template #header>
         <!-- Header -->
         <div class="relative z-10 flex w-full items-center justify-between p-4 md:p-6">
-          <h3 class="font-heading text-muted-900 text-lg font-medium leading-6 dark:text-white">Configuration</h3>
+          <h3 class="font-heading text-lg font-medium leading-6 text-muted-900 dark:text-white">
+            Configuration
+          </h3>
 
-          <BaseButtonClose rounded="full" size="sm" color="default" @click="isModalOpen = false" />
+          <BaseButtonClose
+            rounded="full"
+            size="sm"
+            color="default"
+            @click="isModalOpen = false"
+          />
         </div>
       </template>
 
       <!-- Body -->
-      <div class="relative z-10 nui-slimscroll max-h-[550px] overflow-y-auto px-4 pb-4 md:px-6 md:pb-6">
+      <div class="nui-slimscroll relative z-10 max-h-[550px] overflow-y-auto px-4 pb-4 md:px-6 md:pb-6">
         <BaseTabs
           model-value="tailwind"
           :tabs="[
@@ -422,16 +640,14 @@ export default defineAppConfig({
         >
           <template #tab="{ activeValue }">
             <div v-if="activeValue === 'tailwind'" class="relative font-mono text-sm text-muted-500 dark:text-muted-400">
-              <pre class="bg-muted-100 dark:bg-muted-950 rounded-xl px-6">
+              <pre class="rounded-xl bg-muted-100 px-6 dark:bg-muted-950">
                 {{ tailwindConfig }}
               </pre>
-              <div class="absolute top-6 end-6">
-                
-              </div>
+              <div class="absolute end-6 top-6" />
             </div>
 
             <div v-else-if="activeValue === 'config'" class="relative font-mono text-sm text-muted-500 dark:text-muted-400">
-              <pre class="bg-muted-100 dark:bg-muted-950 rounded-xl px-6">
+              <pre class="rounded-xl bg-muted-100 px-6 dark:bg-muted-950">
                 {{ appConfig }}
               </pre>
             </div>
@@ -441,39 +657,49 @@ export default defineAppConfig({
 
       <svg class="h-0">
         <defs>
-          <clipPath id="clip0_1232_2031"><rect width="1440" height="1024" fill="white"></rect></clipPath>
+          <clipPath id="clip0_1232_2031"><rect
+            width="1440"
+            height="1024"
+            fill="white"
+          /></clipPath>
         </defs>
       </svg>
-      <div class="flex absolute top-0 start-0 h-full w-full justify-center">
+      <div class="absolute start-0 top-0 flex h-full w-full justify-center">
         <div class="shrink-0">
-          <svg width="1640" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="1640"
+            height="1024"
+            viewBox="0 0 1440 1024"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g clip-path="url(#clip0_1232_2031)">
               <path
                 d="M15.5 1024V0M79.5 1024V0M143.5 1024V0M207.5 1024V0M271.5 1024V0M335.5 1024V0M399.5 1024V0M463.5 1024V0M527.5 1024V0M591.5 1024V0M655.5 1024V0M719.5 1024V0M783.5 1024V0M847.5 1024V0M911.5 1024V0M975.5 1024V0M1039.5 1024V0M1103.5 1024V0M1167.5 1024V0M1231.5 1024V0M1295.5 1024V0M1359.5 1024V0M1423.5 1024V0M0 31.5H1440M0 95.5H1440M0 159.5H1440M0 223.5H1440M0 287.5H1440M0 351.5H1440M0 415.5H1440M0 479.5H1440M0 543.5H1440M0 607.5H1440M0 671.5H1440M0 735.5H1440M0 799.5H1440M0 863.5H1440M0 927.5H1440M0 991.5H1440"
                 class="stroke-current text-muted-100 dark:text-muted-800/50"
-              ></path>
-              <path d="M272 160H335V223H272V160Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M1168 800H1231V863H1168V800Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M528 96H591V159H528V96Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M1104 160H1167V223H1104V160Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M1232 352H1295V415H1232V352Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M1040 672H1103V735H1040V672Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M784 800H847V863H784V800Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M336 480H399V543H336V480Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M208 800H271V863H208V800Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M464 736H527V799H464V736Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M336 224H399V287H336V224Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M976 287H1039V350H976V287Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M720 864H783V927H720V864Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M1232 480H1295V543H1232V480Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M1168 544H1231V607H1168V544Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M784 224H847V287H784V224Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M208 352H271V415H208V352Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M272 608H335V671H272V608Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M144 480H207V543H144V480Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M848 32H911V95H848V32Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M528 352H591V415H528V352Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
-              <path d="M912 480H975V543H912V480Z" class="fill-current text-muted-50 dark:text-muted-800/20"></path>
+              />
+              <path d="M272 160H335V223H272V160Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M1168 800H1231V863H1168V800Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M528 96H591V159H528V96Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M1104 160H1167V223H1104V160Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M1232 352H1295V415H1232V352Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M1040 672H1103V735H1040V672Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M784 800H847V863H784V800Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M336 480H399V543H336V480Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M208 800H271V863H208V800Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M464 736H527V799H464V736Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M336 224H399V287H336V224Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M976 287H1039V350H976V287Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M720 864H783V927H720V864Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M1232 480H1295V543H1232V480Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M1168 544H1231V607H1168V544Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M784 224H847V287H784V224Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M208 352H271V415H208V352Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M272 608H335V671H272V608Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M144 480H207V543H144V480Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M848 32H911V95H848V32Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M528 352H591V415H528V352Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
+              <path d="M912 480H975V543H912V480Z" class="fill-current text-muted-50 dark:text-muted-800/20" />
             </g>
           </svg>
         </div>

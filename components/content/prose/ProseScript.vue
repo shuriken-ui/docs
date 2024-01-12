@@ -10,8 +10,8 @@ import { computed } from 'vue'
 defineProps({
   src: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 const isDev = computed(() => process.dev)
 </script>

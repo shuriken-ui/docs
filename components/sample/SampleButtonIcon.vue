@@ -63,50 +63,106 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="Loading" label-align="center">
             <div class="flex flex-wrap items-end gap-4">
-              <BaseButtonIcon loading :rounded="rounded" color="default">
+              <BaseButtonIcon
+                loading
+                :rounded="rounded"
+                color="default"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon loading :rounded="rounded" color="muted">
+              <BaseButtonIcon
+                loading
+                :rounded="rounded"
+                color="muted"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon loading :rounded="rounded" color="primary">
+              <BaseButtonIcon
+                loading
+                :rounded="rounded"
+                color="primary"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon loading :rounded="rounded" color="info">
+              <BaseButtonIcon
+                loading
+                :rounded="rounded"
+                color="info"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon loading :rounded="rounded" color="success">
+              <BaseButtonIcon
+                loading
+                :rounded="rounded"
+                color="success"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon loading :rounded="rounded" color="warning">
+              <BaseButtonIcon
+                loading
+                :rounded="rounded"
+                color="warning"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon loading :rounded="rounded" color="danger">
+              <BaseButtonIcon
+                loading
+                :rounded="rounded"
+                color="danger"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Disabled" label-align="center">
             <div class="flex flex-wrap items-end gap-4">
-              <BaseButtonIcon disabled :rounded="rounded" color="default">
+              <BaseButtonIcon
+                disabled
+                :rounded="rounded"
+                color="default"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon disabled :rounded="rounded" color="muted">
+              <BaseButtonIcon
+                disabled
+                :rounded="rounded"
+                color="muted"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon disabled :rounded="rounded" color="primary">
+              <BaseButtonIcon
+                disabled
+                :rounded="rounded"
+                color="primary"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon disabled :rounded="rounded" color="info">
+              <BaseButtonIcon
+                disabled
+                :rounded="rounded"
+                color="info"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon disabled :rounded="rounded" color="success">
+              <BaseButtonIcon
+                disabled
+                :rounded="rounded"
+                color="success"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon disabled :rounded="rounded" color="warning">
+              <BaseButtonIcon
+                disabled
+                :rounded="rounded"
+                color="warning"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
-              <BaseButtonIcon disabled :rounded="rounded" color="danger">
+              <BaseButtonIcon
+                disabled
+                :rounded="rounded"
+                color="danger"
+              >
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
             </div>

@@ -1,8 +1,10 @@
 <template>
-  <div class="max-w-3xl mx-auto py-6">
+  <div class="mx-auto max-w-3xl py-6">
     <BaseProse rounded="md" class="prose-md">
       <h1>Typography prose</h1>
-      <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
+      <p class="lead">
+        Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
+      </p>
       <p>
         By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less
         time undoing user-agent styles, but when you
@@ -55,7 +57,7 @@
         <a href="https://github.com/tailwindcss/typography/blob/master/README.md"> read the documentation </a>
         .
       </p>
-      <hr />
+      <hr>
       <h2>What to expect from here on out</h2>
       <p>
         What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like
@@ -79,7 +81,12 @@
       </blockquote>
       <p>It's probably important that images look okay here by default as well:</p>
       <figure>
-        <NuxtImg  loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="" />
+        <NuxtImg
+          loading="lazy"
+          decoding="async"
+          src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+          alt=""
+        />
         <figcaption>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</figcaption>
       </figure>
       <p>Now I'm going to show you an example of an unordered list to make sure that looks good, too:</p>

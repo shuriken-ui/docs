@@ -1,11 +1,31 @@
 <template>
   <div class="flex items-center p-4">
     <div class="flex flex-wrap items-end gap-4">
-      <BaseButtonClose size="sm" rounded="none" color="muted" />
-      <BaseButtonClose size="sm" rounded="sm" color="muted" />
-      <BaseButtonClose size="sm" rounded="md" color="muted" />
-      <BaseButtonClose size="sm" rounded="lg" color="muted" />
-      <BaseButtonClose size="sm" rounded="full" color="muted" />
+      <BaseButtonClose
+        size="sm"
+        rounded="none"
+        color="muted"
+      />
+      <BaseButtonClose
+        size="sm"
+        rounded="sm"
+        color="muted"
+      />
+      <BaseButtonClose
+        size="sm"
+        rounded="md"
+        color="muted"
+      />
+      <BaseButtonClose
+        size="sm"
+        rounded="lg"
+        color="muted"
+      />
+      <BaseButtonClose
+        size="sm"
+        rounded="full"
+        color="muted"
+      />
     </div>
   </div>
 </template>

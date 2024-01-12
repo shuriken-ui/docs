@@ -1,6 +1,8 @@
 <template>
   <div class="flex items-center px-4 pt-4">
-    <BaseBreadcrumb :items="breadcrumb"> / </BaseBreadcrumb>
+    <BaseBreadcrumb :items="breadcrumb">
+      /
+    </BaseBreadcrumb>
   </div>
 </template>
 

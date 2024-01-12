@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl px-6 py-16">
-      <div class="flex items-center w-full">
+  <div class="flex items-center justify-center px-4 pb-0 pt-4">
+    <div class="w-full rounded-xl bg-muted-100 px-6 py-16 dark:bg-muted-900">
+      <div class="flex w-full items-center">
         <div class="flex flex-wrap gap-3">
           <BaseTag
             rounded="full"

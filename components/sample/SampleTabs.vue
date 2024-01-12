@@ -23,12 +23,12 @@ const { rounded } = usePlayground()
                   { label: 'Projects', value: 'projects' },
                 ]"
               >
-                <template #tab="{ activeValue }">
-                  <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <template #tab="{ activeValue: activeChildValue }">
+                  <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                   </p>
 
-                  <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                  <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime
                     contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                   </p>
@@ -46,12 +46,12 @@ const { rounded } = usePlayground()
                   { label: 'Projects', value: 'projects' },
                 ]"
               >
-                <template #tab="{ activeValue }">
-                  <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <template #tab="{ activeValue: activeChildValue }">
+                  <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                   </p>
 
-                  <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                  <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime
                     contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                   </p>
@@ -85,17 +85,17 @@ const { rounded } = usePlayground()
                   },
                 ]"
               >
-                <template #tab="{ activeValue }">
-                  <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <template #tab="{ activeValue: activeChildValue }">
+                  <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                   </p>
 
-                  <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                  <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime
                     contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                   </p>
 
-                  <p v-else-if="activeValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                  <p v-else-if="activeChildValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime
                     contra.
                   </p>
@@ -126,17 +126,17 @@ const { rounded } = usePlayground()
                   },
                 ]"
               >
-                <template #tab="{ activeValue }">
-                  <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <template #tab="{ activeValue: activeChildValue }">
+                  <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                   </p>
 
-                  <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                  <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime
                     contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                   </p>
 
-                  <p v-else-if="activeValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                  <p v-else-if="activeChildValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime
                     contra.
                   </p>

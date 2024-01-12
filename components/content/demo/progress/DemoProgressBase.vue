@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 max-w-sm">
+  <div class="max-w-sm p-4">
     <BaseProgress
       title="Default progress bar"
       size="sm"

@@ -32,12 +32,16 @@ const accordion = [
         <div class="space-y-4">
           <PlaygroundSampleRow label="Inclusive">
             <div class="max-w-md">
-              <BaseAccordion :items="accordion" :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" />
+              <BaseAccordion :items="accordion" :rounded="(rounded as 'none' | 'sm' | 'md' | 'lg')" />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Exclusive">
             <div class="max-w-md">
-              <BaseAccordion :items="accordion" :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" exclusive />
+              <BaseAccordion
+                :items="accordion"
+                :rounded="(rounded as 'none' | 'sm' | 'md' | 'lg')"
+                exclusive
+              />
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -46,12 +50,21 @@ const accordion = [
         <div class="space-y-4">
           <PlaygroundSampleRow label="Inclusive">
             <div class="max-w-md">
-              <BaseAccordion :items="accordion" :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" action="chevron" />
+              <BaseAccordion
+                :items="accordion"
+                :rounded="(rounded as 'none' | 'sm' | 'md' | 'lg')"
+                action="chevron"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Exclusive">
             <div class="max-w-md">
-              <BaseAccordion :items="accordion" :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" action="chevron" exclusive />
+              <BaseAccordion
+                :items="accordion"
+                :rounded="(rounded as 'none' | 'sm' | 'md' | 'lg')"
+                action="chevron"
+                exclusive
+              />
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -60,12 +73,21 @@ const accordion = [
         <div class="space-y-4">
           <PlaygroundSampleRow label="Inclusive">
             <div class="max-w-md">
-              <BaseAccordion :items="accordion" :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" action="plus" />
+              <BaseAccordion
+                :items="accordion"
+                :rounded="(rounded as 'none' | 'sm' | 'md' | 'lg')"
+                action="plus"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Exclusive">
             <div class="max-w-md">
-              <BaseAccordion :items="accordion" :rounded="rounded as 'none' | 'sm' | 'md' | 'lg'" action="plus" exclusive />
+              <BaseAccordion
+                :items="accordion"
+                :rounded="(rounded as 'none' | 'sm' | 'md' | 'lg')"
+                action="plus"
+                exclusive
+              />
             </div>
           </PlaygroundSampleRow>
         </div>

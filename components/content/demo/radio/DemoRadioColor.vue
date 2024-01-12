@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center flex-wrap gap-8 p-4">
+  <div class="flex flex-wrap items-center gap-8 p-4">
     <BaseRadio
       v-model="value"
       name="radio_base"

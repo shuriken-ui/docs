@@ -10,5 +10,5 @@
 </template>
 
 <script setup lang="ts">
-const value = reactive('')
+const value = ref('')
 </script>

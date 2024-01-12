@@ -1,8 +1,8 @@
 <template>
-  <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-4">
-      <div class="flex items-center w-full">
-        <div class="w-full max-w-xs flex items-end gap-4">
+  <div class="flex items-center justify-center px-4 pb-0 pt-4">
+    <div class="w-full rounded-xl bg-muted-100 p-4 dark:bg-muted-900">
+      <div class="flex w-full items-center">
+        <div class="flex w-full max-w-xs items-end gap-4">
           <BaseInput
             v-model="value"
             rounded="sm"
@@ -16,7 +16,7 @@
               <button
                 type="button"
                 data-nui-tooltip="Save"
-                class="text-muted-400 hover:text-primary-500 absolute end-0 top-0 z-[1] flex h-10 w-10 items-center justify-center transition-colors duration-300"
+                class="absolute end-0 top-0 z-[1] flex h-10 w-10 items-center justify-center text-muted-400 transition-colors duration-300 hover:text-primary-500"
               >
                 <Icon name="lucide:save" class="h-4 w-4" />
               </button>

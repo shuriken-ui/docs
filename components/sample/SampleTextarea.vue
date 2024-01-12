@@ -19,7 +19,7 @@ const value = ref('')
       <div v-if="activeValue === 'contrasts'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Default" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="default"
@@ -36,7 +36,7 @@ const value = ref('')
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="default-contrast"
@@ -53,7 +53,7 @@ const value = ref('')
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Muted" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="muted"
@@ -70,7 +70,7 @@ const value = ref('')
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="muted-contrast"
@@ -91,7 +91,7 @@ const value = ref('')
       <div v-if="activeValue === 'addon'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Example" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 label="Message"
@@ -106,13 +106,26 @@ const value = ref('')
               >
                 <template #addon>
                   <div class="flex items-center gap-2">
-                    <BaseAvatar src="/img/avatars/2.svg" class="me-1" size="xs" />
+                    <BaseAvatar
+                      src="/img/avatars/2.svg"
+                      class="me-1"
+                      size="xs"
+                    />
 
-                    <BaseHeading as="h4" size="sm" weight="semibold" class="text-muted-800 dark:text-white"> Maya </BaseHeading>
+                    <BaseHeading
+                      as="h4"
+                      size="sm"
+                      weight="semibold"
+                      class="text-muted-800 dark:text-white"
+                    >
+                      Maya
+                    </BaseHeading>
                   </div>
 
                   <div class="flex items-center gap-2">
-                    <BaseButton size="sm"> Post Comment </BaseButton>
+                    <BaseButton size="sm">
+                      Post Comment
+                    </BaseButton>
                   </div>
                 </template>
               </BaseTextarea>
@@ -123,7 +136,7 @@ const value = ref('')
       <div v-if="activeValue === 'label'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Float" label-align="center">
-            <div class="w-full max-w-sm flex items-center pt-8">
+            <div class="flex w-full max-w-sm items-center pt-8">
               <BaseTextarea
                 v-model="value"
                 contrast="default"
@@ -145,7 +158,7 @@ const value = ref('')
       <div v-if="activeValue === 'states'" class="relative pb-4">
         <div class="space-y-6">
           <PlaygroundSampleRow label="Focus" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="default"
@@ -163,7 +176,7 @@ const value = ref('')
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Error" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="default"
@@ -181,7 +194,7 @@ const value = ref('')
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Loading" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="default"
@@ -199,7 +212,7 @@ const value = ref('')
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Disabled" label-align="start">
-            <div class="w-full max-w-sm flex items-center">
+            <div class="flex w-full max-w-sm items-center">
               <BaseTextarea
                 v-model="value"
                 contrast="default"

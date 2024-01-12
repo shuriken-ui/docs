@@ -137,22 +137,54 @@ function filterItems(query?: string, items?: any[]) {
         <div class="space-y-4">
           <PlaygroundSampleRow label="Default" label-align="center">
             <div class="w-full max-w-xs">
-              <BaseAutocomplete v-model="value" :items="frameworks" contrast="default" :rounded="rounded" label="Framework" placeholder="Ex: javascript" fixed />
+              <BaseAutocomplete
+                v-model="value"
+                :items="frameworks"
+                contrast="default"
+                :rounded="rounded"
+                label="Framework"
+                placeholder="Ex: javascript"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast" label-align="center">
             <div class="w-full max-w-xs">
-              <BaseAutocomplete v-model="value" :items="frameworks" contrast="default-contrast" :rounded="rounded" label="Framework" placeholder="Ex: javascript" fixed />
+              <BaseAutocomplete
+                v-model="value"
+                :items="frameworks"
+                contrast="default-contrast"
+                :rounded="rounded"
+                label="Framework"
+                placeholder="Ex: javascript"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Muted" label-align="center">
             <div class="w-full max-w-xs">
-              <BaseAutocomplete v-model="value" :items="frameworks" contrast="muted" :rounded="rounded" label="Framework" placeholder="Ex: javascript" fixed />
+              <BaseAutocomplete
+                v-model="value"
+                :items="frameworks"
+                contrast="muted"
+                :rounded="rounded"
+                label="Framework"
+                placeholder="Ex: javascript"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast" label-align="center">
             <div class="w-full max-w-xs">
-              <BaseAutocomplete v-model="value" :items="frameworks" contrast="muted-contrast" :rounded="rounded" label="Framework" placeholder="Ex: javascript" fixed />
+              <BaseAutocomplete
+                v-model="value"
+                :items="frameworks"
+                contrast="muted-contrast"
+                :rounded="rounded"
+                label="Framework"
+                placeholder="Ex: javascript"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -162,30 +194,81 @@ function filterItems(query?: string, items?: any[]) {
           <PlaygroundSampleRow label="Simple" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: javascript" fixed />
+                <BaseAutocomplete
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: javascript"
+                  fixed
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: javascript" fixed />
+                <BaseAutocomplete
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: javascript"
+                  fixed
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: javascript" fixed />
+                <BaseAutocomplete
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: javascript"
+                  fixed
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Icons" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.first" :items="frameworks" icon="lucide:search" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: javascript" fixed />
+                <BaseAutocomplete
+                  v-model="fields.first"
+                  :items="frameworks"
+                  icon="lucide:search"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: javascript"
+                  fixed
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.second" :items="frameworks" icon="lucide:search" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: javascript" fixed />
+                <BaseAutocomplete
+                  v-model="fields.second"
+                  :items="frameworks"
+                  icon="lucide:search"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: javascript"
+                  fixed
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.third" :items="frameworks" icon="lucide:search" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: javascript" fixed />
+                <BaseAutocomplete
+                  v-model="fields.third"
+                  :items="frameworks"
+                  icon="lucide:search"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: javascript"
+                  fixed
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
@@ -193,7 +276,11 @@ function filterItems(query?: string, items?: any[]) {
       </div>
       <div v-if="activeValue === 'media'" class="relative pb-4">
         <div class="space-y-4">
-          <PlaygroundSampleRow label="Icons" label-align="center" class="relative z-[2]">
+          <PlaygroundSampleRow
+            label="Icons"
+            label-align="center"
+            class="relative z-[2]"
+          >
             <div class="max-w-xs">
               <BaseAutocomplete
                 v-model="hobbyValue"
@@ -244,15 +331,42 @@ function filterItems(query?: string, items?: any[]) {
           <PlaygroundSampleRow label="Float" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3 pt-5">
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: javascript" fixed label-float />
+                <BaseAutocomplete
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: javascript"
+                  fixed
+                  label-float
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: javascript" fixed label-float />
+                <BaseAutocomplete
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: javascript"
+                  fixed
+                  label-float
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: javascript" fixed label-float />
+                <BaseAutocomplete
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: javascript"
+                  fixed
+                  label-float
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
@@ -263,60 +377,168 @@ function filterItems(query?: string, items?: any[]) {
           <PlaygroundSampleRow label="Clearable" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: javascript" fixed clearable />
+                <BaseAutocomplete
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: javascript"
+                  fixed
+                  clearable
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: javascript" fixed clearable />
+                <BaseAutocomplete
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: javascript"
+                  fixed
+                  clearable
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: javascript" fixed clearable />
+                <BaseAutocomplete
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: javascript"
+                  fixed
+                  clearable
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Error" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: javascript" fixed error="Please select a value" />
+                <BaseAutocomplete
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: javascript"
+                  fixed
+                  error="Please select a value"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: javascript" fixed error="Please select a value" />
+                <BaseAutocomplete
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: javascript"
+                  fixed
+                  error="Please select a value"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: javascript" fixed error="Please select a value" />
+                <BaseAutocomplete
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: javascript"
+                  fixed
+                  error="Please select a value"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Loading" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: javascript" fixed loading />
+                <BaseAutocomplete
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: javascript"
+                  fixed
+                  loading
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: javascript" fixed loading />
+                <BaseAutocomplete
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: javascript"
+                  fixed
+                  loading
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: javascript" fixed loading />
+                <BaseAutocomplete
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: javascript"
+                  fixed
+                  loading
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Disabled" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: javascript" fixed disabled />
+                <BaseAutocomplete
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: javascript"
+                  fixed
+                  disabled
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: javascript" fixed disabled />
+                <BaseAutocomplete
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: javascript"
+                  fixed
+                  disabled
+                />
               </div>
 
               <div class="flex-1">
-                <BaseAutocomplete v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: javascript" fixed disabled />
+                <BaseAutocomplete
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: javascript"
+                  fixed
+                  disabled
+                />
               </div>
             </div>
           </PlaygroundSampleRow>

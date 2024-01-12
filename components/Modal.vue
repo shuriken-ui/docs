@@ -128,7 +128,7 @@ const dialogClasses = computed(() => {
           leave-from="opacity-100"
           leave-to="opacity-0"
         >
-          <div class="bg-muted-800/70 dark:bg-muted-900/80 fixed inset-0" />
+          <div class="fixed inset-0 bg-muted-800/70 dark:bg-muted-900/80" />
         </TransitionChild>
 
         <div class="fixed inset-0">
@@ -146,7 +146,7 @@ const dialogClasses = computed(() => {
               leave-to="opacity-0 scale-95"
             >
               <DialogPanel
-                class="overflow-hidden relative dark:bg-muted-800 w-full bg-white text-start align-middle shadow-xl transition-all"
+                class="relative w-full overflow-hidden bg-white text-start align-middle shadow-xl transition-all dark:bg-muted-800"
                 :class="dialogClasses"
               >
                 <slot name="header" />

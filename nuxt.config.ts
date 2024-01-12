@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     '~/assets/css/gridlines.css',
   ],
   fontMetrics: {
-    fonts: ['Inter']
+    fonts: ['Inter'],
   },
   googleFonts: {
     display: 'swap',

@@ -5,7 +5,7 @@
         size="xs"
         rounded="full"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
+        class="border border-muted-200 bg-white text-muted-500 dark:border-muted-600 dark:bg-muted-700"
       >
         <Icon name="ph:nut-duotone" class="h-3 w-3" />
       </BaseIconBox>
@@ -13,7 +13,7 @@
         size="sm"
         rounded="full"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
+        class="border border-muted-200 bg-white text-muted-500 dark:border-muted-600 dark:bg-muted-700"
       >
         <Icon name="ph:nut-duotone" class="h-4 w-4" />
       </BaseIconBox>
@@ -21,7 +21,7 @@
         size="md"
         rounded="full"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
+        class="border border-muted-200 bg-white text-muted-500 dark:border-muted-600 dark:bg-muted-700"
       >
         <Icon name="ph:nut-duotone" class="h-4 w-4" />
       </BaseIconBox>
@@ -29,7 +29,7 @@
         size="lg"
         rounded="full"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
+        class="border border-muted-200 bg-white text-muted-500 dark:border-muted-600 dark:bg-muted-700"
       >
         <Icon name="ph:nut-duotone" class="h-5 w-5" />
       </BaseIconBox>
@@ -37,7 +37,7 @@
         size="xl"
         rounded="full"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
+        class="border border-muted-200 bg-white text-muted-500 dark:border-muted-600 dark:bg-muted-700"
       >
         <Icon name="ph:nut-duotone" class="h-6 w-6" />
       </BaseIconBox>
@@ -45,7 +45,7 @@
         size="2xl"
         rounded="full"
         color="default"
-        class="border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-muted-500"
+        class="border border-muted-200 bg-white text-muted-500 dark:border-muted-600 dark:bg-muted-700"
       >
         <Icon name="ph:nut-duotone" class="h-6 w-6" />
       </BaseIconBox>

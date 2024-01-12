@@ -50,25 +50,35 @@ const breakpoints = [
 
 <template>
   <div class="py-6">
-    <div class="bg-white dark:bg-muted-950 rounded-md border border-muted-300 dark:border-muted-800 overflow-x-auto">
+    <div class="overflow-x-auto rounded-md border border-muted-300 bg-white dark:border-muted-800 dark:bg-muted-950">
       <table class="w-full">
         <thead>
           <tr>
-            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Size</th>
-            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Width</th>
+            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">
+              Size
+            </th>
+            <th class="bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">
+              Width
+            </th>
           </tr>
         </thead>
         <tbody>
           <!--Row-->
-          <tr v-for="breakpoint in breakpoints" :key="breakpoint.name" class="border-t border-muted-300 dark:border-muted-800 text-sm">
+          <tr
+            v-for="breakpoint in breakpoints"
+            :key="breakpoint.name"
+            class="border-t border-muted-300 text-sm dark:border-muted-800"
+          >
             <td class="px-4 py-3">
               <div class="">
                 <p>{{ breakpoint.name }}</p>
-                <p class="text-xs text-muted-400">{{ breakpoint.description }}</p>
+                <p class="text-xs text-muted-400">
+                  {{ breakpoint.description }}
+                </p>
               </div>
             </td>
             <td class="px-4 py-3">
-              <div class="flex items-center flex-wrap gap-1">
+              <div class="flex flex-wrap items-center gap-1">
                 <p>{{ breakpoint.value }}</p>
               </div>
             </td>

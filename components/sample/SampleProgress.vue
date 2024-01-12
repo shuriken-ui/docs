@@ -17,27 +17,52 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="Primary" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Primary progress bar" size="sm" :value="85" color="primary" />
+              <BaseProgress
+                title="Primary progress bar"
+                size="sm"
+                :value="85"
+                color="primary"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Success" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Success progress bar" size="sm" :value="85" color="success" />
+              <BaseProgress
+                title="Success progress bar"
+                size="sm"
+                :value="85"
+                color="success"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Info" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Info progress bar" size="sm" :value="85" color="info" />
+              <BaseProgress
+                title="Info progress bar"
+                size="sm"
+                :value="85"
+                color="info"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Warning" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Warning progress bar" size="sm" :value="85" color="warning" />
+              <BaseProgress
+                title="Warning progress bar"
+                size="sm"
+                :value="85"
+                color="warning"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Danger" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Danger progress bar" size="sm" :value="85" color="danger" />
+              <BaseProgress
+                title="Danger progress bar"
+                size="sm"
+                :value="85"
+                color="danger"
+              />
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -46,22 +71,42 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="Xs" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Primary progress bar" size="xs" :value="85" color="primary" />
+              <BaseProgress
+                title="Primary progress bar"
+                size="xs"
+                :value="85"
+                color="primary"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Sm" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Primary progress bar" size="sm" :value="85" color="primary" />
+              <BaseProgress
+                title="Primary progress bar"
+                size="sm"
+                :value="85"
+                color="primary"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Md" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Primary progress bar" size="md" :value="85" color="primary" />
+              <BaseProgress
+                title="Primary progress bar"
+                size="md"
+                :value="85"
+                color="primary"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Lg" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Primary progress bar" size="lg" :value="85" color="primary" />
+              <BaseProgress
+                title="Primary progress bar"
+                size="lg"
+                :value="85"
+                color="primary"
+              />
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -70,12 +115,24 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="Default" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Primary progress bar" size="sm" contrast="default" :value="50" color="primary" />
+              <BaseProgress
+                title="Primary progress bar"
+                size="sm"
+                contrast="default"
+                :value="50"
+                color="primary"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast" label-align="start">
             <div class="max-w-sm pt-2">
-              <BaseProgress title="Primary progress bar" size="sm" contrast="contrast" :value="50" color="primary" />
+              <BaseProgress
+                title="Primary progress bar"
+                size="sm"
+                contrast="contrast"
+                :value="50"
+                color="primary"
+              />
             </div>
           </PlaygroundSampleRow>
         </div>

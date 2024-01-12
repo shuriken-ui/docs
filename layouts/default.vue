@@ -16,15 +16,15 @@ const links = computed(() => {
 const { x, y } = useWindowScroll()
 console.log(navigation.value)
 
-//Fetch tabs
+// Fetch tabs
 const { data } = await useAsyncData('home', () =>
   queryContent()
     .where({ 'tabs.title': { $exists: true } })
     .only(['tabs', '_path'])
-    .find()
+    .find(),
 )
 
-//Handle UI
+// Handle UI
 const isSidebarOpenMobile = ref(false)
 const isTocOpenMobile = ref(false)
 
@@ -35,37 +35,51 @@ const onOverlayClick = () => {
 </script>
 
 <template>
-  <div class="flex items-stretch min-h-screen bg-white dark:bg-muted-900">
+  <div class="flex min-h-screen items-stretch bg-white dark:bg-muted-900">
     <!--Sidebar navigation-->
     <aside
-      class="fixed top-0 start-0 h-full min-h-screen ltablet:w-64 w-64 bg-muted-50 dark:bg-muted-950 border-e border-muted-200 dark:border-muted-800 transition-transform duration-300 ease-in-out"
-      :class="[isSidebarOpenMobile ? 'translate-x-0 z-10' : '-translate-x-full ltablet:translate-x-0 lg:translate-x-0']"
+      class="fixed start-0 top-0 h-full min-h-screen w-64 border-e border-muted-200 bg-muted-50 transition-transform duration-300 ease-in-out dark:border-muted-800 dark:bg-muted-950 ltablet:w-64"
+      :class="[isSidebarOpenMobile ? 'z-10 translate-x-0' : '-translate-x-full lg:translate-x-0 ltablet:translate-x-0']"
     >
-      <div class="flex items-center px-6 h-14">
-        <NuxtLink to="/" class="text-muted-600 dark:text-muted-100 hover:text-primary-600 dark:hover:text-primary-500 transition-colors duration-300">
+      <div class="flex h-14 items-center px-6">
+        <NuxtLink to="/" class="text-muted-600 transition-colors duration-300 hover:text-primary-600 dark:text-muted-100 dark:hover:text-primary-500">
           <LogoText class="h-8" />
         </NuxtLink>
-        <BaseButtonIcon size="sm" rounded="md" class="ms-auto ltablet:hidden lg:hidden" @click="isSidebarOpenMobile = !isSidebarOpenMobile">
-          <Icon name="lucide:x" class="w-4 h-4" />
+        <BaseButtonIcon
+          size="sm"
+          rounded="md"
+          class="ms-auto lg:hidden ltablet:hidden"
+          @click="isSidebarOpenMobile = !isSidebarOpenMobile"
+        >
+          <Icon name="lucide:x" class="h-4 w-4" />
         </BaseButtonIcon>
       </div>
-      <div class="p-6 space-y-2 h-[calc(100%_-_3.5rem)] overflow-y-auto nui-slimscroll">
+      <div class="nui-slimscroll h-[calc(100%_-_3.5rem)] space-y-2 overflow-y-auto p-6">
         <!--Navigation links-->
         <template v-for="item in links" :key="item._id">
           <div v-if="item?.children" class="py-3">
             <div class="mb-3 px-3">
-              <BaseHeading as="h5" size="xs" weight="medium" class="uppercase text-muted-400 dark:text-muted-500">
+              <BaseHeading
+                as="h5"
+                size="xs"
+                weight="medium"
+                class="uppercase text-muted-400 dark:text-muted-500"
+              >
                 {{ item.title }}
               </BaseHeading>
             </div>
             <ul class="space-y-1">
-              <li v-for="child in item.children">
+              <li v-for="child in item.children" :key="child._path">
                 <NuxtLink
                   :to="child._path"
                   exact-active-class="!font-medium !bg-muted-200 dark:!bg-muted-900 !text-muted-800 dark:!text-muted-100"
-                  class="h-8 flex gap-4 items-center px-3 font-sans text-sm rounded-full transition-colors duration-300 hover:bg-muted-200/70 dark:hover:bg-muted-800 text-muted-700 hover:text-muted-800 dark:text-muted-400 dark:hover:text-muted-100"
+                  class="flex h-8 items-center gap-4 rounded-full px-3 font-sans text-sm text-muted-700 transition-colors duration-300 hover:bg-muted-200/70 hover:text-muted-800 dark:text-muted-400 dark:hover:bg-muted-800 dark:hover:text-muted-100"
                 >
-                  <Icon v-if="child.icon" :name="child.icon" class="w-5 h-5" />
+                  <Icon
+                    v-if="child.icon"
+                    :name="child.icon"
+                    class="h-5 w-5"
+                  />
                   <span>{{ child.title || child._path }}</span>
                 </NuxtLink>
               </li>
@@ -75,38 +89,51 @@ const onOverlayClick = () => {
             v-else
             :to="item._path"
             exact-active-class="!font-medium !bg-muted-200 dark:!bg-muted-900 !text-muted-800 dark:!text-muted-100"
-            class="h-8 flex gap-4 items-center px-3 font-sans text-sm rounded-full transition-colors duration-300 hover:bg-muted-200/70 dark:hover:bg-muted-800 text-muted-700 hover:text-muted-800 dark:text-muted-400 dark:hover:text-muted-100"
+            class="flex h-8 items-center gap-4 rounded-full px-3 font-sans text-sm text-muted-700 transition-colors duration-300 hover:bg-muted-200/70 hover:text-muted-800 dark:text-muted-400 dark:hover:bg-muted-800 dark:hover:text-muted-100"
           >
-            <Icon v-if="item.icon" :name="item.icon" class="w-5 h-5" />
+            <Icon
+              v-if="item.icon"
+              :name="item.icon"
+              class="h-5 w-5"
+            />
             <span>{{ item.title || item._path }}</span>
           </NuxtLink>
         </template>
       </div>
     </aside>
     <!--Main content-->
-    <main class="w-full ltablet:w-[calc(100%_-_16rem)] lg:w-[calc(100%_-_34rem)] ltablet:ms-64 lg:ms-64 lg:me-72">
+    <main class="w-full lg:me-72 lg:ms-64 lg:w-[calc(100%_-_34rem)] ltablet:ms-64 ltablet:w-[calc(100%_-_16rem)]">
       <div class="relative w-full">
-        <div class="fixed top-0 start-0 z-[5] w-full ltablet:static lg:static bg-white dark:bg-muted-900 border-b border-muted-200 dark:border-muted-800">
-          <div class="max-w-3xl mx-auto">
-            <div class="flex items-center h-14 gap-8 md:gap-10 px-6">
-              <BaseButtonIcon size="sm" rounded="md" class="ltablet:hidden lg:hidden" @click="isSidebarOpenMobile = !isSidebarOpenMobile">
-                <Icon name="lucide:menu" class="w-4 h-4" />
+        <div class="fixed start-0 top-0 z-[5] w-full border-b border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900 lg:static ltablet:static">
+          <div class="mx-auto max-w-3xl">
+            <div class="flex h-14 items-center gap-8 px-6 md:gap-10">
+              <BaseButtonIcon
+                size="sm"
+                rounded="md"
+                class="lg:hidden ltablet:hidden"
+                @click="isSidebarOpenMobile = !isSidebarOpenMobile"
+              >
+                <Icon name="lucide:menu" class="h-4 w-4" />
               </BaseButtonIcon>
               <NuxtLink
                 v-for="tab in data"
                 :key="tab._path"
                 :to="tab._path"
-                class="h-14 flex items-center gap-2 border-b-2 text-sm"
+                class="flex h-14 items-center gap-2 border-b-2 text-sm"
                 :class="[
-                  route.path.startsWith(tab._path) ? ' font-medium border-muted-800 dark:border-muted-100 text-muted-800 dark:text-muted-100 opacity-100' : 'border-transparent grayscale opacity-50',
+                  route.path.startsWith(tab._path) ? ' border-muted-800 font-medium text-muted-800 opacity-100 dark:border-muted-100 dark:text-muted-100' : 'border-transparent opacity-50 grayscale',
                 ]"
               >
-                <Icon :name="tab.tabs.icon" class="w-5 h-5" />
-                <span class="hidden md:inline text-sm font-medium text-muted-800 dark:text-muted-100">{{ tab.tabs.title }}</span>
+                <Icon :name="tab.tabs.icon" class="h-5 w-5" />
+                <span class="hidden text-sm font-medium text-muted-800 dark:text-muted-100 md:inline">{{ tab.tabs.title }}</span>
               </NuxtLink>
-              <div class="flex items-center gap-2 ms-auto">
-                <BaseButtonIcon size="sm" rounded="lg" class="md:hidden">
-                  <Icon name="lucide:search" class="w-4 h-4" />
+              <div class="ms-auto flex items-center gap-2">
+                <BaseButtonIcon
+                  size="sm"
+                  rounded="lg"
+                  class="md:hidden"
+                >
+                  <Icon name="lucide:search" class="h-4 w-4" />
                 </BaseButtonIcon>
                 <BaseInput
                   icon="lucide:search"
@@ -119,29 +146,44 @@ const onOverlayClick = () => {
                   }"
                 >
                   <template #action>
-                    <div class="absolute top-1 end-1 flex items-center justify-end gap-1">
-                      <BaseKbd size="xs" color="default" rounded="md">Ctrl</BaseKbd>
+                    <div class="absolute end-1 top-1 flex items-center justify-end gap-1">
+                      <BaseKbd
+                        size="xs"
+                        color="default"
+                        rounded="md"
+                      >
+                        Ctrl
+                      </BaseKbd>
                       <span>+</span>
-                      <BaseKbd size="xs" color="default" rounded="md">
+                      <BaseKbd
+                        size="xs"
+                        color="default"
+                        rounded="md"
+                      >
                         <span class="px-1">K</span>
                       </BaseKbd>
                     </div>
                   </template>
                 </BaseInput>
-                <BaseButtonIcon size="sm" rounded="md" class="lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">
-                  <Icon name="lucide:folder" class="w-4 h-4" />
+                <BaseButtonIcon
+                  size="sm"
+                  rounded="md"
+                  class="lg:hidden"
+                  @click="isTocOpenMobile = !isTocOpenMobile"
+                >
+                  <Icon name="lucide:folder" class="h-4 w-4" />
                 </BaseButtonIcon>
               </div>
             </div>
           </div>
         </div>
         <div class="relative">
-          <div class="max-w-3xl mx-auto px-6 pt-20 ltablet:pt-6 lg:pt-6 pb-12">
+          <div class="mx-auto max-w-3xl px-6 pb-12 pt-20 lg:pt-6 ltablet:pt-6">
             <slot />
           </div>
         </div>
         <div class="pt-16">
-          <div class="max-w-3xl mx-auto px-6">
+          <div class="mx-auto max-w-3xl px-6">
             <Nav />
           </div>
         </div>
@@ -149,18 +191,33 @@ const onOverlayClick = () => {
     </main>
     <!--Table of contents-->
     <div
-      class="fixed top-0 end-0 h-full w-72 bg-white dark:bg-muted-900 min-h-screen transition-transform duration-300 ease-in-out"
-      :class="[isTocOpenMobile ? 'translate-x-0 z-[10]' : 'translate-x-full lg:translate-x-0']"
+      class="fixed end-0 top-0 h-full min-h-screen w-72 bg-white transition-transform duration-300 ease-in-out dark:bg-muted-900"
+      :class="[isTocOpenMobile ? 'z-[10] translate-x-0' : 'translate-x-full lg:translate-x-0']"
     >
-      <div class="flex items-center gap-3 px-6 h-14 border-b" :class="[y === 0 ? 'border-muted-200 dark:border-muted-800' : 'border-transparent dark:border-transparent']">
-        <BaseButtonIcon size="sm" rounded="md" class="lg:hidden" @click="isTocOpenMobile = !isTocOpenMobile">
-          <Icon name="lucide:arrow-right" class="w-4 h-4" />
+      <div class="flex h-14 items-center gap-3 border-b px-6" :class="[y === 0 ? 'border-muted-200 dark:border-muted-800' : 'border-transparent dark:border-transparent']">
+        <BaseButtonIcon
+          size="sm"
+          rounded="md"
+          class="lg:hidden"
+          @click="isTocOpenMobile = !isTocOpenMobile"
+        >
+          <Icon name="lucide:arrow-right" class="h-4 w-4" />
         </BaseButtonIcon>
-        <NuxtLink to="https://github.com/shuriken-ui" target="_blank" rel="noopener" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
-          <Icon name="fa6-brands:github" class="w-5 h-5" />
+        <NuxtLink
+          to="https://github.com/shuriken-ui"
+          target="_blank"
+          rel="noopener"
+          class="flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-300 hover:bg-muted-100 dark:hover:bg-muted-800"
+        >
+          <Icon name="fa6-brands:github" class="h-5 w-5" />
         </NuxtLink>
-        <NuxtLink to="https://twitter.com/cssninjaStudio" target="_blank" rel="noopener" class="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted-100 dark:hover:bg-muted-800 transition-colors duration-300">
-          <Icon name="ri:twitter-x-fill" class="w-4 h-4" />
+        <NuxtLink
+          to="https://twitter.com/cssninjaStudio"
+          target="_blank"
+          rel="noopener"
+          class="flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-300 hover:bg-muted-100 dark:hover:bg-muted-800"
+        >
+          <Icon name="ri:twitter-x-fill" class="h-4 w-4" />
         </NuxtLink>
         <div class="ms-auto">
           <BaseThemeSwitch />
@@ -175,9 +232,9 @@ const onOverlayClick = () => {
     <!--Mobile overlay-->
     <div
       role="button"
-      class="fixed z-[9] top-0 start-0 h-full w-full bg-muted-950 transition-opacity duration-300"
+      class="fixed start-0 top-0 z-[9] h-full w-full bg-muted-950 transition-opacity duration-300"
       :class="isSidebarOpenMobile || isTocOpenMobile ? 'opacity-70 pointer-events-auto' : 'opacity-0 pointer-events-none'"
       @click="onOverlayClick"
-    ></div>
+    />
   </div>
 </template>

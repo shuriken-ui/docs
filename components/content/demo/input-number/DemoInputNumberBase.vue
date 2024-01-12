@@ -1,8 +1,8 @@
 <template>
-  <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-4">
-      <div class="flex items-center w-full">
-        <div class="w-full max-w-sm flex items-end gap-4">
+  <div class="flex items-center justify-center px-4 pb-0 pt-4">
+    <div class="w-full rounded-xl bg-muted-100 p-4 dark:bg-muted-900">
+      <div class="flex w-full items-center">
+        <div class="flex w-full max-w-sm items-end gap-4">
           <BaseInputNumber
             v-model="value"
             rounded="sm"

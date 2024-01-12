@@ -2,7 +2,7 @@
 useHead({
   titleTemplate: '%s | Shuriken UI',
   htmlAttrs: {
-    lang: 'en'
+    lang: 'en',
   },
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
@@ -16,7 +16,7 @@ useSeoMeta({
   ogSiteName: 'Shuriken UI',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterSite: 'shurikenui'
+  twitterSite: 'shurikenui',
 })
 </script>
 

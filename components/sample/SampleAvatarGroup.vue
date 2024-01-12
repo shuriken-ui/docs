@@ -74,22 +74,38 @@ const people = [
         <div class="space-y-4">
           <PlaygroundSampleRow label="3 max">
             <div class="flex items-end gap-3">
-              <BaseAvatarGroup size="sm" :avatars="people" :limit="3" />
+              <BaseAvatarGroup
+                size="sm"
+                :avatars="people"
+                :limit="3"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="5 max">
             <div class="flex items-end gap-3">
-              <BaseAvatarGroup size="sm" :avatars="people" :limit="5" />
+              <BaseAvatarGroup
+                size="sm"
+                :avatars="people"
+                :limit="5"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="7 max">
             <div class="flex items-end gap-3">
-              <BaseAvatarGroup size="sm" :avatars="people" :limit="7" />
+              <BaseAvatarGroup
+                size="sm"
+                :avatars="people"
+                :limit="7"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="9 max">
             <div class="flex items-end gap-3">
-              <BaseAvatarGroup size="sm" :avatars="people" :limit="9" />
+              <BaseAvatarGroup
+                size="sm"
+                :avatars="people"
+                :limit="9"
+              />
             </div>
           </PlaygroundSampleRow>
         </div>

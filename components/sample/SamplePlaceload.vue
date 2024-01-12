@@ -56,11 +56,11 @@ const { rounded } = usePlayground()
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Mask" label-align="center">
             <div class="flex flex-wrap items-end gap-2">
-              <BasePlaceload class="h-12 w-12 rounded-none nui-mask nui-mask-hex" />
-              <BasePlaceload class="h-12 w-12 rounded-none nui-mask nui-mask-hexed" />
-              <BasePlaceload class="h-12 w-12 rounded-none nui-mask nui-mask-blob" />
-              <BasePlaceload class="h-12 w-12 rounded-none nui-mask nui-mask-deca" />
-              <BasePlaceload class="h-12 w-12 rounded-none nui-mask nui-mask-diamond" />
+              <BasePlaceload class="nui-mask nui-mask-hex h-12 w-12 rounded-none" />
+              <BasePlaceload class="nui-mask nui-mask-hexed h-12 w-12 rounded-none" />
+              <BasePlaceload class="nui-mask nui-mask-blob h-12 w-12 rounded-none" />
+              <BasePlaceload class="nui-mask nui-mask-deca h-12 w-12 rounded-none" />
+              <BasePlaceload class="nui-mask nui-mask-diamond h-12 w-12 rounded-none" />
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -69,7 +69,7 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="Card" label-align="center">
             <div class="max-w-sm">
-              <BaseCard :rounded="rounded as  'none' | 'sm' | 'md' | 'lg'" class="p-4 md:p-6">
+              <BaseCard :rounded="(rounded as 'none' | 'sm' | 'md' | 'lg')" class="p-4 md:p-6">
                 <div class="flex items-center gap-3">
                   <BasePlaceload class="h-10 w-10" :class="`rounded-${rounded}`" />
                   <div class="grow space-y-2">

@@ -16,35 +16,161 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="Solid">
             <div class="flex flex-wrap items-end gap-3">
-              <BaseTag :rounded="rounded" variant="solid" color="default"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="solid" color="muted"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="solid" color="primary"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="solid" color="success"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="solid" color="info"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="solid" color="warning"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="solid" color="danger"> Label </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="default"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="muted"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="primary"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="success"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="info"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="warning"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="danger"
+              >
+                Label
+              </BaseTag>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Pastel">
             <div class="flex flex-wrap items-end gap-3">
-              <BaseTag :rounded="rounded" variant="pastel" color="default"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="pastel" color="muted"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="pastel" color="primary"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="pastel" color="success"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="pastel" color="info"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="pastel" color="warning"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="pastel" color="danger"> Label </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="default"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="muted"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="primary"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="success"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="info"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="warning"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="danger"
+              >
+                Label
+              </BaseTag>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Outline">
             <div class="flex flex-wrap items-end gap-3">
-              <BaseTag :rounded="rounded" variant="outline" color="default"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="outline" color="muted"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="outline" color="primary"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="outline" color="success"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="outline" color="info"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="outline" color="warning"> Label </BaseTag>
-              <BaseTag :rounded="rounded" variant="outline" color="danger"> Label </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="default"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="muted"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="primary"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="success"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="info"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="warning"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="danger"
+              >
+                Label
+              </BaseTag>
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -52,8 +178,12 @@ const { rounded } = usePlayground()
       <div v-if="activeValue === 'sizes'" class="relative pb-4">
         <div class="space-y-8">
           <div class="flex flex-wrap items-end gap-3">
-            <BaseTag :rounded="rounded" size="sm"> Label </BaseTag>
-            <BaseTag :rounded="rounded" size="md"> Label </BaseTag>
+            <BaseTag :rounded="rounded" size="sm">
+              Label
+            </BaseTag>
+            <BaseTag :rounded="rounded" size="md">
+              Label
+            </BaseTag>
           </div>
         </div>
       </div>

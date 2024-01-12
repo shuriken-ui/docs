@@ -1,9 +1,34 @@
 <template>
   <div class="flex flex-wrap items-end gap-4 p-4">
-    <BaseAvatar src="/img/avatars/2.svg" rounded="none" size="md" badge-src="/img/icons/flags/united-states-of-america.svg" />
-    <BaseAvatar src="/img/avatars/10.svg" rounded="sm" size="md" badge-src="/img/icons/flags/united-states-of-america.svg" />
-    <BaseAvatar src="/img/avatars/25.svg" rounded="md" size="md" badge-src="/img/icons/flags/united-states-of-america.svg" />
-    <BaseAvatar src="/img/avatars/24.svg" rounded="lg" size="md" badge-src="/img/icons/flags/united-states-of-america.svg" />
-    <BaseAvatar src="/img/avatars/15.svg" rounded="full" size="md" badge-src="/img/icons/flags/united-states-of-america.svg" />
+    <BaseAvatar
+      src="/img/avatars/2.svg"
+      rounded="none"
+      size="md"
+      badge-src="/img/icons/flags/united-states-of-america.svg"
+    />
+    <BaseAvatar
+      src="/img/avatars/10.svg"
+      rounded="sm"
+      size="md"
+      badge-src="/img/icons/flags/united-states-of-america.svg"
+    />
+    <BaseAvatar
+      src="/img/avatars/25.svg"
+      rounded="md"
+      size="md"
+      badge-src="/img/icons/flags/united-states-of-america.svg"
+    />
+    <BaseAvatar
+      src="/img/avatars/24.svg"
+      rounded="lg"
+      size="md"
+      badge-src="/img/icons/flags/united-states-of-america.svg"
+    />
+    <BaseAvatar
+      src="/img/avatars/15.svg"
+      rounded="full"
+      size="md"
+      badge-src="/img/icons/flags/united-states-of-america.svg"
+    />
   </div>
 </template>

@@ -1,14 +1,14 @@
 interface Component {
-  name: string,
-  description: string,
-  category: string,
-  url: string,
+  name: string
+  description: string
+  category: string
+  url: string
   image: {
-    light: string,
-    dark: string,
-  },
-  availableIn: string[],
-  requiresTailwind?: boolean,
+    light: string
+    dark: string
+  }
+  availableIn: string[]
+  requiresTailwind?: boolean
 }
 
 export const components: Component[] = [
@@ -225,7 +225,7 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-focus-loop.svg',
       dark: '/img/illustrations/components/icon-focus-loop-dark.svg',
     },
-    availableIn: ['nuxt', 'react']
+    availableIn: ['nuxt', 'react'],
   },
   {
     name: 'pagination',
@@ -344,7 +344,7 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-checkbox-headless.svg',
       dark: '/img/illustrations/components/icon-checkbox-headless-dark.svg',
     },
-    availableIn: ['nuxt', 'react']
+    availableIn: ['nuxt', 'react'],
   },
   {
     name: 'checkbox animated',
@@ -355,7 +355,7 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-checkbox-animated.svg',
       dark: '/img/illustrations/components/icon-checkbox-animated-dark.svg',
     },
-    availableIn: ['nuxt', 'react']
+    availableIn: ['nuxt', 'react'],
   },
   {
     name: 'input',
@@ -448,7 +448,7 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-radio-headless.svg',
       dark: '/img/illustrations/components/icon-radio-headless-dark.svg',
     },
-    availableIn: ['nuxt', 'react']
+    availableIn: ['nuxt', 'react'],
   },
   {
     name: 'select',
@@ -495,7 +495,7 @@ export const components: Component[] = [
       light: '/img/illustrations/components/icon-treeselect.svg',
       dark: '/img/illustrations/components/icon-treeselect-dark.svg',
     },
-    availableIn: ['nuxt', 'react']
+    availableIn: ['nuxt', 'react'],
   },
   {
     name: 'heading',
@@ -628,5 +628,5 @@ export const components: Component[] = [
     },
     availableIn: ['tailwind'],
     requiresTailwind: true,
-  }
+  },
 ]

@@ -65,16 +65,24 @@ const breadcrumbIcon = [
       <div v-if="activeValue === 'separator'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Slash" label-align="start">
-            <BaseBreadcrumb :items="breadcrumb"> / </BaseBreadcrumb>
+            <BaseBreadcrumb :items="breadcrumb">
+              /
+            </BaseBreadcrumb>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Arrow" label-align="start">
-            <BaseBreadcrumb :items="breadcrumb"><Icon name="lucide:arrow-right" class="block h-3 w-3" /> </BaseBreadcrumb>
+            <BaseBreadcrumb :items="breadcrumb">
+              <Icon name="lucide:arrow-right" class="block h-3 w-3" />
+            </BaseBreadcrumb>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Chevron" label-align="start">
-            <BaseBreadcrumb :items="breadcrumb"> <Icon name="lucide:chevron-right" class="block h-3 w-3" /> </BaseBreadcrumb>
+            <BaseBreadcrumb :items="breadcrumb">
+              <Icon name="lucide:chevron-right" class="block h-3 w-3" />
+            </BaseBreadcrumb>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Marker" label-align="start">
-            <BaseBreadcrumb :items="breadcrumb"> <Icon name="lucide:move-right" class="block h-3 w-3" /> </BaseBreadcrumb>
+            <BaseBreadcrumb :items="breadcrumb">
+              <Icon name="lucide:move-right" class="block h-3 w-3" />
+            </BaseBreadcrumb>
           </PlaygroundSampleRow>
         </div>
       </div>

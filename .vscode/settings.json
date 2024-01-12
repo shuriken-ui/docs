@@ -1,0 +1,13 @@
+{
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always"
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always"
+    }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

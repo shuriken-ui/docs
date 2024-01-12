@@ -1,8 +1,18 @@
 <template>
-  <BaseHeading as="h4" size="md" weight="medium" :id="id" class="mt-8 mb-1 group/heading">
-    <a v-if="generate" :href="`#${id}`" class="flex items-center gap-2 group-hover/heading:underline underline-offset-4">
+  <BaseHeading
+    :id="id"
+    as="h4"
+    size="md"
+    weight="medium"
+    class="group/heading mb-1 mt-8"
+  >
+    <a
+      v-if="generate"
+      :href="`#${id}`"
+      class="flex items-center gap-2 underline-offset-4 group-hover/heading:underline"
+    >
       <slot />
-      <Icon name="ph:link-simple" class="w-4 h-4 opacity-0 group-hover/heading:opacity-100 transition-opacity duration-200" />
+      <Icon name="ph:link-simple" class="h-4 w-4 opacity-0 transition-opacity duration-200 group-hover/heading:opacity-100" />
     </a>
     <slot v-else />
   </BaseHeading>

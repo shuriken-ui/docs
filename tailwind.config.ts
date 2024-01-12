@@ -11,7 +11,7 @@ export default withShurikenUI({
     extend: {
       /**
        * Customize fonts
-       * 
+       *
        * You must load them yourself
        * (ex: with unplugin-fonts)
        */
@@ -20,8 +20,8 @@ export default withShurikenUI({
         heading: ['Inter', 'sans-serif'],
       },
       /**
-       * Customize colors 
-       * 
+       * Customize colors
+       *
        * Use tailwind predefined colors,
        * or generate your own with tools like https://tailwindshades.com
        */
@@ -79,8 +79,8 @@ export default withShurikenUI({
           900: 'rgb(var(--color-muted-900) / <alpha-value>)',
           950: 'rgb(var(--color-muted-950) / <alpha-value>)',
         },
-        //muted: colors.slate,
-        //primary: colors.violet,
+        // muted: colors.slate,
+        // primary: colors.violet,
         info: colors.sky,
         success: colors.teal,
         warning: colors.amber,
@@ -89,12 +89,12 @@ export default withShurikenUI({
 
       /**
        * Customize Shuriken UI components
-       * 
+       *
        * @see https://github.com/shuriken-ui/tailwind
        */
       shurikenUi: {
         // ...
-      }
+      },
     },
   },
 })

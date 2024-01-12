@@ -17,15 +17,31 @@ const { rounded } = usePlayground()
           <PlaygroundSampleRow label="Light" label-align="center">
             <div class="flex items-center gap-4">
               <BaseSnack label="Label" color="default" />
-              <BaseSnack icon="logos:react" label="React" color="default" />
-              <BaseSnack image="/img/photo/avatars/30.jpg" label="Label" color="default" />
+              <BaseSnack
+                icon="logos:react"
+                label="React"
+                color="default"
+              />
+              <BaseSnack
+                image="/img/photo/avatars/30.jpg"
+                label="Label"
+                color="default"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Muted" label-align="center">
             <div class="flex items-center gap-4">
               <BaseSnack label="Label" color="muted" />
-              <BaseSnack icon="logos:react" label="React" color="muted" />
-              <BaseSnack image="/img/photo/avatars/30.jpg" label="Label" color="muted" />
+              <BaseSnack
+                icon="logos:react"
+                label="React"
+                color="muted"
+              />
+              <BaseSnack
+                image="/img/photo/avatars/30.jpg"
+                label="Label"
+                color="muted"
+              />
             </div>
           </PlaygroundSampleRow>
         </div>
@@ -34,16 +50,40 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="Light" label-align="end">
             <div class="flex items-end gap-4">
-              <BaseSnack label="Label" color="default" size="xs" />
-              <BaseSnack label="Label" color="default" size="sm" />
-              <BaseSnack label="Label" color="default" size="md" />
+              <BaseSnack
+                label="Label"
+                color="default"
+                size="xs"
+              />
+              <BaseSnack
+                label="Label"
+                color="default"
+                size="sm"
+              />
+              <BaseSnack
+                label="Label"
+                color="default"
+                size="md"
+              />
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Muted" label-align="end">
             <div class="flex items-end gap-4">
-              <BaseSnack label="Label" color="muted" size="xs" />
-              <BaseSnack label="Label" color="muted" size="sm" />
-              <BaseSnack label="Label" color="muted" size="md" />
+              <BaseSnack
+                label="Label"
+                color="muted"
+                size="xs"
+              />
+              <BaseSnack
+                label="Label"
+                color="muted"
+                size="sm"
+              />
+              <BaseSnack
+                label="Label"
+                color="muted"
+                size="md"
+              />
             </div>
           </PlaygroundSampleRow>
         </div>

@@ -6,28 +6,32 @@ const { x, y } = useWindowScroll()
 
 <template>
   <header
-    class="fixed z-40 top-0 start-0 w-full px-4 md:px-6 border-b transition-all duration-300"
+    class="fixed start-0 top-0 z-40 w-full border-b px-4 transition-all duration-300 md:px-6"
     :class="[
-      y > 60 ? 'bg-white/95 dark:bg-muted-950 !border-muted-200 dark:!border-muted-800' : 'border-transparent',
-      mobileOpen ? '!bg-white/95 dark:!bg-muted-950 !border-muted-200 dark:!border-muted-800' : 'border-transparent',
+      y > 60 ? '!border-muted-200 bg-white/95 dark:!border-muted-800 dark:bg-muted-950' : 'border-transparent',
+      mobileOpen ? '!border-muted-200 !bg-white/95 dark:!border-muted-800 dark:!bg-muted-950' : 'border-transparent',
     ]"
   >
     <div class="mx-auto max-w-7xl">
-      <div class="flex items-center justify-between h-16">
-        <div class="shrink-0 w-1/4">
-          <NuxtLink to="/" title="" class="">
+      <div class="flex h-16 items-center justify-between">
+        <div class="w-1/4 shrink-0">
+          <NuxtLink
+            to="/"
+            title=""
+            class=""
+          >
             <LogoText
-              class="w-auto h-8 transition-colors duration-300"
-              :class="[y > 60 ? 'text-primary-600 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500 hover:!text-primary-600', mobileOpen ? '!text-primary-600 dark:!text-primary-400' : '']"
+              class="h-8 w-auto transition-colors duration-300"
+              :class="[y > 60 ? 'text-primary-600 dark:text-primary-400' : 'text-muted-400 hover:!text-primary-600 dark:text-muted-500', mobileOpen ? '!text-primary-600 dark:!text-primary-400' : '']"
             />
           </NuxtLink>
         </div>
         <!--Desktop menu-->
-        <div class="hidden grow lg:flex lg:items-center lg:space-x-4 lg:justify-center">
+        <div class="hidden grow lg:flex lg:items-center lg:justify-center lg:space-x-4">
           <NuxtLink
             to="/docs"
             title=""
-            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
+            class="nui-focus inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-sm font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 dark:text-muted-400 dark:hover:text-muted-100"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Documentation
@@ -36,7 +40,7 @@ const { x, y } = useWindowScroll()
             to="/changelog"
             title=""
             active-class="!text-muted-900 dark:!text-muted-100 !bg-muted-100 dark:!bg-muted-900"
-            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
+            class="nui-focus inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-sm font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 dark:text-muted-400 dark:hover:text-muted-100"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Changelog
@@ -45,33 +49,66 @@ const { x, y } = useWindowScroll()
             to="/playground"
             title=""
             exact-active-class="!text-muted-900 dark:!text-muted-100 !bg-muted-100 dark:!bg-muted-900"
-            class="inline-flex items-center justify-center px-4 py-1.5 text-sm font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 nui-focus"
+            class="nui-focus inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-sm font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 dark:text-muted-400 dark:hover:text-muted-100"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Playground
           </NuxtLink>
         </div>
-        <div class="hidden ml-auto sm:flex lg:ml-0 justify-end gap-2 w-1/4">
-          <BaseDropdown variant="button" label="Dropdown" orientation="end" size="md">
+        <div class="ml-auto hidden w-1/4 justify-end gap-2 sm:flex lg:ml-0">
+          <BaseDropdown
+            variant="button"
+            label="Dropdown"
+            orientation="end"
+            size="md"
+          >
             <template #button>
-              <div role="button" tabindex="0" class="nui-focus h-8 px-3 flex items-center gap-1 rounded-full hover:bg-muted-100 dark:hover:bg-muted-900">
-                <Icon name="lucide:git-commit" class="w-5 h-5 shrink-0" />
-                <BaseText size="xs" weight="medium" class="">Versions</BaseText>
+              <div
+                role="button"
+                tabindex="0"
+                class="nui-focus flex h-8 items-center gap-1 rounded-full px-3 hover:bg-muted-100 dark:hover:bg-muted-900"
+              >
+                <Icon name="lucide:git-commit" class="h-5 w-5 shrink-0" />
+                <BaseText
+                  size="xs"
+                  weight="medium"
+                  class=""
+                >
+                  Versions
+                </BaseText>
               </div>
             </template>
-            <BaseDropdownItem to="#" title="@shuriken-ui/nuxt" :text="packagejson.devDependencies['@shuriken-ui/nuxt'].replace('^', '')" color="default" rounded="sm">
+            <BaseDropdownItem
+              to="#"
+              title="@shuriken-ui/nuxt"
+              :text="packagejson.devDependencies['@shuriken-ui/nuxt'].replace('^', '')"
+              color="default"
+              rounded="sm"
+            >
               <template #start>
-                <Icon name="logos:nuxt-icon" class="w-5 h-5" />
+                <Icon name="logos:nuxt-icon" class="h-5 w-5" />
               </template>
             </BaseDropdownItem>
-            <BaseDropdownItem to="#" title="@shuriken-ui/react" text="0.0.0-alpha.1" color="default" rounded="sm">
+            <BaseDropdownItem
+              to="#"
+              title="@shuriken-ui/react"
+              text="0.0.0-alpha.1"
+              color="default"
+              rounded="sm"
+            >
               <template #start>
-                <Icon name="logos:react" class="w-5 h-5" />
+                <Icon name="logos:react" class="h-5 w-5" />
               </template>
             </BaseDropdownItem>
-            <BaseDropdownItem to="#" title="@shuriken-ui/tailwind" text="2.0.0-next.12" color="default" rounded="sm">
+            <BaseDropdownItem
+              to="#"
+              title="@shuriken-ui/tailwind"
+              text="2.0.0-next.12"
+              color="default"
+              rounded="sm"
+            >
               <template #start>
-                <Icon name="logos:tailwindcss-icon" class="w-5 h-5" />
+                <Icon name="logos:tailwindcss-icon" class="h-5 w-5" />
               </template>
             </BaseDropdownItem>
           </BaseDropdown>
@@ -86,34 +123,45 @@ const { x, y } = useWindowScroll()
               }
             "
           >
-            <Icon name="mingcute:drop-fill" class="w-4 h-4 text-primary-500" />
+            <Icon name="mingcute:drop-fill" class="h-4 w-4 text-primary-500" />
           </BaseButtonIcon>
-          <BaseButtonIcon size="sm" rounded="lg" class="hidden lg:flex">
-            <Icon name="lucide:search" class="w-4 h-4" />
+          <BaseButtonIcon
+            size="sm"
+            rounded="lg"
+            class="hidden lg:flex"
+          >
+            <Icon name="lucide:search" class="h-4 w-4" />
           </BaseButtonIcon>
-          <BaseButtonIcon to="https://github.com/shuriken-ui" target="_blank" rel="noopener" size="sm" rounded="lg" class="hidden lg:flex">
-            <Icon name="fa6-brands:github" class="w-4 h-4" />
+          <BaseButtonIcon
+            to="https://github.com/shuriken-ui"
+            target="_blank"
+            rel="noopener"
+            size="sm"
+            rounded="lg"
+            class="hidden lg:flex"
+          >
+            <Icon name="fa6-brands:github" class="h-4 w-4" />
           </BaseButtonIcon>
-          <div class="relative -top-0.5 scale-90 hidden lg:flex">
+          <div class="relative -top-0.5 hidden scale-90 lg:flex">
             <BaseThemeToggle disable-transitions />
           </div>
         </div>
         <!--Mobile menu button-->
-        <div class="flex ms-4 lg:hidden">
+        <div class="ms-4 flex lg:hidden">
           <button
-            class="relative group h-10 w-10 flex items-center justify-center nui-mask nui-mask-blob"
+            class="group nui-mask nui-mask-blob relative flex h-10 w-10 items-center justify-center"
             :class="[mobileOpen ? 'bg-muted-100' : '', mobileOpen && y > 60 ? 'dark:bg-muted-900' : 'dark:bg-muted-950']"
             @click="mobileOpen = !mobileOpen"
           >
-            <div class="relative flex overflow-hidden items-center justify-center w-[24px] h-[24px] transform transition-all duration-200">
-              <div class="flex flex-col justify-between w-[24px] h-4 transform transition-all duration-300 origin-center overflow-hidden">
-                <div class="bg-muted-500 h-[2px] w-7 transform transition-all duration-300 origin-left" :class="mobileOpen ? 'translate-x-10' : ''"></div>
-                <div class="bg-muted-500 h-[2px] w-7 rounded transform transition-all duration-300 delay-75" :class="mobileOpen ? 'translate-x-10' : ''"></div>
-                <div class="bg-muted-500 h-[2px] w-7 transform transition-all duration-300 origin-left delay-150" :class="mobileOpen ? 'translate-x-10' : ''"></div>
+            <div class="relative flex h-[24px] w-[24px] items-center justify-center overflow-hidden transition-all duration-200">
+              <div class="flex h-4 w-[24px] origin-center flex-col justify-between overflow-hidden transition-all duration-300">
+                <div class="h-[2px] w-7 origin-left bg-muted-500 transition-all duration-300" :class="mobileOpen ? 'translate-x-10' : ''" />
+                <div class="h-[2px] w-7 rounded bg-muted-500 transition-all delay-75 duration-300" :class="mobileOpen ? 'translate-x-10' : ''" />
+                <div class="h-[2px] w-7 origin-left bg-muted-500 transition-all delay-150 duration-300" :class="mobileOpen ? 'translate-x-10' : ''" />
 
-                <div class="absolute items-center justify-between transform transition-all duration-500 scale-105 top-2 flex" :class="[mobileOpen ? 'w-12 translate-x-1' : 'w-0 -translate-x-10']">
-                  <div class="absolute bg-muted-500 h-[2px] w-4 transform transition-all duration-500 delay-300" :class="mobileOpen ? 'rotate-45' : 'rotate-0'"></div>
-                  <div class="absolute bg-muted-500 h-[2px] w-4 transform transition-all duration-500 delay-300" :class="mobileOpen ? '-rotate-45' : '-rotate-0'"></div>
+                <div class="absolute top-2 flex scale-105 items-center justify-between transition-all duration-500" :class="[mobileOpen ? 'w-12 translate-x-1' : 'w-0 -translate-x-10']">
+                  <div class="absolute h-[2px] w-4 bg-muted-500 transition-all delay-300 duration-500" :class="mobileOpen ? 'rotate-45' : 'rotate-0'" />
+                  <div class="absolute h-[2px] w-4 bg-muted-500 transition-all delay-300 duration-500" :class="mobileOpen ? '-rotate-45' : '-rotate-0'" />
                 </div>
               </div>
             </div>
@@ -121,43 +169,46 @@ const { x, y } = useWindowScroll()
         </div>
         <!--Mobile menu-->
         <div
-          class="z-20 block lg:hidden fixed top-16 start-0 w-full border-y border-muted-200 bg-white dark:bg-muted-950 transition-all duration-300 shadow-xl shadow-muted-300/30 dark:shadow-muted-800/20"
+          class="fixed start-0 top-16 z-20 block w-full border-y border-muted-200 bg-white shadow-xl shadow-muted-300/30 transition-all duration-300 dark:bg-muted-950 dark:shadow-muted-800/20 lg:hidden"
           :class="[mobileOpen ? 'h-[460px] opacity-100' : 'h-0 opacity-0']"
         >
-          <div class="w-full max-w-[240px] mx-auto flex flex-col text-center py-6 transition-opacity duration-300" :class="[mobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none']">
+          <div class="mx-auto flex w-full max-w-[240px] flex-col py-6 text-center transition-opacity duration-300" :class="[mobileOpen ? 'opacity-100' : 'pointer-events-none opacity-0']">
             <div class="flex flex-col gap-2">
               <NuxtLink
                 to="/docs"
-                class="inline-flex items-center justify-center px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
-                >Documentation</NuxtLink
+                class="focus:ring-ring-300 inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
               >
+                Documentation
+              </NuxtLink>
               <NuxtLink
                 to="/changelog"
-                class="inline-flex items-center justify-center px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
-                >Changelog
+                class="focus:ring-ring-300 inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
+              >
+                Changelog
               </NuxtLink>
               <NuxtLink
                 to="/playground"
-                class="inline-flex items-center justify-center px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
-                >Playground
+                class="focus:ring-ring-300 inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
+              >
+                Playground
               </NuxtLink>
             </div>
-            <hr class="my-6 border-t border-muted-200 dark:border-muted-800" />
+            <hr class="my-6 border-t border-muted-200 dark:border-muted-800">
             <div class="flex flex-col gap-2">
               <button
                 type="button"
-                class="inline-flex items-center justify-center gap-2 px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+                class="focus:ring-ring-300 inline-flex items-center justify-center gap-2 rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
               >
-                <Icon name="mingcute:drop-fill" class="w-5 h-5 text-primary-500" />
+                <Icon name="mingcute:drop-fill" class="h-5 w-5 text-primary-500" />
                 <span>Customize</span>
               </button>
               <NuxtLink
                 to="https://github.com/shuriken-ui"
                 target="_blank"
                 rel="noopener"
-                class="inline-flex items-center justify-center gap-2 px-4 py-1.5 text-base font-medium text-muted-600 dark:text-muted-400 hover:text-muted-900 dark:hover:text-muted-100 transition-all duration-200 border border-transparent rounded-full hover:bg-muted-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300"
+                class="focus:ring-ring-300 inline-flex items-center justify-center gap-2 rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
               >
-                <Icon name="fa6-brands:github" class="w-5 h-5" />
+                <Icon name="fa6-brands:github" class="h-5 w-5" />
                 <span>Github</span>
               </NuxtLink>
               <div class="flex items-center justify-center py-4">
@@ -165,9 +216,13 @@ const { x, y } = useWindowScroll()
               </div>
             </div>
           </div>
-          <div class="px-8 max-w-md mx-auto transition-opacity duration-300" :class="[mobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none']">
-            <BaseButton rounded="lg" size="lg" class="w-full">
-              <Icon name="lucide:search" class="w-4 h-4" />
+          <div class="mx-auto max-w-md px-8 transition-opacity duration-300" :class="[mobileOpen ? 'opacity-100' : 'pointer-events-none opacity-0']">
+            <BaseButton
+              rounded="lg"
+              size="lg"
+              class="w-full"
+            >
+              <Icon name="lucide:search" class="h-4 w-4" />
               <span>Search</span>
             </BaseButton>
           </div>

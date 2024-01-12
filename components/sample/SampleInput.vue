@@ -87,30 +87,69 @@ const fields = reactive({
           <PlaygroundSampleRow label="Normal" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: username" />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: username"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: username" />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: username"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: username" />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: username"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Icon" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" icon="lucide:user-2" placeholder="Ex: username" />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  icon="lucide:user-2"
+                  placeholder="Ex: username"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" icon="lucide:user-2" placeholder="Ex: username" />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  icon="lucide:user-2"
+                  placeholder="Ex: username"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" icon="lucide:user-2" placeholder="Ex: username" />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  icon="lucide:user-2"
+                  placeholder="Ex: username"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
@@ -121,30 +160,75 @@ const fields = reactive({
           <PlaygroundSampleRow label="Float" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3 pt-5">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: username" label-float />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: username"
+                  label-float
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: username" label-float />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: username"
+                  label-float
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: username" label-float />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: username"
+                  label-float
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Icon" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3 pt-5">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" icon="lucide:user-2" placeholder="Ex: username" label-float />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  icon="lucide:user-2"
+                  placeholder="Ex: username"
+                  label-float
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" icon="lucide:user-2" placeholder="Ex: username" label-float />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  icon="lucide:user-2"
+                  placeholder="Ex: username"
+                  label-float
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" icon="lucide:user-2" placeholder="Ex: username" label-float />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  icon="lucide:user-2"
+                  placeholder="Ex: username"
+                  label-float
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
@@ -155,60 +239,144 @@ const fields = reactive({
           <PlaygroundSampleRow label="Focus" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: username" color-focus />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: username"
+                  color-focus
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: username" color-focus />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: username"
+                  color-focus
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: username" color-focus />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: username"
+                  color-focus
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Error" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: username" error="Please enter a valid value" />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: username"
+                  error="Please enter a valid value"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: username" error="Please enter a valid value" />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: username"
+                  error="Please enter a valid value"
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: username" error="Please enter a valid value" />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: username"
+                  error="Please enter a valid value"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Loading" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: username" loading />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: username"
+                  loading
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: username" loading />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: username"
+                  loading
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: username" loading />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: username"
+                  loading
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Disabled" label-align="end">
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseInput v-model="fields.first" size="sm" :rounded="rounded" label="Size: sm" placeholder="Ex: username" disabled />
+                <BaseInput
+                  v-model="fields.first"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Size: sm"
+                  placeholder="Ex: username"
+                  disabled
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.second" size="md" :rounded="rounded" label="Size: md" placeholder="Ex: username" disabled />
+                <BaseInput
+                  v-model="fields.second"
+                  size="md"
+                  :rounded="rounded"
+                  label="Size: md"
+                  placeholder="Ex: username"
+                  disabled
+                />
               </div>
 
               <div class="flex-1">
-                <BaseInput v-model="fields.third" size="lg" :rounded="rounded" label="Size: lg" placeholder="Ex: username" disabled />
+                <BaseInput
+                  v-model="fields.third"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Size: lg"
+                  placeholder="Ex: username"
+                  disabled
+                />
               </div>
             </div>
           </PlaygroundSampleRow>

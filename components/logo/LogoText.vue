@@ -1,5 +1,9 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 807.1 169.81">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 807.1 169.81"
+  >
     <defs>
       <clipPath id="clippath">
         <path
@@ -16,8 +20,25 @@
       fill-rule="evenodd"
       stroke-width="0"
     />
-    <g clip-path="url(#clippath)"><rect y="-1.6" width="156.17" height="173.01" fill="currentColor" stroke-width="0" /></g>
-    <rect x="750.24" y="44.27" width="55.37" height="55.37" rx="16.19" ry="16.19" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3" />
+    <g clip-path="url(#clippath)"><rect
+      y="-1.6"
+      width="156.17"
+      height="173.01"
+      fill="currentColor"
+      stroke-width="0"
+    /></g>
+    <rect
+      x="750.24"
+      y="44.27"
+      width="55.37"
+      height="55.37"
+      rx="16.19"
+      ry="16.19"
+      fill="none"
+      stroke="currentColor"
+      stroke-miterlimit="10"
+      stroke-width="3"
+    />
     <path
       d="m791.42,83.71h-3.16v-23.78h3.16v23.78Zm-22.35-3.67c1,.91,2.68,1.36,5.06,1.36s4.06-.45,5.06-1.36c1-.91,1.49-2.46,1.49-4.65v-15.46h3.16v15.76c0,2.99-.83,5.12-2.48,6.39-1.65,1.27-4.06,1.9-7.24,1.9s-5.58-.63-7.24-1.9c-1.65-1.27-2.48-3.4-2.48-6.39v-15.76h3.16v15.46c0,2.2.5,3.75,1.49,4.65Z"
       fill="currentColor"

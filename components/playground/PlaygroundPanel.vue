@@ -7,6 +7,8 @@ const props = defineProps<{
   loading?: boolean
 }>()
 
+const emit = defineEmits(['close', 'generate', 'primaryChanged', 'mutedChanged'])
+
 const { rounded } = usePlayground()
 
 const currentPrimary = ref('violet')
@@ -162,8 +164,6 @@ const mutedPresets = [
   },
 ] as const
 
-const emit = defineEmits(['close', 'generate', 'primaryChanged', 'mutedChanged'])
-
 function switchPrimary(color: (typeof primaryPresets)[number]) {
   currentPrimary.value = color.name
   switchColorShades('primary', color.shades)
@@ -181,100 +181,172 @@ function switchMuted(color: (typeof mutedPresets)[number]) {
     color="white-contrast"
     rounded="lg"
     shadow="flat"
-    class="p-6 fixed z-40 top-20 md:top-20 end-4 md:end-6 w-[calc(100%_-_32px)] md:w-[380px] lg:w-full lg:static"
+    class="fixed end-4 top-20 z-40 w-[calc(100%_-_32px)] p-6 md:end-6 md:top-20 md:w-[380px] lg:static lg:w-full"
     :class="props.open ? 'translate-x-0' : 'translate-x-[480px] lg:translate-x-0'"
   >
-    <div class="flex items-center mb-6">
-      <BaseHeading as="h3" size="md">Configuration</BaseHeading>
+    <div class="mb-6 flex items-center">
+      <BaseHeading as="h3" size="md">
+        Configuration
+      </BaseHeading>
       <div class="ms-auto lg:hidden">
-        <BaseButtonIcon size="sm" rounded="md" @click="emit('close')">
-          <Icon name="lucide:x" class="w-4 h-4" />
+        <BaseButtonIcon
+          size="sm"
+          rounded="md"
+          @click="emit('close')"
+        >
+          <Icon name="lucide:x" class="h-4 w-4" />
         </BaseButtonIcon>
       </div>
     </div>
     <div class="mb-3">
-      <BaseHeading as="h4" size="sm" weight="medium" class="text-muted-700 dark:text-muted-200">Primary color</BaseHeading>
+      <BaseHeading
+        as="h4"
+        size="sm"
+        weight="medium"
+        class="text-muted-700 dark:text-muted-200"
+      >
+        Primary color
+      </BaseHeading>
     </div>
-    <div class="flex flex-wrap gap-x-3 gap-y-1 mb-6">
+    <div class="mb-6 flex flex-wrap gap-x-3 gap-y-1">
       <div v-for="color in primaryPresets" :key="color.name">
         <button
           type="button"
-          class="h-8 w-8 flex items-center justify-center rounded-full transition-colors duration-200"
-          :class="[currentPrimary === color.name ? 'ring-muted-800 dark:ring-muted-100 relative z-10 ring-1' : 'ring-0']"
+          class="flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-200"
+          :class="[currentPrimary === color.name ? 'relative z-10 ring-1 ring-muted-800 dark:ring-muted-100' : 'ring-0']"
           @click="() => switchPrimary(color)"
         >
-          <span class="block h-6 w-6 shrink-0 rounded-full" :class="color.class" :data-nui-tooltip="color.label" />
+          <span
+            class="block h-6 w-6 shrink-0 rounded-full"
+            :class="color.class"
+            :data-nui-tooltip="color.label"
+          />
         </button>
       </div>
     </div>
     <div class="mb-3">
-      <BaseHeading as="h4" size="sm" weight="medium" class="text-muted-700 dark:text-muted-200">Gray shade</BaseHeading>
+      <BaseHeading
+        as="h4"
+        size="sm"
+        weight="medium"
+        class="text-muted-700 dark:text-muted-200"
+      >
+        Gray shade
+      </BaseHeading>
     </div>
-    <div class="flex flex-wrap gap-x-3 gap-y-2 mb-6">
+    <div class="mb-6 flex flex-wrap gap-x-3 gap-y-2">
       <div v-for="color in mutedPresets" :key="color.name">
         <button
           type="button"
-          class="h-8 w-8 flex items-center justify-center rounded-full transition-colors duration-200"
-          :class="[currentMuted === color.name ? 'ring-muted-800 dark:ring-muted-100 relative z-10 ring-1' : 'ring-0']"
+          class="flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-200"
+          :class="[currentMuted === color.name ? 'relative z-10 ring-1 ring-muted-800 dark:ring-muted-100' : 'ring-0']"
           @click="() => switchMuted(color)"
         >
-          <span class="block h-6 w-6 shrink-0 rounded-full" :class="color.class" :data-nui-tooltip="color.label" />
+          <span
+            class="block h-6 w-6 shrink-0 rounded-full"
+            :class="color.class"
+            :data-nui-tooltip="color.label"
+          />
         </button>
       </div>
     </div>
-    <div class="flex items-center gap-3 mb-6">
+    <div class="mb-6 flex items-center gap-3">
       <BaseThemeSwitch />
       <div>
-        <BaseHeading as="h5" size="sm" weight="medium" class="text-muted-700 dark:text-muted-200">Dark/Light mode</BaseHeading>
-        <BaseParagraph size="xs" class="text-muted-400 dark:text-muted-500">Switch between light and dark mode.</BaseParagraph>
+        <BaseHeading
+          as="h5"
+          size="sm"
+          weight="medium"
+          class="text-muted-700 dark:text-muted-200"
+        >
+          Dark/Light mode
+        </BaseHeading>
+        <BaseParagraph size="xs" class="text-muted-400 dark:text-muted-500">
+          Switch between light and dark mode.
+        </BaseParagraph>
       </div>
     </div>
     <div class="mb-3">
-      <BaseHeading as="h4" size="sm" weight="medium" class="text-muted-700 dark:text-muted-200">Border radius</BaseHeading>
+      <BaseHeading
+        as="h4"
+        size="sm"
+        weight="medium"
+        class="text-muted-700 dark:text-muted-200"
+      >
+        Border radius
+      </BaseHeading>
     </div>
-    <div class="w-full flex gap-2 mb-6">
-      <button type="button" class="flex-1 flex items-center justify-center" @click="rounded = 'none'">
+    <div class="mb-6 flex w-full gap-2">
+      <button
+        type="button"
+        class="flex flex-1 items-center justify-center"
+        @click="rounded = 'none'"
+      >
         <span class="flex flex-col items-center gap-1">
-          <span class="w-10 h-10 flex items-center justify-center bg-white dark:bg-muted-900 border border-muted-200 dark:border-muted-800 rounded-lg">
-            <RoundedNone class="w-6 h-6" :class="rounded === 'none' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
+          <span class="flex h-10 w-10 items-center justify-center rounded-lg border border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900">
+            <RoundedNone class="h-6 w-6" :class="rounded === 'none' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
           </span>
-          <span class="font-sans font-medium text-xs" :class="rounded === 'none' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">none</span>
+          <span class="font-sans text-xs font-medium" :class="rounded === 'none' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">none</span>
         </span>
       </button>
-      <button type="button" class="flex-1 flex items-center justify-center" @click="rounded = 'sm'">
+      <button
+        type="button"
+        class="flex flex-1 items-center justify-center"
+        @click="rounded = 'sm'"
+      >
         <span class="flex flex-col items-center gap-1">
-          <span class="w-10 h-10 flex items-center justify-center bg-white dark:bg-muted-900 border border-muted-200 dark:border-muted-800 rounded-lg">
-            <RoundedSm class="w-6 h-6" :class="rounded === 'sm' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
+          <span class="flex h-10 w-10 items-center justify-center rounded-lg border border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900">
+            <RoundedSm class="h-6 w-6" :class="rounded === 'sm' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
           </span>
-          <span class="font-sans font-medium text-xs" :class="rounded === 'sm' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">sm</span>
-        </span></button
-      ><button type="button" class="flex-1 flex items-center justify-center" @click="rounded = 'md'">
+          <span class="font-sans text-xs font-medium" :class="rounded === 'sm' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">sm</span>
+        </span>
+      </button><button
+        type="button"
+        class="flex flex-1 items-center justify-center"
+        @click="rounded = 'md'"
+      >
         <span class="flex flex-col items-center gap-1">
-          <span class="w-10 h-10 flex items-center justify-center bg-white dark:bg-muted-900 border border-muted-200 dark:border-muted-800 rounded-lg">
-            <RoundedMd class="w-6 h-6" :class="rounded === 'md' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
+          <span class="flex h-10 w-10 items-center justify-center rounded-lg border border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900">
+            <RoundedMd class="h-6 w-6" :class="rounded === 'md' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
           </span>
-          <span class="font-sans font-medium text-xs" :class="rounded === 'md' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">md</span>
+          <span class="font-sans text-xs font-medium" :class="rounded === 'md' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">md</span>
         </span>
       </button>
-      <button type="button" class="flex-1 flex items-center justify-center" @click="rounded = 'lg'">
+      <button
+        type="button"
+        class="flex flex-1 items-center justify-center"
+        @click="rounded = 'lg'"
+      >
         <span class="flex flex-col items-center gap-1">
-          <span class="w-10 h-10 flex items-center justify-center bg-white dark:bg-muted-900 border border-muted-200 dark:border-muted-800 rounded-lg">
-            <RoundedLg class="w-6 h-6" :class="rounded === 'lg' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
+          <span class="flex h-10 w-10 items-center justify-center rounded-lg border border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900">
+            <RoundedLg class="h-6 w-6" :class="rounded === 'lg' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
           </span>
-          <span class="font-sans font-medium text-xs" :class="rounded === 'lg' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">lg</span>
+          <span class="font-sans text-xs font-medium" :class="rounded === 'lg' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">lg</span>
         </span>
       </button>
-      <button type="button" class="flex-1 flex items-center justify-center" @click="rounded = 'full'">
+      <button
+        type="button"
+        class="flex flex-1 items-center justify-center"
+        @click="rounded = 'full'"
+      >
         <span class="flex flex-col items-center gap-1">
-          <span class="w-10 h-10 flex items-center justify-center bg-white dark:bg-muted-900 border border-muted-200 dark:border-muted-800 rounded-lg">
-            <RoundedFull class="w-6 h-6" :class="rounded === 'full' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
+          <span class="flex h-10 w-10 items-center justify-center rounded-lg border border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900">
+            <RoundedFull class="h-6 w-6" :class="rounded === 'full' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-500 dark:text-muted-100'" />
           </span>
-          <span class="font-sans font-medium text-xs" :class="rounded === 'full' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">full</span>
+          <span class="font-sans text-xs font-medium" :class="rounded === 'full' ? 'text-primary-500 dark:text-primary-400' : 'text-muted-400 dark:text-muted-500'">full</span>
         </span>
       </button>
     </div>
     <div>
-      <BaseButton :loading="props.loading" :color="props.loading ? 'default' : 'none'" size="md" class="w-full bg-muted-900 hover:bg-muted-800 dark:bg-muted-900 dark:hover:bg-muted-800 text-white" @click="emit('generate')">Generate Configuration</BaseButton>
+      <BaseButton
+        :loading="props.loading"
+        :color="props.loading ? 'default' : 'none'"
+        size="md"
+        class="w-full bg-muted-900 text-white hover:bg-muted-800 dark:bg-muted-900 dark:hover:bg-muted-800"
+        @click="emit('generate')"
+      >
+        Generate Configuration
+      </BaseButton>
     </div>
   </BaseCard>
 </template>

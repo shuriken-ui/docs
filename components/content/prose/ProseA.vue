@@ -2,7 +2,7 @@
   <NuxtLink
     :href="href"
     :target="target"
-    class="text-primary-800 dark:text-primary-500 hover:underline underline-offset-4 px-1"
+    class="px-1 text-primary-800 underline-offset-4 hover:underline dark:text-primary-500"
   >
     <slot />
   </NuxtLink>
@@ -12,12 +12,12 @@
 defineProps({
   href: {
     type: String,
-    default: ''
+    default: '',
   },
   target: {
     type: String,
     default: undefined,
-    required: false
-  }
+    required: false,
+  },
 })
 </script>

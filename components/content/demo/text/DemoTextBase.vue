@@ -1,8 +1,12 @@
 <template>
   <div class="flex items-center p-4">
-    <BaseText size="md" weight="normal" lead="normal">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urgent 
-      tamen et nihil remittunt. Et non ex maxima parte de tota iudicabis? 
+    <BaseText
+      size="md"
+      weight="normal"
+      lead="normal"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urgent
+      tamen et nihil remittunt. Et non ex maxima parte de tota iudicabis?
       Beatum, inquit. Ille incendat?
     </BaseText>
   </div>

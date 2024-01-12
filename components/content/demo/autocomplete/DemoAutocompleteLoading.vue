@@ -1,13 +1,30 @@
 <template>
-  <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-4 md:p-6">
-      <div class="flex flex-col md:flex-row max-w-3xl items-end gap-3">
+  <div class="flex items-center justify-center px-4 pb-0 pt-4">
+    <div class="w-full rounded-xl bg-muted-100 p-4 dark:bg-muted-900 md:p-6">
+      <div class="flex max-w-3xl flex-col items-end gap-3 md:flex-row">
         <div class="flex-1">
-          <BaseAutocomplete v-model="fields.first" :items="frameworks" size="md" rounded="md" label="Framework" placeholder="Ex: javascript" loading />
+          <BaseAutocomplete
+            v-model="fields.first"
+            :items="frameworks"
+            size="md"
+            rounded="md"
+            label="Framework"
+            placeholder="Ex: javascript"
+            loading
+          />
         </div>
 
         <div class="flex-1">
-          <BaseAutocomplete v-model="fields.second" :items="frameworks" icon="lucide:search" size="md" rounded="md" label="Framework" placeholder="Ex: javascript" loading />
+          <BaseAutocomplete
+            v-model="fields.second"
+            :items="frameworks"
+            icon="lucide:search"
+            size="md"
+            rounded="md"
+            label="Framework"
+            placeholder="Ex: javascript"
+            loading
+          />
         </div>
       </div>
     </div>

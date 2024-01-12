@@ -5,7 +5,8 @@ const route = useRoute()
 const currentPage = computed(() => {
   try {
     return Number.parseInt(route.query.page as string) || 1
-  } catch {
+  }
+  catch {
     return 1
   }
 })
@@ -15,7 +16,13 @@ const currentPage = computed(() => {
   <div class="relative pb-4">
     <div class="space-y-4">
       <PlaygroundSampleRow label="Base" label-align="center">
-        <BasePagination :item-per-page="8" :total-items="512" :current-page="currentPage" :max-links-displayed="5" :rounded="rounded" />
+        <BasePagination
+          :item-per-page="8"
+          :total-items="512"
+          :current-page="currentPage"
+          :max-links-displayed="5"
+          :rounded="rounded"
+        />
       </PlaygroundSampleRow>
     </div>
   </div>

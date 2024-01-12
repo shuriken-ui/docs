@@ -1,11 +1,12 @@
 <template>
-  <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl px-4 py-4 md:py-8">
+  <div class="flex items-center justify-center px-4 pb-0 pt-4">
+    <div class="w-full rounded-xl bg-muted-100 p-4 dark:bg-muted-900 md:py-8">
       <div class="mx-auto w-full max-w-md ">
         <BaseCard
-          class="p-4 md:p-6 !border-muted-300 dark:!border-muted-800" 
-          color="white-contrast" 
-          rounded="md">
+          class="!border-muted-300 p-4 dark:!border-muted-800 md:p-6"
+          color="white-contrast"
+          rounded="md"
+        >
           <div class="flex flex-col py-2">
             <BaseAvatar
               class="mx-auto"
@@ -14,9 +15,16 @@
               badge-src="/img/stacks/react.svg"
             />
             <div class="mx-auto max-w-xs text-center">
-              <BaseHeading tag="h2" size="md" weight="medium" class="mt-4">
+              <BaseHeading
+                tag="h2"
+                size="md"
+                weight="medium"
+                class="mt-4"
+              >
                 Josh M. has invited you to the
-                <BaseLink to="#" class="text-primary-800">Banking Solution Website</BaseLink>
+                <BaseLink to="#" class="text-primary-800">
+                  Banking Solution Website
+                </BaseLink>
                 project.
               </BaseHeading>
             </div>
@@ -45,8 +53,16 @@
                 </BaseText>
               </div>
               <div class="mt-6 flex items-center justify-between gap-2">
-                <BaseButton rounded="md" class="w-full">Decline</BaseButton>
-                <BaseButton rounded="md" color="primary" class="w-full">Accept</BaseButton>
+                <BaseButton rounded="md" class="w-full">
+                  Decline
+                </BaseButton>
+                <BaseButton
+                  rounded="md"
+                  color="primary"
+                  class="w-full"
+                >
+                  Accept
+                </BaseButton>
               </div>
             </div>
           </div>

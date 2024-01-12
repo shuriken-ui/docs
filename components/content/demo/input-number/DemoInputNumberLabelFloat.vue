@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-center px-4 pt-4 pb-0">
-    <div class="w-full bg-muted-100 dark:bg-muted-900 rounded-xl p-4">
-      <div class="flex items-center w-full">
+  <div class="flex items-center justify-center px-4 pb-0 pt-4">
+    <div class="w-full rounded-xl bg-muted-100 p-4 dark:bg-muted-900">
+      <div class="flex w-full items-center">
         <div class="grid gap-6 md:max-w-lg md:grid-cols-2">
           <BaseInputNumber
             v-model="fields.first"

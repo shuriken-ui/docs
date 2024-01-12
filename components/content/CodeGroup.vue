@@ -53,10 +53,10 @@ export default defineComponent({
                 [
                   previewSlot,
                   h(CodeGroupHeader, {
-                    ref: 'tabs-header',
-                    activeTabIndex: activeTabIndex.value,
+                    'ref': 'tabs-header',
+                    'activeTabIndex': activeTabIndex.value,
                     tabs,
-                    hasPreview: !!previewSlot,
+                    'hasPreview': !!previewSlot,
                     'onUpdate:activeTabIndex': (value: number) => (activeTabIndex.value = value),
                   }),
                   h(
@@ -94,19 +94,19 @@ export default defineComponent({
                             [
                               h(
                                 'span',
-                                expanded.value ? 'Collapse code' : 'Expand code'
+                                expanded.value ? 'Collapse code' : 'Expand code',
                               ),
-                            ]
+                            ],
                           ),
-                        ]
+                        ],
                       ),
                       h(
                         'div',
                         {
                           class: [
-                            ' text-sm', 
+                            ' text-sm',
                             previewSlot ? 'px-4' : 'px-3',
-                            props.expandable ? 'pt-4 pb-16' : 'py-4'
+                            props.expandable ? 'pt-4 pb-16' : 'py-4',
                           ],
                         },
                         // Map slots to content children
@@ -124,25 +124,25 @@ export default defineComponent({
                               isTag(slot, 'code') || isTag(slot, 'pre')
                                 ? slot
                                 : h(
-                                    'div',
-                                    {
-                                      class: {
-                                        'preview-canvas': true,
-                                      },
+                                  'div',
+                                  {
+                                    class: {
+                                      'preview-canvas': true,
                                     },
-                                    [(slot.children as any)?.default?.() || slot.children]
-                                  ),
-                            ]
-                          )
-                        )
+                                  },
+                                  [(slot.children as any)?.default?.() || slot.children],
+                                ),
+                            ],
+                          ),
+                        ),
                       ),
-                    ]
+                    ],
                   ),
-                ]
+                ],
               ),
-            ]
+            ],
           ),
-        ]
+        ],
       )
     }
   },

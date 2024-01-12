@@ -22,7 +22,7 @@ const third = ref('')
       <div v-if="activeValue === 'contrasts'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Default" label-align="center">
-            <div class="w-full max-w-xs flex items-end gap-4">
+            <div class="flex w-full max-w-xs items-end gap-4">
               <BaseSelect
                 v-model="value"
                 contrast="default"
@@ -32,17 +32,29 @@ const third = ref('')
                   wrapper: 'w-full',
                 }"
               >
-                <option value="">Select a hero</option>
-                <option value="Superman">Superman</option>
-                <option value="Batman">Batman</option>
-                <option value="Iron man">Iron man</option>
-                <option value="Magneto">Magneto</option>
-                <option value="Cyclops">Cyclops</option>
+                <option value="">
+                  Select a hero
+                </option>
+                <option value="Superman">
+                  Superman
+                </option>
+                <option value="Batman">
+                  Batman
+                </option>
+                <option value="Iron man">
+                  Iron man
+                </option>
+                <option value="Magneto">
+                  Magneto
+                </option>
+                <option value="Cyclops">
+                  Cyclops
+                </option>
               </BaseSelect>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast" label-align="center">
-            <div class="w-full max-w-xs flex items-end gap-4">
+            <div class="flex w-full max-w-xs items-end gap-4">
               <BaseSelect
                 v-model="value"
                 contrast="default-contrast"
@@ -52,17 +64,29 @@ const third = ref('')
                   wrapper: 'w-full',
                 }"
               >
-                <option value="">Select a hero</option>
-                <option value="Superman">Superman</option>
-                <option value="Batman">Batman</option>
-                <option value="Iron man">Iron man</option>
-                <option value="Magneto">Magneto</option>
-                <option value="Cyclops">Cyclops</option>
+                <option value="">
+                  Select a hero
+                </option>
+                <option value="Superman">
+                  Superman
+                </option>
+                <option value="Batman">
+                  Batman
+                </option>
+                <option value="Iron man">
+                  Iron man
+                </option>
+                <option value="Magneto">
+                  Magneto
+                </option>
+                <option value="Cyclops">
+                  Cyclops
+                </option>
               </BaseSelect>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Muted" label-align="center">
-            <div class="w-full max-w-xs flex items-end gap-4">
+            <div class="flex w-full max-w-xs items-end gap-4">
               <BaseSelect
                 v-model="value"
                 contrast="muted"
@@ -72,17 +96,29 @@ const third = ref('')
                   wrapper: 'w-full',
                 }"
               >
-                <option value="">Select a hero</option>
-                <option value="Superman">Superman</option>
-                <option value="Batman">Batman</option>
-                <option value="Iron man">Iron man</option>
-                <option value="Magneto">Magneto</option>
-                <option value="Cyclops">Cyclops</option>
+                <option value="">
+                  Select a hero
+                </option>
+                <option value="Superman">
+                  Superman
+                </option>
+                <option value="Batman">
+                  Batman
+                </option>
+                <option value="Iron man">
+                  Iron man
+                </option>
+                <option value="Magneto">
+                  Magneto
+                </option>
+                <option value="Cyclops">
+                  Cyclops
+                </option>
               </BaseSelect>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast" label-align="center">
-            <div class="w-full max-w-xs flex items-end gap-4">
+            <div class="flex w-full max-w-xs items-end gap-4">
               <BaseSelect
                 v-model="value"
                 contrast="muted-contrast"
@@ -92,12 +128,24 @@ const third = ref('')
                   wrapper: 'w-full',
                 }"
               >
-                <option value="">Select a hero</option>
-                <option value="Superman">Superman</option>
-                <option value="Batman">Batman</option>
-                <option value="Iron man">Iron man</option>
-                <option value="Magneto">Magneto</option>
-                <option value="Cyclops">Cyclops</option>
+                <option value="">
+                  Select a hero
+                </option>
+                <option value="Superman">
+                  Superman
+                </option>
+                <option value="Batman">
+                  Batman
+                </option>
+                <option value="Iron man">
+                  Iron man
+                </option>
+                <option value="Magneto">
+                  Magneto
+                </option>
+                <option value="Cyclops">
+                  Cyclops
+                </option>
               </BaseSelect>
             </div>
           </PlaygroundSampleRow>
@@ -106,7 +154,7 @@ const third = ref('')
       <div v-if="activeValue === 'sizes'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Normal" label-align="end">
-            <div class="w-full max-w-2xl flex flex-wrap items-end gap-3">
+            <div class="flex w-full max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
                 <BaseSelect
                   v-model="first"
@@ -117,12 +165,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -136,12 +196,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -155,18 +227,30 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Icon" label-align="end">
-            <div class="w-full max-w-2xl flex flex-wrap items-end gap-3">
+            <div class="flex w-full max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
                 <BaseSelect
                   v-model="first"
@@ -178,12 +262,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -198,12 +294,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -218,12 +326,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
             </div>
@@ -233,7 +353,7 @@ const third = ref('')
       <div v-if="activeValue === 'label'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Float" label-align="end">
-            <div class="w-full max-w-2xl flex flex-wrap items-end gap-3 pt-8">
+            <div class="flex w-full max-w-2xl flex-wrap items-end gap-3 pt-8">
               <div class="flex-1">
                 <BaseSelect
                   v-model="first"
@@ -245,12 +365,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -265,12 +397,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -285,12 +429,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
             </div>
@@ -300,7 +456,7 @@ const third = ref('')
       <div v-if="activeValue === 'states'" class="relative pb-4">
         <div class="space-y-4">
           <PlaygroundSampleRow label="Error" label-align="end">
-            <div class="w-full max-w-2xl flex flex-wrap items-end gap-3">
+            <div class="flex w-full max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
                 <BaseSelect
                   v-model="first"
@@ -312,12 +468,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -332,12 +500,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -352,18 +532,30 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Loading" label-align="end">
-            <div class="w-full max-w-2xl flex flex-wrap items-end gap-3">
+            <div class="flex w-full max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
                 <BaseSelect
                   v-model="first"
@@ -375,12 +567,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -395,12 +599,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -415,18 +631,30 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Disabled" label-align="end">
-            <div class="w-full max-w-2xl flex flex-wrap items-end gap-3">
+            <div class="flex w-full max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
                 <BaseSelect
                   v-model="first"
@@ -438,12 +666,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -458,12 +698,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
 
@@ -478,12 +730,24 @@ const third = ref('')
                     wrapper: 'w-full',
                   }"
                 >
-                  <option value="">Select a hero</option>
-                  <option value="Superman">Superman</option>
-                  <option value="Batman">Batman</option>
-                  <option value="Iron man">Iron man</option>
-                  <option value="Magneto">Magneto</option>
-                  <option value="Cyclops">Cyclops</option>
+                  <option value="">
+                    Select a hero
+                  </option>
+                  <option value="Superman">
+                    Superman
+                  </option>
+                  <option value="Batman">
+                    Batman
+                  </option>
+                  <option value="Iron man">
+                    Iron man
+                  </option>
+                  <option value="Magneto">
+                    Magneto
+                  </option>
+                  <option value="Cyclops">
+                    Cyclops
+                  </option>
                 </BaseSelect>
               </div>
             </div>

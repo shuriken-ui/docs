@@ -165,12 +165,17 @@ function switchMuted(color: (typeof mutedPresets)[number]) {
       <!-- Header -->
       <div class="flex w-full items-center justify-between p-4 md:p-6">
         <h3
-          class="font-heading text-muted-900 text-lg font-medium leading-6 dark:text-white"
+          class="font-heading text-lg font-medium leading-6 text-muted-900 dark:text-white"
         >
           Theme configuration
         </h3>
 
-        <BaseButtonClose rounded="full" size="sm" color="default" @click="closeModal" />
+        <BaseButtonClose
+          rounded="full"
+          size="sm"
+          color="default"
+          @click="closeModal"
+        />
       </div>
     </template>
 
@@ -200,10 +205,10 @@ function switchMuted(color: (typeof mutedPresets)[number]) {
               <div v-for="color in primaryPresets" :key="color.name">
                 <button
                   type="button"
-                  class="hover:bg-muted-100 dark:hover:bg-muted-700/70 group flex w-full items-center gap-3 rounded-lg p-2 transition-colors duration-200"
+                  class="group flex w-full items-center gap-3 rounded-lg p-2 transition-colors duration-200 hover:bg-muted-100 dark:hover:bg-muted-700/70"
                   :class="[
                     currentPrimary === color.name
-                      ? 'ring-primary-500 relative z-10 ring-1'
+                      ? 'relative z-10 ring-1 ring-primary-500'
                       : 'ring-0',
                   ]"
                   @click="() => switchPrimary(color)"
@@ -218,14 +223,14 @@ function switchMuted(color: (typeof mutedPresets)[number]) {
                 </button>
               </div>
             </div>
-            <hr class="border-muted-200 dark:border-muted-700 !my-4">
+            <hr class="!my-4 border-muted-200 dark:border-muted-700">
             <div>
               <button
                 type="button"
                 class="group flex w-full items-center gap-3 rounded-lg p-2"
               >
                 <span
-                  class="bg-muted-200 dark:bg-muted-900 block h-6 w-6 rounded-lg"
+                  class="block h-6 w-6 rounded-lg bg-muted-200 dark:bg-muted-900"
                 />
                 <BaseText size="sm">
                   Gray shade
@@ -247,7 +252,7 @@ function switchMuted(color: (typeof mutedPresets)[number]) {
                     :class="[
                       color.class,
                       currentMuted === color.name
-                        ? 'ring-primary-500 ring-1'
+                        ? 'ring-1 ring-primary-500'
                         : 'ring-0',
                     ]"
                     :data-nui-tooltip="color.label"

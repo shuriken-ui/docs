@@ -77,41 +77,55 @@ const scales = [
     size: '8rem',
     letterSpacing: '0',
     lineHeight: '1',
-  }
+  },
 ]
 </script>
 
 <template>
   <div class="py-6">
-    <div class="bg-white dark:bg-muted-950 rounded-md border border-muted-300 dark:border-muted-800 overflow-x-auto">
+    <div class="overflow-x-auto rounded-md border border-muted-300 bg-white dark:border-muted-800 dark:bg-muted-950">
       <table class="w-full">
         <thead>
           <tr>
-            <th class="whitespace-nowrap md:whitespace-normal bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Step</th>
-            <th class="whitespace-nowrap md:whitespace-normal bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Size</th>
-            <th class="whitespace-nowrap md:whitespace-normal bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Letter spacing</th>
-            <th class="whitespace-nowrap md:whitespace-normal bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100">Line height</th>
+            <th class="whitespace-nowrap bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100 md:whitespace-normal">
+              Step
+            </th>
+            <th class="whitespace-nowrap bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100 md:whitespace-normal">
+              Size
+            </th>
+            <th class="whitespace-nowrap bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100 md:whitespace-normal">
+              Letter spacing
+            </th>
+            <th class="whitespace-nowrap bg-muted-50 px-4 py-3 text-start font-sans text-sm font-medium text-muted-800 dark:bg-muted-900/50 dark:text-muted-100 md:whitespace-normal">
+              Line height
+            </th>
           </tr>
         </thead>
         <tbody>
           <!--Row-->
-          <tr v-for="scale in scales" :key="scale.step" class="border-t border-muted-300 dark:border-muted-800 text-sm">
-            <td class="px-4 py-3">
-              <div class="flex items-center gap-1">{{ scale.step }}</div>
-            </td>
+          <tr
+            v-for="scale in scales"
+            :key="scale.step"
+            class="border-t border-muted-300 text-sm dark:border-muted-800"
+          >
             <td class="px-4 py-3">
               <div class="flex items-center gap-1">
-                <code class="px-1 text-muted-600 dark:text-muted-100 rounded bg-muted-100 dark:bg-muted-950">{{ scale.size }}</code>
+                {{ scale.step }}
               </div>
             </td>
             <td class="px-4 py-3">
               <div class="flex items-center gap-1">
-                <code class="px-1 text-muted-600 dark:text-muted-100 rounded bg-muted-100 dark:bg-muted-950">{{ scale.letterSpacing }}</code>
+                <code class="rounded bg-muted-100 px-1 text-muted-600 dark:bg-muted-950 dark:text-muted-100">{{ scale.size }}</code>
               </div>
             </td>
             <td class="px-4 py-3">
               <div class="flex items-center gap-1">
-                <code class="px-1 text-muted-600 dark:text-muted-100 rounded bg-muted-100 dark:bg-muted-950">{{ scale.lineHeight }}</code>
+                <code class="rounded bg-muted-100 px-1 text-muted-600 dark:bg-muted-950 dark:text-muted-100">{{ scale.letterSpacing }}</code>
+              </div>
+            </td>
+            <td class="px-4 py-3">
+              <div class="flex items-center gap-1">
+                <code class="rounded bg-muted-100 px-1 text-muted-600 dark:bg-muted-950 dark:text-muted-100">{{ scale.lineHeight }}</code>
               </div>
             </td>
           </tr>

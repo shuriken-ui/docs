@@ -107,40 +107,117 @@ const people = [
     <template #tab="{ activeValue }">
       <div v-if="activeValue === 'contrasts'" class="relative pb-4">
         <div class="space-y-4">
-          <PlaygroundSampleRow label="Default" label-align="center" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Default"
+            label-align="center"
+            class="relative focus-within:z-[2]"
+          >
             <div class="w-full max-w-xs">
-              <BaseListbox v-model="value" :items="frameworks" contrast="default" label="Framework" size="md" placeholder="Select a framework" :rounded="rounded" fixed />
+              <BaseListbox
+                v-model="value"
+                :items="frameworks"
+                contrast="default"
+                label="Framework"
+                size="md"
+                placeholder="Select a framework"
+                :rounded="rounded"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
-          <PlaygroundSampleRow label="Contrast" label-align="center" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Contrast"
+            label-align="center"
+            class="relative focus-within:z-[2]"
+          >
             <div class="w-full max-w-xs">
-              <BaseListbox v-model="value" :items="frameworks" contrast="default-contrast" label="Framework" size="md" placeholder="Select a framework" :rounded="rounded" fixed />
+              <BaseListbox
+                v-model="value"
+                :items="frameworks"
+                contrast="default-contrast"
+                label="Framework"
+                size="md"
+                placeholder="Select a framework"
+                :rounded="rounded"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
-          <PlaygroundSampleRow label="Muted" label-align="center" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Muted"
+            label-align="center"
+            class="relative focus-within:z-[2]"
+          >
             <div class="w-full max-w-xs">
-              <BaseListbox v-model="value" :items="frameworks" contrast="muted" label="Framework" size="md" placeholder="Select a framework" :rounded="rounded" fixed />
+              <BaseListbox
+                v-model="value"
+                :items="frameworks"
+                contrast="muted"
+                label="Framework"
+                size="md"
+                placeholder="Select a framework"
+                :rounded="rounded"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
-          <PlaygroundSampleRow label="Contrast" label-align="center" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Contrast"
+            label-align="center"
+            class="relative focus-within:z-[2]"
+          >
             <div class="w-full max-w-xs">
-              <BaseListbox v-model="value" :items="frameworks" contrast="muted-contrast" label="Framework" size="md" placeholder="Select a framework" :rounded="rounded" fixed />
+              <BaseListbox
+                v-model="value"
+                :items="frameworks"
+                contrast="muted-contrast"
+                label="Framework"
+                size="md"
+                placeholder="Select a framework"
+                :rounded="rounded"
+                fixed
+              />
             </div>
           </PlaygroundSampleRow>
         </div>
       </div>
       <div v-if="activeValue === 'sizes'" class="relative pb-4">
         <div class="space-y-4">
-          <PlaygroundSampleRow label="Default" label-align="end" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Default"
+            label-align="end"
+            class="relative focus-within:z-[2]"
+          >
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseListbox v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
@@ -148,7 +225,11 @@ const people = [
       </div>
       <div v-if="activeValue === 'media'" class="relative pb-4">
         <div class="space-y-4">
-          <PlaygroundSampleRow label="Sublabel" label-align="center" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Sublabel"
+            label-align="center"
+            class="relative focus-within:z-[2]"
+          >
             <div class="max-w-xs">
               <BaseListbox
                 v-model="peopleValue"
@@ -165,7 +246,11 @@ const people = [
               />
             </div>
           </PlaygroundSampleRow>
-          <PlaygroundSampleRow label="Icon" label-align="center" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Icon"
+            label-align="center"
+            class="relative focus-within:z-[2]"
+          >
             <div class="max-w-xs">
               <BaseListbox
                 v-model="hobbyValue"
@@ -183,7 +268,11 @@ const people = [
               />
             </div>
           </PlaygroundSampleRow>
-          <PlaygroundSampleRow label="Image" label-align="center" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Image"
+            label-align="center"
+            class="relative focus-within:z-[2]"
+          >
             <div class="max-w-xs">
               <BaseListbox
                 v-model="peopleValue"
@@ -205,16 +294,47 @@ const people = [
       </div>
       <div v-if="activeValue === 'label'" class="relative pb-4">
         <div class="space-y-4">
-          <PlaygroundSampleRow label="Image" label-align="end" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Image"
+            label-align="end"
+            class="relative focus-within:z-[2]"
+          >
             <div class="flex max-w-2xl flex-wrap items-end gap-3 pt-5">
               <div class="flex-1">
-                <BaseListbox v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" label-float label="Framework" placeholder="Select a framework" fixed />
+                <BaseListbox
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  label-float
+                  label="Framework"
+                  placeholder="Select a framework"
+                  fixed
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" label-float label="Framework" placeholder="Select a framework" fixed />
+                <BaseListbox
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  label-float
+                  label="Framework"
+                  placeholder="Select a framework"
+                  fixed
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" label-float label="Framework" placeholder="Select a framework" fixed />
+                <BaseListbox
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  label-float
+                  label="Framework"
+                  placeholder="Select a framework"
+                  fixed
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
@@ -222,42 +342,126 @@ const people = [
       </div>
       <div v-if="activeValue === 'states'" class="relative pb-4">
         <div class="space-y-4">
-          <PlaygroundSampleRow label="Error" label-align="end" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Error"
+            label-align="end"
+            class="relative focus-within:z-[2]"
+          >
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseListbox v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" error="Please select a value" label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  error="Please select a value"
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" error="Please select a value" label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  error="Please select a value"
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" error="Please select a value" label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  error="Please select a value"
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
-          <PlaygroundSampleRow label="Loading" label-align="end" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Loading"
+            label-align="end"
+            class="relative focus-within:z-[2]"
+          >
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseListbox v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" loading label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  loading
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" loading label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  loading
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" loading label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  loading
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>
-          <PlaygroundSampleRow label="Disabled" label-align="end" class="relative focus-within:z-[2]">
+          <PlaygroundSampleRow
+            label="Disabled"
+            label-align="end"
+            class="relative focus-within:z-[2]"
+          >
             <div class="flex max-w-2xl flex-wrap items-end gap-3">
               <div class="flex-1">
-                <BaseListbox v-model="fields.first" :items="frameworks" size="sm" :rounded="rounded" disabled label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.first"
+                  :items="frameworks"
+                  size="sm"
+                  :rounded="rounded"
+                  disabled
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.second" :items="frameworks" size="md" :rounded="rounded" disabled label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.second"
+                  :items="frameworks"
+                  size="md"
+                  :rounded="rounded"
+                  disabled
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
               <div class="flex-1">
-                <BaseListbox v-model="fields.third" :items="frameworks" size="lg" :rounded="rounded" disabled label="Framework" placeholder="Select a framework" />
+                <BaseListbox
+                  v-model="fields.third"
+                  :items="frameworks"
+                  size="lg"
+                  :rounded="rounded"
+                  disabled
+                  label="Framework"
+                  placeholder="Select a framework"
+                />
               </div>
             </div>
           </PlaygroundSampleRow>

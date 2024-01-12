@@ -20,7 +20,7 @@ const activeTab = computed(() => props.tabs[activeTabIndex.value])
 </script>
 
 <template>
-  <div class="flex gap-2 bg-white border-b border-muted-300 dark:border-muted-800" :class="hasPreview ? 'dark:bg-muted-950' : 'dark:bg-muted-800'">
+  <div class="flex gap-2 border-b border-muted-300 bg-white dark:border-muted-800" :class="hasPreview ? 'dark:bg-muted-950' : 'dark:bg-muted-800'">
     <button
       v-for="(tab, index) in props.tabs"
       :key="index"
@@ -35,22 +35,41 @@ const activeTab = computed(() => props.tabs[activeTabIndex.value])
       @click="() => (activeTabIndex = index)"
       @keydown.enter.prevent="() => (activeTabIndex = index)"
     >
-      <span v-if="tab.filename" class="block m-1 py-1 px-3 rounded-md" :class="[tabs.length > 1 ? 'group-hover/button:bg-muted-100 dark:group-hover/button:bg-muted-900' : '']">
+      <span
+        v-if="tab.filename"
+        class="m-1 block rounded-md px-3 py-1"
+        :class="[tabs.length > 1 ? 'group-hover/button:bg-muted-100 dark:group-hover/button:bg-muted-900' : '']"
+      >
         {{ tab.filename?.replaceAll('⦋', '[')?.replaceAll('⦌', ']') }}
       </span>
     </button>
 
     <div
       v-if="isSupported"
-      class="absolute mt-12 z-[2] opacity-0 group-hover/code:opacity-100 pointer-events-none group-hover/code:pointer-events-auto transition-opacity duration-300"
+      class="pointer-events-none absolute z-[2] mt-12 opacity-0 transition-opacity duration-300 group-hover/code:pointer-events-auto group-hover/code:opacity-100"
       :class="hasPreview ? 'end-4' : 'end-2'"
     >
-      <BaseButtonIcon size="sm" rounded="md" :data-nui-tooltip="copied ? 'Copied!' : 'Copy'" data-nui-tooltip-position="start" :aria-label="copied ? 'Copied!' : 'Copy'" @click="() => copy()">
-        <Icon v-if="!copied" name="lucide:copy" class="w-4 h-4" />
-        <Icon v-else name="lucide:check" class="w-4 h-4 text-success-500" />
+      <BaseButtonIcon
+        size="sm"
+        rounded="md"
+        :data-nui-tooltip="copied ? 'Copied!' : 'Copy'"
+        data-nui-tooltip-position="start"
+        :aria-label="copied ? 'Copied!' : 'Copy'"
+        @click="() => copy()"
+      >
+        <Icon
+          v-if="!copied"
+          name="lucide:copy"
+          class="h-4 w-4"
+        />
+        <Icon
+          v-else
+          name="lucide:check"
+          class="h-4 w-4 text-success-500"
+        />
       </BaseButtonIcon>
     </div>
-    <div class="absolute mt-1.5 z-[2]" :class="hasPreview ? 'end-5' : 'end-3'">
+    <div class="absolute z-[2] mt-1.5" :class="hasPreview ? 'end-5' : 'end-3'">
       <span v-if="activeTab.language" class="text-xs font-medium text-muted-500">
         {{ activeTab.language }}
       </span>

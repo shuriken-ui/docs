@@ -1,5 +1,9 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169.82 169.82">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 169.82 169.82"
+  >
     <defs>
       <clipPath id="clippath-sm">
         <path
@@ -9,6 +13,12 @@
         />
       </clipPath>
     </defs>
-    <g clip-path="url(#clippath-sm)" class="fill-current"><rect x="6.83" y="-1.59" width="156.17" height="173.01" stroke-width="0" /></g>
+    <g clip-path="url(#clippath-sm)" class="fill-current"><rect
+      x="6.83"
+      y="-1.59"
+      width="156.17"
+      height="173.01"
+      stroke-width="0"
+    /></g>
   </svg>
 </template>

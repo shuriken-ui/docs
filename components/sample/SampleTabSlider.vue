@@ -17,7 +17,7 @@ const { rounded } = usePlayground()
           <PlaygroundSampleRow label="Normal" label-align="start">
             <div class="w-full max-w-sm">
               <BaseTabSlider
-                v-slot="{ activeValue }"
+                v-slot="{ activeValue: activeChildValue }"
                 model-value="team"
                 :rounded="rounded"
                 :tabs="[
@@ -25,11 +25,11 @@ const { rounded } = usePlayground()
                   { label: 'Projects', value: 'projects' },
                 ]"
               >
-                <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                 </p>
 
-                <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra
                   Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                 </p>
@@ -39,7 +39,7 @@ const { rounded } = usePlayground()
           <PlaygroundSampleRow label="Small" label-align="start">
             <div class="w-full max-w-sm">
               <BaseTabSlider
-                v-slot="{ activeValue }"
+                v-slot="{ activeValue: activeChildValue }"
                 model-value="team"
                 :rounded="rounded"
                 size="sm"
@@ -48,11 +48,11 @@ const { rounded } = usePlayground()
                   { label: 'Projects', value: 'projects' },
                 ]"
               >
-                <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                 </p>
 
-                <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra
                   Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                 </p>
@@ -66,7 +66,7 @@ const { rounded } = usePlayground()
           <PlaygroundSampleRow label="Normal" label-align="start">
             <div class="w-full max-w-sm">
               <BaseTabSlider
-                v-slot="{ activeValue }"
+                v-slot="{ activeValue: activeChildValue }"
                 model-value="team"
                 :rounded="rounded"
                 :tabs="[
@@ -75,14 +75,14 @@ const { rounded } = usePlayground()
                   { label: 'Tasks', value: 'tasks' },
                 ]"
               >
-                <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                 </p>
-                <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra
                   Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                 </p>
-                <p v-if="activeValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-if="activeChildValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                 </p>
               </BaseTabSlider>
@@ -91,7 +91,7 @@ const { rounded } = usePlayground()
           <PlaygroundSampleRow label="Small" label-align="start">
             <div class="w-full max-w-sm">
               <BaseTabSlider
-                v-slot="{ activeValue }"
+                v-slot="{ activeValue: activeChildValue }"
                 model-value="team"
                 :rounded="rounded"
                 size="sm"
@@ -101,14 +101,14 @@ const { rounded } = usePlayground()
                   { label: 'Tasks', value: 'tasks' },
                 ]"
               >
-                <p v-if="activeValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-if="activeChildValue === 'team'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                 </p>
-                <p v-else-if="activeValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-else-if="activeChildValue === 'projects'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra
                   Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.
                 </p>
-                <p v-if="activeValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
+                <p v-if="activeChildValue === 'tasks'" class="font-sans text-sm text-muted-500 dark:text-muted-400">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times.
                 </p>
               </BaseTabSlider>

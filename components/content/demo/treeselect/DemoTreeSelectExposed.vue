@@ -8,7 +8,7 @@
         treeline
       />
 
-      <div class="flex gap-2 mt-6">
+      <div class="mt-6 flex gap-2">
         <BaseButton size="sm" @click="toggleAll">
           toggle selection
         </BaseButton>
