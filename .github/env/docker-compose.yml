@@ -13,14 +13,16 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: 'cssninja-services'
-      traefik.http.routers.nui-docs.entrypoints: 'http'
+      #gzip
+      traefik.http.middlewares.nui-docs-middleware.compress: true
+      #routers
+      traefik.http.routers.nui-docs.entrypoints: http
+      traefik.http.routers.nui-docs.middlewares: https-redirect@docker
       traefik.http.routers.nui-docs.rule: 'Host(`shurikenui.com`)'
-      traefik.http.routers.nui-docs.middlewares: 'https-redirect@file'
-      traefik.http.services.nui-docs-https.loadbalancer.server.port: 3000
       traefik.http.routers.nui-docs-https.rule: 'Host(`shurikenui.com`)'
       traefik.http.routers.nui-docs-https.tls: true
-      traefik.http.routers.nui-docs-https.entrypoints: 'https'
-      traefik.http.routers.nui-docs-https.tls.certresolver: 'http'
-      traefik.http.routers.nui-docs-https.middlewares: tairo-middleware@docker
-      #gzip
-      traefik.http.middlewares.tairo-middleware.compress: true
+      traefik.http.routers.nui-docs-https.entrypoints: https
+      traefik.http.routers.nui-docs-https.tls.certresolver: http
+      traefik.http.routers.nui-docs-https.middlewares: nui-docs-middleware@docker
+      traefik.http.services.nui-docs-https.loadbalancer.server.port: 3000
+
