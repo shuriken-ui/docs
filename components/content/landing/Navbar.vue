@@ -94,7 +94,7 @@ const { x, y } = useWindowScroll()
           <BaseButtonIcon to="https://github.com/shuriken-ui" target="_blank" rel="noopener" size="sm" rounded="lg" class="hidden lg:flex">
             <Icon name="fa6-brands:github" class="w-4 h-4" />
           </BaseButtonIcon>
-          <div class="scale-90 hidden lg:flex">
+          <div class="relative -top-0.5 scale-90 hidden lg:flex">
             <BaseThemeToggle />
           </div>
         </div>
