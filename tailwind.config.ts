@@ -92,7 +92,7 @@ export default withShurikenUI({
        *
        * @see https://github.com/shuriken-ui/tailwind
        */
-      shurikenUi: {
+      nui: {
         // ...
       },
     },

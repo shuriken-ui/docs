@@ -38,7 +38,7 @@ The `defaultShapes` object of the `app.config.ts` file has been removed. It is r
 
 ::code-group
 
-```js [app.config.ts]
+```ts [app.config.ts]
 export default defineAppConfig({
   nui: {
     //...
@@ -60,7 +60,7 @@ The `<BaseButtonClose />` component now has a `size` prop accepting `xs`, `sm`, 
 
 ::code-group
 
-```js [BaseButtonClose sizes]
+```vue [BaseButtonClose sizes]
 <template>
   <BaseButtonClose size="xs" rounded="md" color="muted" />
   <BaseButtonClose size="sm" rounded="md" color="muted" />
@@ -79,7 +79,7 @@ The `<BaseSnack />` component now has a new `xs` size.
 
 ::code-group
 
-```js [BaseSnack sizes]
+```vue [BaseSnack sizes]
 <template>
   <BaseSnack label="React" color="default" size="xs" />
   <BaseSnack label="Angular" color="default" size="sm" />
@@ -97,7 +97,7 @@ We've added a new `<BaseKbd />` component for keyboard keys and shortcuts.
 
 ::code-group
 
-```js [BaseKbd component]
+```vue [BaseKbd component]
 <template>
   <BaseKbd color="default" size="sm" rounded="md">Ctrl</BaseKbd>
   <Icon name="lucide:plus" class="w-3 h-3" />
