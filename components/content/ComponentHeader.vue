@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { joinURL, withQuery } from 'ufo'
+
 const props = withDefaults(defineProps<{
   category: string
   fileName: string
@@ -10,24 +12,20 @@ const props = withDefaults(defineProps<{
   storybook: undefined,
 })
 
-const part = computed(() => {
-  if (props.framework === 'nuxt') {
-    return 'https://github.com/shuriken-ui/nuxt/tree/main/components'
-  }
-  else if (props.framework === 'react') {
-    return 'https://github.com/shuriken-ui/react/tree/main/ui/src/components'
-  }
-  else if (props.framework === 'tailwind') {
-    return 'https://github.com/shuriken-ui/tailwind/tree/main/src/plugins'
-  }
-  else {
-    return 'https://github.com/shuriken-ui/nuxt/tree/main/components'
-  }
+const appConfig = useAppConfig()
+const githubUrl = computed(() => {
+  return joinURL('https://github.com', appConfig.github.org, props.framework)
 })
 
-const sourceUrl = computed(() => `${part.value}/${props.category}/${props.fileName}`)
-const issueUrl = computed(() => `https://github.com/shuriken-ui/${props.framework}/issues`)
-const storybookUrl = computed(() => `https://main--656a098589ac31a8b917519a.chromatic.com/?path=/docs/${props.storybook ? 'shuriken-ui-base-avatar' : ''}--docs/`)
+const issueUrl = computed(() => {
+  return joinURL(githubUrl.value, 'issues')
+})
+const sourceUrl = computed(() => {
+  return joinURL(githubUrl.value, 'tree', appConfig.github.branch, props.category, props.fileName)
+})
+const storybookUrl = computed(() => withQuery(appConfig.storybookUrl, {
+  path: `/docs/${props.storybook}--docs/`,
+}))
 </script>
 
 <template>

@@ -39,7 +39,7 @@ const { data } = await useAsyncData('changelog', () =>
       <div class="mx-auto w-full max-w-7xl">
         <!--pre>{{ data }}</pre-->
         <slot />
-        <ThemeSwitcher />
+        <!-- <ThemeSwitcher /> -->
       </div>
     </div>
     <SiteFooter />

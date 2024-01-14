@@ -290,7 +290,7 @@
                   weight="semibold"
                   class="mt-8 text-muted-900 dark:text-white lg:mt-12"
                 >
-                  Licensing
+                  MIT License
                 </BaseHeading>
                 <BaseParagraph
                   size="md"

@@ -1,8 +1,10 @@
 <script setup lang="ts">
-const { prev, next } = useContent()
-const editUrl = computed(() => {
-  return `${process.env.SHURIKEN_UI_DOCS_GITHUB_URL}`
-})
+import { joinURL } from 'ufo'
+
+const appConfig = useAppConfig()
+const { prev, next, page } = useContent()
+
+const editUrl = computed(() => joinURL('https://github.com', appConfig.github.org, appConfig.github.repo, 'edit', appConfig.github.branch, page.value._source, page.value._file))
 </script>
 
 <template>

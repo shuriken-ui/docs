@@ -2,7 +2,6 @@
   <div class="flex flex-col justify-end gap-4">
     <div class="flex flex-wrap items-end gap-x-3 gap-y-2">
       <BaseTag
-        color="none"
         rounded="lg"
         class="bg-muted-900 text-white dark:bg-muted-950"
       >

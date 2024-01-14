@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const appConfig = useAppConfig()
 const route = useRoute()
 
 const pathFilter = computed(() => {
@@ -14,7 +15,6 @@ const links = computed(() => {
 })
 
 const { x, y } = useWindowScroll()
-console.log(navigation.value)
 
 // Fetch tabs
 const { data } = await useAsyncData('home', () =>
@@ -69,7 +69,7 @@ const onOverlayClick = () => {
               </BaseHeading>
             </div>
             <ul class="space-y-1">
-              <li v-for="child in item.children" :key="child._path">
+              <li v-for="child in item?.children" :key="child._path">
                 <NuxtLink
                   :to="child._path"
                   exact-active-class="!font-medium !bg-muted-200 dark:!bg-muted-900 !text-muted-800 dark:!text-muted-100"
@@ -212,7 +212,7 @@ const onOverlayClick = () => {
           <Icon name="fa6-brands:github" class="h-5 w-5" />
         </NuxtLink>
         <NuxtLink
-          to="https://twitter.com/cssninjaStudio"
+          :to="`https://twitter.com/${appConfig.twitter}`"
           target="_blank"
           rel="noopener"
           class="flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-300 hover:bg-muted-100 dark:hover:bg-muted-800"

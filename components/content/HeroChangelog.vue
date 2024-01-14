@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const appConfig = useAppConfig()
+const { data } = await useFetch('/api/versions')
+</script>
+
 <template>
   <div class="relative min-h-screen overflow-hidden bg-white dark:bg-muted-900">
     <svg class="h-0">
@@ -62,7 +67,7 @@
             <Icon name="fa6-brands:github" class="h-5 w-5" />
           </NuxtLink>
           <NuxtLink
-            to="https://twitter.com/cssninjaStudio"
+            :to="`https://twitter.com/${appConfig.twitter}`"
             target="_blank"
             rel="noopener"
             class="flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-300 hover:bg-muted-100 dark:hover:bg-muted-800"
@@ -107,7 +112,12 @@
         </div>
         <div class="h-full">
           <div class="flex flex-col gap-4">
-            <NuxtLink to="/changelog/nuxt" class="group/link mx-auto block w-full max-w-sm">
+            <NuxtLink
+              v-for="project in data"
+              :key="project.packageName"
+              :to="`/changelog/${project.name}`"
+              class="group/link mx-auto block w-full max-w-sm"
+            >
               <BaseCard
                 color="white-contrast"
                 rounded="lg"
@@ -115,7 +125,7 @@
                 class="p-6 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100"
               >
                 <div class="flex items-center gap-5">
-                  <Icon name="logos:nuxt-icon" class="h-8 w-8" />
+                  <Icon :name="project.icon" class="h-8 w-8" />
                   <div>
                     <BaseHeading
                       as="h3"
@@ -124,10 +134,10 @@
                       lead="tight"
                       class="text-muted-800 dark:text-muted-100"
                     >
-                      Nuxt
+                      {{ project.name }}
                     </BaseHeading>
                     <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-400">
-                      @shuriken-ui/nuxt
+                      {{ project.packageName }}
                     </BaseParagraph>
                   </div>
                   <div class="ms-auto">
@@ -136,77 +146,7 @@
                       rounded="full"
                       color="muted"
                     >
-                      v2.0.0
-                    </BaseTag>
-                  </div>
-                </div>
-              </BaseCard>
-            </NuxtLink>
-            <NuxtLink to="/changelog/react" class="group/link mx-auto block w-full max-w-sm">
-              <BaseCard
-                color="white-contrast"
-                rounded="lg"
-                shadow="hover"
-                class="p-6 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100"
-              >
-                <div class="flex items-center gap-5">
-                  <Icon name="logos:react" class="h-8 w-8" />
-                  <div>
-                    <BaseHeading
-                      as="h3"
-                      size="md"
-                      weight="semibold"
-                      lead="tight"
-                      class="text-muted-800 dark:text-muted-100"
-                    >
-                      React
-                    </BaseHeading>
-                    <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-400">
-                      @shuriken-ui/react
-                    </BaseParagraph>
-                  </div>
-                  <div class="ms-auto">
-                    <BaseTag
-                      size="sm"
-                      rounded="full"
-                      color="muted"
-                    >
-                      v0.0.0-alpha.0
-                    </BaseTag>
-                  </div>
-                </div>
-              </BaseCard>
-            </NuxtLink>
-            <NuxtLink to="/changelog/tailwind" class="group/link mx-auto block w-full max-w-sm">
-              <BaseCard
-                color="white-contrast"
-                rounded="lg"
-                shadow="hover"
-                class="p-6 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100"
-              >
-                <div class="flex items-center gap-5">
-                  <Icon name="logos:tailwindcss-icon" class="h-8 w-8" />
-                  <div>
-                    <BaseHeading
-                      as="h3"
-                      size="md"
-                      weight="semibold"
-                      lead="tight"
-                      class="text-muted-800 dark:text-muted-100"
-                    >
-                      Tailwind
-                    </BaseHeading>
-                    <BaseParagraph size="sm" class="text-muted-500 dark:text-muted-400">
-                      @shuriken-ui/tailwind
-                    </BaseParagraph>
-                  </div>
-                  <div class="ms-auto">
-                    <BaseTag
-                      size="sm"
-                      rounded="full"
-                      color="muted"
-                    >
-                      v2.0.0
+                      {{ project.version }}
                     </BaseTag>
                   </div>
                 </div>

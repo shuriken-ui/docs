@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import packagejson from '~/package.json'
+
+const { data } = await useFetch('/api/versions')
+
 const mobileOpen = ref(false)
 const { x, y } = useWindowScroll()
 </script>
@@ -79,36 +82,16 @@ const { x, y } = useWindowScroll()
               </div>
             </template>
             <BaseDropdownItem
-              to="#"
-              title="@shuriken-ui/nuxt"
-              :text="packagejson.devDependencies['@shuriken-ui/nuxt'].replace('^', '')"
+              v-for="project in data"
+              :key="project.packageName"
+              :to="project.repo"
+              :title="project.packageName"
+              :text="project.version"
               color="default"
               rounded="sm"
             >
               <template #start>
-                <Icon name="logos:nuxt-icon" class="h-5 w-5" />
-              </template>
-            </BaseDropdownItem>
-            <BaseDropdownItem
-              to="#"
-              title="@shuriken-ui/react"
-              text="0.0.0-alpha.1"
-              color="default"
-              rounded="sm"
-            >
-              <template #start>
-                <Icon name="logos:react" class="h-5 w-5" />
-              </template>
-            </BaseDropdownItem>
-            <BaseDropdownItem
-              to="#"
-              title="@shuriken-ui/tailwind"
-              text="2.0.0-next.12"
-              color="default"
-              rounded="sm"
-            >
-              <template #start>
-                <Icon name="logos:tailwindcss-icon" class="h-5 w-5" />
+                <Icon :name="project.icon" class="h-5 w-5" />
               </template>
             </BaseDropdownItem>
           </BaseDropdown>

@@ -26,7 +26,6 @@
 
       <div class="flex items-center space-x-2">
         <BaseTag
-          color="none"
           rounded="full"
           class="bg-muted-900 text-white dark:bg-muted-950"
         >

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const appConfig = useAppConfig()
+</script>
+
 <template>
   <div class="relative min-h-screen overflow-hidden bg-white dark:bg-muted-900">
     <svg class="h-0">
@@ -62,7 +66,7 @@
             <Icon name="fa6-brands:github" class="h-5 w-5" />
           </NuxtLink>
           <NuxtLink
-            to="https://twitter.com/cssninjaStudio"
+            :to="`https://twitter.com/${appConfig.twitter}`"
             target="_blank"
             rel="noopener"
             class="flex h-8 w-8 items-center justify-center rounded-full transition-colors duration-300 hover:bg-muted-100 dark:hover:bg-muted-800"

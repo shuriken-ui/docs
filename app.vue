@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const appConfig = useAppConfig()
+
 useHead({
   titleTemplate: '%s | Shuriken UI',
   htmlAttrs: {
@@ -16,7 +18,7 @@ useSeoMeta({
   ogSiteName: 'Shuriken UI',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterSite: 'shurikenui',
+  twitterSite: appConfig.twitter,
 })
 </script>
 
@@ -25,5 +27,6 @@ useSeoMeta({
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+    <ThemeSwitcher />
   </div>
 </template>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const date = new Date().getFullYear()
+const appConfig = useAppConfig()
 </script>
 
 <template>
@@ -95,7 +96,7 @@ const date = new Date().getFullYear()
                   rel="noopener"
                   class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400"
                 >
-                  Licensing
+                  MIT License
                 </NuxtLink>
               </li>
             </ul>
@@ -221,7 +222,7 @@ const date = new Date().getFullYear()
               </li-->
               <li>
                 <NuxtLink
-                  to="https://656a098589ac31a8b917519a-ejjinpgpck.chromatic.com/?path=/docs/shuriken-ui-base-accordion--docs"
+                  :to="`${appConfig.storybookUrl}?path=/docs/shuriken-ui-base-accordion--docs`"
                   target="_blank"
                   rel="noopener"
                   class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400"
