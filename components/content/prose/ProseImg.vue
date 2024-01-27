@@ -7,7 +7,7 @@
       :alt="alt"
       :width="width"
       :height="height"
-      class="rounded-xl border border-muted-300 shadow-xl shadow-muted-300/30 dark:border-muted-800 dark:shadow-muted-800/20"
+      class="w-full rounded-xl border border-muted-300 shadow-xl shadow-muted-300/30 dark:border-muted-800 dark:shadow-muted-800/20"
     />
   </div>
 </template>

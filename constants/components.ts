@@ -16,7 +16,7 @@ export const components: Component[] = [
     name: 'avatar',
     description: 'A profile picture, a company logo or abstracted initials as fallback.',
     category: 'display',
-    url: '/avatar',
+    url: '/components/avatar',
     image: {
       light: '/img/illustrations/components/icon-avatar.svg',
       dark: '/img/illustrations/components/icon-avatar-dark.svg',
@@ -28,7 +28,7 @@ export const components: Component[] = [
     name: 'avatar group',
     description: 'A group of users or of company logos stacked together, featuring a limit counter.',
     category: 'display',
-    url: '/avatar-group',
+    url: '/components/avatar-group',
     image: {
       light: '/img/illustrations/components/icon-avatar-group.svg',
       dark: '/img/illustrations/components/icon-avatar-group-dark.svg',
@@ -40,7 +40,7 @@ export const components: Component[] = [
     name: 'accordion',
     description: 'A simple accordion component to display collapsible content.',
     category: 'display',
-    url: '/accordion',
+    url: '/components/accordion',
     image: {
       light: '/img/illustrations/components/icon-accordion.svg',
       dark: '/img/illustrations/components/icon-accordion-dark.svg',
@@ -52,7 +52,7 @@ export const components: Component[] = [
     name: 'card',
     description: 'A versatile and customizable container that can hold any type of content.',
     category: 'display',
-    url: '/card',
+    url: '/components/card',
     image: {
       light: '/img/illustrations/components/icon-card.svg',
       dark: '/img/illustrations/components/icon-card-dark.svg',
@@ -64,7 +64,7 @@ export const components: Component[] = [
     name: 'icon box',
     description: 'A flexible icon container that can be used to display any svg icon or image.',
     category: 'display',
-    url: '/iconbox',
+    url: '/components/iconbox',
     image: {
       light: '/img/illustrations/components/icon-icon-box.svg',
       dark: '/img/illustrations/components/icon-icon-box-dark.svg',
@@ -76,7 +76,7 @@ export const components: Component[] = [
     name: 'list',
     description: 'A list shortcut component to display simple Html lists or more complex setups.',
     category: 'display',
-    url: '/list',
+    url: '/components/list',
     image: {
       light: '/img/illustrations/components/icon-list.svg',
       dark: '/img/illustrations/components/icon-list-dark.svg',
@@ -88,7 +88,7 @@ export const components: Component[] = [
     name: 'message',
     description: 'A useful component to display important or informative messages to the user.',
     category: 'display',
-    url: '/message',
+    url: '/components/message',
     image: {
       light: '/img/illustrations/components/icon-message.svg',
       dark: '/img/illustrations/components/icon-message-dark.svg',
@@ -100,7 +100,7 @@ export const components: Component[] = [
     name: 'placeholder',
     description: 'A placeholder component that can be used for empty states or empty search results.',
     category: 'display',
-    url: '/placeholder',
+    url: '/components/placeholder',
     image: {
       light: '/img/illustrations/components/icon-placeholder.svg',
       dark: '/img/illustrations/components/icon-placeholder-dark.svg',
@@ -112,7 +112,7 @@ export const components: Component[] = [
     name: 'placeload',
     description: 'A flexible loading indicator that can mimic real components while they load.',
     category: 'display',
-    url: '/placeload',
+    url: '/components/placeload',
     image: {
       light: '/img/illustrations/components/icon-placeload.svg',
       dark: '/img/illustrations/components/icon-placeload-dark.svg',
@@ -124,7 +124,7 @@ export const components: Component[] = [
     name: 'tag',
     description: 'A badge-like component to display smaller pieces of info, like topic or categories.',
     category: 'display',
-    url: '/tag',
+    url: '/components/tag',
     image: {
       light: '/img/illustrations/components/icon-tag.svg',
       dark: '/img/illustrations/components/icon-tag-dark.svg',
@@ -136,7 +136,7 @@ export const components: Component[] = [
     name: 'breadcrumb',
     description: 'A list of navigation link to help users know where they are in the app.',
     category: 'interaction',
-    url: '/interaction/breadcrumb',
+    url: '/components/breadcrumb',
     image: {
       light: '/img/illustrations/components/icon-breadcrumb.svg',
       dark: '/img/illustrations/components/icon-breadcrumb-dark.svg',
@@ -148,7 +148,7 @@ export const components: Component[] = [
     name: 'button',
     description: 'A classic button interaction that can be used as a button or as a link.',
     category: 'interaction',
-    url: '/interaction/button',
+    url: '/components/button',
     image: {
       light: '/img/illustrations/components/icon-button.svg',
       dark: '/img/illustrations/components/icon-button-dark.svg',
@@ -160,7 +160,7 @@ export const components: Component[] = [
     name: 'button action',
     description: 'A smaller button interaction that can be used for minor actions.',
     category: 'interaction',
-    url: '/interaction/button-action',
+    url: '/components/button-action',
     image: {
       light: '/img/illustrations/components/icon-button-action.svg',
       dark: '/img/illustrations/components/icon-button-action-dark.svg',
@@ -172,7 +172,7 @@ export const components: Component[] = [
     name: 'button close',
     description: 'A closing interaction that can be used in dialogs or messages.',
     category: 'interaction',
-    url: '/interaction/button-close',
+    url: '/components/button-close',
     image: {
       light: '/img/illustrations/components/icon-button-close.svg',
       dark: '/img/illustrations/components/icon-button-close-dark.svg',
@@ -184,7 +184,7 @@ export const components: Component[] = [
     name: 'button icon',
     description: 'A specialized button made to hold icons and potentially small images.',
     category: 'interaction',
-    url: '/interaction/button-icon',
+    url: '/components/button-icon',
     image: {
       light: '/img/illustrations/components/icon-button-icon.svg',
       dark: '/img/illustrations/components/icon-button-icon-dark.svg',
@@ -196,7 +196,7 @@ export const components: Component[] = [
     name: 'button group',
     description: 'A flexible container made to group buttons and form controls together.',
     category: 'interaction',
-    url: '/interaction/button-group',
+    url: '/components/button-group',
     image: {
       light: '/img/illustrations/components/icon-button-group.svg',
       dark: '/img/illustrations/components/icon-button-group-dark.svg',
@@ -208,7 +208,7 @@ export const components: Component[] = [
     name: 'dropdown',
     description: 'A dropdown menu that can be used as a any type of menu or filter.',
     category: 'interaction',
-    url: '/interaction/dropdown',
+    url: '/components/dropdown',
     image: {
       light: '/img/illustrations/components/icon-dropdown.svg',
       dark: '/img/illustrations/components/icon-dropdown-dark.svg',
@@ -220,7 +220,7 @@ export const components: Component[] = [
     name: 'focus loop',
     description: 'An abstract component that acts as a focus wrapper for nested elements.',
     category: 'interaction',
-    url: '/interaction/focus-loop',
+    url: '/components/focus-loop',
     image: {
       light: '/img/illustrations/components/icon-focus-loop.svg',
       dark: '/img/illustrations/components/icon-focus-loop-dark.svg',
@@ -231,7 +231,7 @@ export const components: Component[] = [
     name: 'pagination',
     description: 'A navigation component that allows to paginate long data lists.',
     category: 'interaction',
-    url: '/interaction/pagination',
+    url: '/components/pagination',
     image: {
       light: '/img/illustrations/components/icon-pagination.svg',
       dark: '/img/illustrations/components/icon-pagination-dark.svg',
@@ -243,7 +243,7 @@ export const components: Component[] = [
     name: 'progress',
     description: 'A progress bar component to be used as a progression indicator.',
     category: 'interaction',
-    url: '/interaction/progress',
+    url: '/components/progress',
     image: {
       light: '/img/illustrations/components/icon-progress.svg',
       dark: '/img/illustrations/components/icon-progress-dark-2.svg',
@@ -255,7 +255,7 @@ export const components: Component[] = [
     name: 'progress circle',
     description: 'A circle progress component to be used as a progression indicator.',
     category: 'interaction',
-    url: '/interaction/progress-circle',
+    url: '/components/progress-circle',
     image: {
       light: '/img/illustrations/components/icon-progress-circle.svg',
       dark: '/img/illustrations/components/icon-progress-circle-dark.svg',
@@ -267,7 +267,7 @@ export const components: Component[] = [
     name: 'snack',
     description: 'A closable pill that works great with multiple selection components.',
     category: 'interaction',
-    url: '/interaction/snack',
+    url: '/components/snack',
     image: {
       light: '/img/illustrations/components/icon-snack.svg',
       dark: '/img/illustrations/components/icon-snack-dark.svg',
@@ -279,7 +279,7 @@ export const components: Component[] = [
     name: 'tab slider',
     description: 'A tabbed navigation component with a nice sliding effect.',
     category: 'interaction',
-    url: '/interaction/tab-slider',
+    url: '/components/tab-slider',
     image: {
       light: '/img/illustrations/components/icon-tab-slider.svg',
       dark: '/img/illustrations/components/icon-tab-slider-dark.svg',
@@ -291,7 +291,7 @@ export const components: Component[] = [
     name: 'tabs',
     description: 'A flexible tabbed navigation component with different style options.',
     category: 'interaction',
-    url: '/interaction/tabs',
+    url: '/components/tabs',
     image: {
       light: '/img/illustrations/components/icon-tabs.svg',
       dark: '/img/illustrations/components/icon-tabs-dark.svg',
@@ -303,7 +303,7 @@ export const components: Component[] = [
     name: 'theme toggle',
     description: 'A special switch that allows you to change the light/dark theme.',
     category: 'interaction',
-    url: '/interaction/theme-toggle',
+    url: '/components/theme-toggle',
     image: {
       light: '/img/illustrations/components/icon-theme-toggle.svg',
       dark: '/img/illustrations/components/icon-theme-toggle-dark.svg',
@@ -315,7 +315,7 @@ export const components: Component[] = [
     name: 'autocomplete',
     description: 'A search input component that displays suggestions while typing.',
     category: 'form',
-    url: '/autocomplete',
+    url: '/components/autocomplete',
     image: {
       light: '/img/illustrations/components/icon-autocomplete.svg',
       dark: '/img/illustrations/components/icon-autocomplete-dark-2.svg',
@@ -327,7 +327,7 @@ export const components: Component[] = [
     name: 'checkbox',
     description: 'A simple checkbox component that can be used in different setups.',
     category: 'form',
-    url: '/checkbox',
+    url: '/components/checkbox',
     image: {
       light: '/img/illustrations/components/icon-checkbox.svg',
       dark: '/img/illustrations/components/icon-checkbox-dark.svg',
@@ -339,7 +339,7 @@ export const components: Component[] = [
     name: 'checkbox headless',
     description: 'A headless checkbox component that lets you build custom styles.',
     category: 'form',
-    url: '/checkbox-headless',
+    url: '/components/checkbox-headless',
     image: {
       light: '/img/illustrations/components/icon-checkbox-headless.svg',
       dark: '/img/illustrations/components/icon-checkbox-headless-dark.svg',
@@ -350,7 +350,7 @@ export const components: Component[] = [
     name: 'checkbox animated',
     description: 'An animated checkbox component for smart and fancy interfaces.',
     category: 'form',
-    url: '/checkbox-animated',
+    url: '/components/checkbox-animated',
     image: {
       light: '/img/illustrations/components/icon-checkbox-animated.svg',
       dark: '/img/illustrations/components/icon-checkbox-animated-dark.svg',
@@ -361,7 +361,7 @@ export const components: Component[] = [
     name: 'input',
     description: 'An versatile input component that can be used in any type form.',
     category: 'form',
-    url: '/input',
+    url: '/components/input',
     image: {
       light: '/img/illustrations/components/icon-input.svg',
       dark: '/img/illustrations/components/icon-input-dark.svg',
@@ -373,7 +373,7 @@ export const components: Component[] = [
     name: 'input file',
     description: 'A classic input file upload component for regular forms.',
     category: 'form',
-    url: '/input-file',
+    url: '/components/input-file',
     image: {
       light: '/img/illustrations/components/icon-input-file.svg',
       dark: '/img/illustrations/components/icon-input-file-dark.svg',
@@ -385,7 +385,7 @@ export const components: Component[] = [
     name: 'input file headless',
     description: 'A headless file upload input that allows custom designs.',
     category: 'form',
-    url: '/input-file-headless',
+    url: '/components/input-file-headless',
     image: {
       light: '/img/illustrations/components/icon-upload.svg',
       dark: '/img/illustrations/components/icon-upload-dark.svg',
@@ -396,7 +396,7 @@ export const components: Component[] = [
     name: 'input dropfile',
     description: 'An abstract component that detects file drops all over the screen.',
     category: 'form',
-    url: '/input-dropfile',
+    url: '/components/input-dropfile',
     image: {
       light: '/img/illustrations/components/icon-upload.svg',
       dark: '/img/illustrations/components/icon-upload-dark.svg',
@@ -407,7 +407,7 @@ export const components: Component[] = [
     name: 'input number',
     description: 'A custom ecommerce oriented input with incremental control buttons.',
     category: 'form',
-    url: '/input-number',
+    url: '/components/input-number',
     image: {
       light: '/img/illustrations/components/icon-input-number.svg',
       dark: '/img/illustrations/components/icon-input-number-dark.svg',
@@ -419,7 +419,7 @@ export const components: Component[] = [
     name: 'listbox',
     description: 'A customizable select component that can be used to display enhanced results.',
     category: 'form',
-    url: '/listbox',
+    url: '/components/listbox',
     image: {
       light: '/img/illustrations/components/icon-listbox.svg',
       dark: '/img/illustrations/components/icon-listbox-dark.svg',
@@ -431,7 +431,7 @@ export const components: Component[] = [
     name: 'radio',
     description: 'A simple and straightforward radio button component to be used in forms.',
     category: 'form',
-    url: '/radio',
+    url: '/components/radio',
     image: {
       light: '/img/illustrations/components/icon-radio.svg',
       dark: '/img/illustrations/components/icon-radio-dark.svg',
@@ -443,7 +443,7 @@ export const components: Component[] = [
     name: 'radio headless',
     description: 'A headless radio component that lets you build custom styles.',
     category: 'form',
-    url: '/radio-headless',
+    url: '/components/radio-headless',
     image: {
       light: '/img/illustrations/components/icon-radio-headless.svg',
       dark: '/img/illustrations/components/icon-radio-headless-dark.svg',
@@ -454,7 +454,7 @@ export const components: Component[] = [
     name: 'select',
     description: 'A native select box component to be used in forms of any type.',
     category: 'form',
-    url: '/select',
+    url: '/components/select',
     image: {
       light: '/img/illustrations/components/icon-select.svg',
       dark: '/img/illustrations/components/icon-select-dark.svg',
@@ -466,7 +466,7 @@ export const components: Component[] = [
     name: 'switch thin',
     description: 'A thin switch with a unique visual style to use in forms of any type.',
     category: 'form',
-    url: '/switch-thin',
+    url: '/components/switch-thin',
     image: {
       light: '/img/illustrations/components/icon-switch-thin.svg',
       dark: '/img/illustrations/components/icon-switch-thin-dark.svg',
@@ -478,7 +478,7 @@ export const components: Component[] = [
     name: 'switch ball',
     description: 'A toggle switch with a unique visual style to use in forms of any type.',
     category: 'form',
-    url: '/switch-ball',
+    url: '/components/switch-ball',
     image: {
       light: '/img/illustrations/components/icon-switch-ball.svg',
       dark: '/img/illustrations/components/icon-switch-ball-dark.svg',
@@ -490,7 +490,7 @@ export const components: Component[] = [
     name: 'treeselect',
     description: 'A customizable tree view that supports icons, images and async data.',
     category: 'form',
-    url: '/treeselect',
+    url: '/components/treeselect',
     image: {
       light: '/img/illustrations/components/icon-treeselect.svg',
       dark: '/img/illustrations/components/icon-treeselect-dark.svg',
@@ -501,7 +501,7 @@ export const components: Component[] = [
     name: 'heading',
     description: 'A flexible and versatile heading component to use in typographic compositions.',
     category: 'typography',
-    url: '/heading',
+    url: '/components/heading',
     image: {
       light: '/img/illustrations/components/icon-heading.svg',
       dark: '/img/illustrations/components/icon-heading-dark.svg',
@@ -513,7 +513,7 @@ export const components: Component[] = [
     name: 'paragraph',
     description: 'A flexible and versatile paragraph component to use in typographic compositions.',
     category: 'typography',
-    url: '/paragraph',
+    url: '/components/paragraph',
     image: {
       light: '/img/illustrations/components/icon-paragraph.svg',
       dark: '/img/illustrations/components/icon-paragraph-dark.svg',
@@ -525,7 +525,7 @@ export const components: Component[] = [
     name: 'text',
     description: 'A flexible and versatile text component to use in typographic compositions.',
     category: 'typography',
-    url: '/text',
+    url: '/components/text',
     image: {
       light: '/img/illustrations/components/icon-typography.svg',
       dark: '/img/illustrations/components/icon-typography-dark.svg',
@@ -537,7 +537,7 @@ export const components: Component[] = [
     name: 'link',
     description: 'A simple link component that you can use inside other typography components.',
     category: 'typography',
-    url: '/link',
+    url: '/components/link',
     image: {
       light: '/img/illustrations/components/icon-link.svg',
       dark: '/img/illustrations/components/icon-link-dark.svg',
@@ -549,7 +549,7 @@ export const components: Component[] = [
     name: 'kbd',
     description: 'An abstraction of a keyboard key to show UI shortcuts or keys to press.',
     category: 'typography',
-    url: '/kbd',
+    url: '/components/kbd',
     image: {
       light: '/img/illustrations/components/icon-kbd.svg',
       dark: '/img/illustrations/components/icon-kbd-dark.svg',
@@ -561,7 +561,7 @@ export const components: Component[] = [
     name: 'prose',
     description: 'A prestyled block of text that can be used to render user generated content.',
     category: 'typography',
-    url: '/prose',
+    url: '/components/prose',
     image: {
       light: '/img/illustrations/components/icon-prose.svg',
       dark: '/img/illustrations/components/icon-prose-dark.svg',
@@ -573,7 +573,7 @@ export const components: Component[] = [
     name: 'tooltip',
     description: 'A very simple and minimalistic CSS tooltip to use with HTML attributes.',
     category: 'interaction',
-    url: '/interaction/tooltip',
+    url: '/components/tooltip',
     image: {
       light: '/img/illustrations/components/icon-tooltip.svg',
       dark: '/img/illustrations/components/icon-tooltip-dark.svg',
@@ -585,7 +585,7 @@ export const components: Component[] = [
     name: 'focus',
     description: 'A utility that allows to display a visual indicator when an element is focused.',
     category: 'utilities',
-    url: '/focus',
+    url: '/components/focus',
     image: {
       light: '/img/illustrations/components/icon-focus.svg',
       dark: '/img/illustrations/components/icon-focus-dark.svg',
@@ -597,7 +597,7 @@ export const components: Component[] = [
     name: 'mark',
     description: 'A utility that allows to highlight a chunk of text, useful for autocompletion.',
     category: 'utilities',
-    url: '/mark',
+    url: '/components/mark',
     image: {
       light: '/img/illustrations/components/icon-mark.svg',
       dark: '/img/illustrations/components/icon-mark-dark.svg',
@@ -609,7 +609,7 @@ export const components: Component[] = [
     name: 'mask',
     description: 'A utility that allows to create hexagonal and various other svg masks.',
     category: 'utilities',
-    url: '/mask',
+    url: '/components/mask',
     image: {
       light: '/img/illustrations/components/icon-mask.svg',
       dark: '/img/illustrations/components/icon-mask-dark.svg',
@@ -621,7 +621,7 @@ export const components: Component[] = [
     name: 'slimscroll',
     description: 'A utility that allows to restyle the scrollbar in scrollable containers.',
     category: 'utilities',
-    url: '/slimscroll',
+    url: '/components/slimscroll',
     image: {
       light: '/img/illustrations/components/icon-slimscroll.svg',
       dark: '/img/illustrations/components/icon-slimscroll-dark.svg',
