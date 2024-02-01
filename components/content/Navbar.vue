@@ -150,7 +150,7 @@ const { x, y } = useWindowScroll()
                 <div class="h-[2px] w-7 rounded bg-muted-500 transition-all delay-75 duration-300" :class="mobileOpen ? 'translate-x-10' : ''" />
                 <div class="h-[2px] w-7 origin-left bg-muted-500 transition-all delay-150 duration-300" :class="mobileOpen ? 'translate-x-10' : ''" />
 
-                <div class="absolute top-2 flex scale-105 items-center justify-between transition-all duration-500" :class="[mobileOpen ? 'w-12 translate-x-1' : 'w-0 -translate-x-10']">
+                <div class="absolute top-3 flex scale-105 items-center justify-between transition-all duration-500" :class="[mobileOpen ? 'w-12 translate-x-1' : 'w-0 -translate-x-10']">
                   <div class="absolute h-[2px] w-4 bg-muted-500 transition-all delay-300 duration-500" :class="mobileOpen ? 'rotate-45' : 'rotate-0'" />
                   <div class="absolute h-[2px] w-4 bg-muted-500 transition-all delay-300 duration-500" :class="mobileOpen ? '-rotate-45' : '-rotate-0'" />
                 </div>
@@ -161,7 +161,7 @@ const { x, y } = useWindowScroll()
         <!--Mobile menu-->
         <div
           class="fixed start-0 top-16 z-20 block w-full border-y border-muted-200 bg-white shadow-xl shadow-muted-300/30 transition-all duration-300 dark:bg-muted-950 dark:shadow-muted-800/20 lg:hidden"
-          :class="[mobileOpen ? 'h-[460px] opacity-100' : 'h-0 opacity-0']"
+          :class="[mobileOpen ? 'h-[490px] opacity-100' : 'h-0 opacity-0']"
         >
           <div class="mx-auto flex w-full max-w-[240px] flex-col py-6 text-center transition-opacity duration-300" :class="[mobileOpen ? 'opacity-100' : 'pointer-events-none opacity-0']">
             <div class="flex flex-col gap-2">
