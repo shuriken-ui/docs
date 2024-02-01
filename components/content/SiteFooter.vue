@@ -209,10 +209,10 @@ const appConfig = useAppConfig()
               </li>
               <li>
                 <NuxtLink
-                  to="/changelog"
+                  to="/blog"
                   class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400"
                 >
-                  Changelog
+                  Blog
                 </NuxtLink>
               </li>
               <!--li>

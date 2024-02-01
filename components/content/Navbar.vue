@@ -32,21 +32,20 @@ const { x, y } = useWindowScroll()
         <!--Desktop menu-->
         <div class="hidden grow lg:flex lg:items-center lg:justify-center lg:space-x-4">
           <NuxtLink
-            to="/docs"
+            to="/docs/guide"
             title=""
             class="nui-focus inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-sm font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 dark:text-muted-400 dark:hover:text-muted-100"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
-            Documentation
+            Guide
           </NuxtLink>
           <NuxtLink
-            to="/changelog"
+            to="/docs/reference"
             title=""
-            active-class="!text-muted-900 dark:!text-muted-100 !bg-muted-100 dark:!bg-muted-900"
             class="nui-focus inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-sm font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 dark:text-muted-400 dark:hover:text-muted-100"
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
-            Changelog
+            Components
           </NuxtLink>
           <NuxtLink
             to="/playground"
@@ -56,6 +55,15 @@ const { x, y } = useWindowScroll()
             :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
           >
             Playground
+          </NuxtLink>
+          <NuxtLink
+            to="/blog"
+            title=""
+            active-class="!text-muted-900 dark:!text-muted-100 !bg-muted-100 dark:!bg-muted-900"
+            class="nui-focus inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-sm font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 dark:text-muted-400 dark:hover:text-muted-100"
+            :class="[y > 60 ? 'dark:hover:bg-muted-900' : 'dark:hover:bg-muted-950']"
+          >
+            Blog
           </NuxtLink>
         </div>
         <div class="ml-auto hidden w-1/4 justify-end gap-2 sm:flex lg:ml-0">
@@ -158,22 +166,28 @@ const { x, y } = useWindowScroll()
           <div class="mx-auto flex w-full max-w-[240px] flex-col py-6 text-center transition-opacity duration-300" :class="[mobileOpen ? 'opacity-100' : 'pointer-events-none opacity-0']">
             <div class="flex flex-col gap-2">
               <NuxtLink
-                to="/docs"
+                to="/docs/guide"
                 class="focus:ring-ring-300 inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
               >
-                Documentation
+                Guide
               </NuxtLink>
               <NuxtLink
-                to="/changelog"
+                to="/docs/reference"
                 class="focus:ring-ring-300 inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
               >
-                Changelog
+                Components
               </NuxtLink>
               <NuxtLink
                 to="/playground"
                 class="focus:ring-ring-300 inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
               >
                 Playground
+              </NuxtLink>
+              <NuxtLink
+                to="/blog"
+                class="focus:ring-ring-300 inline-flex items-center justify-center rounded-full border border-transparent px-4 py-1.5 text-base font-medium text-muted-600 transition-all duration-200 hover:bg-muted-100 hover:text-muted-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-muted-400 dark:hover:text-muted-100"
+              >
+                Blog
               </NuxtLink>
             </div>
             <hr class="my-6 border-t border-muted-200 dark:border-muted-800">

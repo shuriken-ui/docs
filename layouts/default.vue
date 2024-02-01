@@ -32,6 +32,9 @@ const onOverlayClick = () => {
   isSidebarOpenMobile.value = false
   isTocOpenMobile.value = false
 }
+
+// Handle active framework
+const activeFramework = ref('Nuxt')
 </script>
 
 <template>
@@ -57,8 +60,28 @@ const onOverlayClick = () => {
       <div class="nui-slimscroll h-[calc(100%_-_3.5rem)] space-y-2 overflow-y-auto p-6">
         <!--Navigation links-->
         <template v-for="item in links" :key="item._id">
-          <div v-if="item?.children" class="py-3">
-            <div class="mb-3 px-3">
+          <div v-if="item?.children" class="pt-3">
+            <div
+              role="button"
+              class="mb-3 flex items-center gap-3 px-3"
+              :class="route.path.includes('reference') ? '' : 'pointer-events-none'"
+              @click="activeFramework === item.title ? activeFramework = '' : activeFramework = item.title"
+            >
+              <Icon
+                v-if="item.title === 'Nuxt'"
+                name="simple-icons:nuxtdotjs"
+                class="h-5 w-5 text-emerald-500"
+              />
+              <Icon
+                v-else-if="item.title === 'React'"
+                name="akar-icons:react-fill"
+                class="h-5 w-5 text-sky-500"
+              />
+              <Icon
+                v-else-if="item.title === 'Tailwind'"
+                name="simple-icons:tailwindcss"
+                class="h-5 w-5 text-sky-500"
+              />
               <BaseHeading
                 as="h5"
                 size="xs"
@@ -67,13 +90,64 @@ const onOverlayClick = () => {
               >
                 {{ item.title }}
               </BaseHeading>
+              <div v-if="route.path.includes('reference')" class="-me-2 ms-auto flex h-6 w-4 items-center justify-center">
+                <Icon
+                  name="lucide:chevron-down"
+                  class="h-4 w-4 text-muted-400 transition-transform duration-300"
+                  :class="activeFramework === item.title ? 'rotate-180' : ''"
+                />
+              </div>
             </div>
-            <ul class="space-y-1">
-              <li v-for="child in item?.children" :key="child._path">
+            <ul v-if="route.path.includes('reference')" class="space-y-1">
+              <template v-if="activeFramework === item.title">
+                <li
+                  v-for="child in item?.children"
+                  :key="child._path"
+                  :class="child.children ? 'ps-2' : ''"
+                >
+                  <NuxtLink
+                    :to="child._path"
+                    exact-active-class="!font-medium !bg-muted-200 dark:!bg-muted-900 !text-muted-800 dark:!text-muted-100"
+                    class="flex h-8 items-center gap-4 rounded-full px-3 font-sans text-sm text-muted-700 transition-colors duration-300 hover:bg-muted-200/70 hover:text-muted-800 dark:text-muted-400 dark:hover:bg-muted-800 dark:hover:text-muted-100"
+                    :class="child.children ? '!text-primary-500 !font-medium text-xs mt-3 uppercase pointer-events-none' : ''"
+                  >
+                    <Icon
+                      v-if="child.icon"
+                      :name="child.icon"
+                      class="h-5 w-5"
+                    />
+                    <span>{{ child.title || child._path }}</span>
+                  </NuxtLink>
+                  <ul class="space-y-1 ps-3">
+                    <li v-for="subchild in child?.children" :key="subchild._path">
+                      <NuxtLink
+                        :to="subchild._path"
+                        exact-active-class="!font-medium !bg-muted-200 dark:!bg-muted-900 !text-muted-800 dark:!text-muted-100"
+                        class="flex h-8 items-center gap-4 rounded-full px-3 font-sans text-[0.8rem] text-muted-700 transition-colors duration-300 hover:bg-muted-200/70 hover:text-muted-800 dark:text-muted-400 dark:hover:bg-muted-800 dark:hover:text-muted-100"
+                      >
+                        <Icon
+                          v-if="subchild.icon"
+                          :name="subchild.icon"
+                          class="h-5 w-5"
+                        />
+                        <span>{{ subchild.title || subchild._path }}</span>
+                      </NuxtLink>
+                    </li>
+                  </ul>
+                </li>
+              </template>
+            </ul>
+            <ul v-else class="space-y-1">
+              <li
+                v-for="child in item?.children"
+                :key="child._path"
+                :class="child.children ? 'ps-2' : ''"
+              >
                 <NuxtLink
                   :to="child._path"
                   exact-active-class="!font-medium !bg-muted-200 dark:!bg-muted-900 !text-muted-800 dark:!text-muted-100"
                   class="flex h-8 items-center gap-4 rounded-full px-3 font-sans text-sm text-muted-700 transition-colors duration-300 hover:bg-muted-200/70 hover:text-muted-800 dark:text-muted-400 dark:hover:bg-muted-800 dark:hover:text-muted-100"
+                  :class="child.children ? '!text-primary-500 text-xs mt-3 uppercase pointer-events-none' : ''"
                 >
                   <Icon
                     v-if="child.icon"
@@ -82,6 +156,23 @@ const onOverlayClick = () => {
                   />
                   <span>{{ child.title || child._path }}</span>
                 </NuxtLink>
+
+                <ul class="space-y-1 ps-3">
+                  <li v-for="subchild in child?.children" :key="subchild._path">
+                    <NuxtLink
+                      :to="subchild._path"
+                      exact-active-class="!font-medium !bg-muted-200 dark:!bg-muted-900 !text-muted-800 dark:!text-muted-100"
+                      class="flex h-8 items-center gap-4 rounded-full px-3 font-sans text-[0.8rem] text-muted-700 transition-colors duration-300 hover:bg-muted-200/70 hover:text-muted-800 dark:text-muted-400 dark:hover:bg-muted-800 dark:hover:text-muted-100"
+                    >
+                      <Icon
+                        v-if="subchild.icon"
+                        :name="subchild.icon"
+                        class="h-5 w-5"
+                      />
+                      <span>{{ subchild.title || subchild._path }}</span>
+                    </NuxtLink>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -219,7 +310,7 @@ const onOverlayClick = () => {
         >
           <Icon name="ri:twitter-x-fill" class="h-4 w-4" />
         </NuxtLink>
-        <div class="ms-auto">
+        <div class="ms-auto scale-90">
           <BaseThemeSwitch />
         </div>
       </div>

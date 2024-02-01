@@ -14,26 +14,8 @@ const url = computed(() => {
 
 <template>
   <Section>
-    <div class="mx-auto max-w-2xl text-center">
-      <BaseParagraph
-        size="md"
-        weight="semibold"
-        class="text-primary-600"
-      >
-        Component Library
-      </BaseParagraph>
-      <BaseHeading
-        as="h2"
-        size="3xl"
-        weight="semibold"
-        class="tracking-light mt-4 text-muted-900 dark:text-white sm:!text-4xl lg:!text-5xl"
-      >
-        More than <span class="text-primary-500">{{ components.length }}+</span> components available out of the box
-      </BaseHeading>
-    </div>
-
-    <div class="relative mt-12">
-      <div class="sticky top-16 z-10 mb-8 flex justify-center gap-10 border-b border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900">
+    <div class="relative -mt-12">
+      <div class="sticky top-14 z-20 mb-8 flex justify-center gap-10 border-b border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900 lg:top-0 lg:z-10">
         <button
           type="button"
           class="flex items-center gap-2 border-b-2 py-4 pe-2 transition-all duration-300"
@@ -68,7 +50,7 @@ const url = computed(() => {
           </BaseText>
         </button>
       </div>
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ltablet:grid-cols-3">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <NuxtLink
           v-for="component in components"
           :key="component.name"
