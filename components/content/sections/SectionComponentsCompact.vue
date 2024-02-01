@@ -15,7 +15,7 @@ const url = computed(() => {
 <template>
   <Section>
     <div class="relative -mt-12">
-      <div class="sticky top-14 z-20 mb-8 flex justify-center gap-10 border-b border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900 lg:top-0 lg:z-10">
+      <div class="sticky top-14 z-[5] mb-8 flex justify-center gap-10 border-b border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900 lg:top-0 lg:z-10">
         <button
           type="button"
           class="flex items-center gap-2 border-b-2 py-4 pe-2 transition-all duration-300"
@@ -50,7 +50,7 @@ const url = computed(() => {
           </BaseText>
         </button>
       </div>
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div class="relative z-[4] grid grid-cols-1 gap-6 md:grid-cols-2">
         <NuxtLink
           v-for="component in components"
           :key="component.name"
