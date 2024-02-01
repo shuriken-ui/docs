@@ -95,7 +95,7 @@ const { data } = await useFetch('/api/versions')
               weight="semibold"
               class="text-primary-600"
             >
-              Changelogs
+              Technical Blog
             </BaseParagraph>
             <BaseHeading
               as="h2"
@@ -106,7 +106,7 @@ const { data } = await useFetch('/api/versions')
               Keep up with the most recent changes and improvements.
             </BaseHeading>
             <BaseParagraph size="md" class="max-w-sm text-muted-500 dark:text-muted-400">
-              Select one of the following changelogs to see what's new in the latest version.
+              Select one of the following package to see what's new in the latest versions.
             </BaseParagraph>
           </div>
         </div>
@@ -115,7 +115,7 @@ const { data } = await useFetch('/api/versions')
             <NuxtLink
               v-for="project in data"
               :key="project.packageName"
-              :to="`/changelog/${project.name}`"
+              :to="`/blog/${project.name}`"
               class="group/link mx-auto block w-full max-w-sm"
             >
               <BaseCard
