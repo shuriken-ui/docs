@@ -1,12 +1,12 @@
 ---
-title: 'Nuxt Changelog'
-description: 'meta description of the page'
+title: 'Nuxt Blog'
+description: 'Read the latest updates and improvements of Shuriken UI.'
 layout: 'changelog'
 section.icon: 'simple-icons:nuxtdotjs'
 section.title: 'Nuxt'
 ---
 
-# Changelog
+# Blog
 
 Follow the latest updates and improvements of Shuriken UI.
 

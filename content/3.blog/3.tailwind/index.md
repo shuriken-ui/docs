@@ -1,12 +1,12 @@
 ---
-title: 'Tailwind Changelog'
-description: 'meta description of the page'
+title: 'Tailwind Blog'
+description: 'Read the latest updates and improvements of Shuriken UI'
 layout: 'changelog'
 section.icon: 'simple-icons:tailwindcss'
 section.title: 'Tailwind'
 ---
 
-# Changelog
+# Blog
 
 Follow the latest updates and improvements of Shuriken UI.
 
