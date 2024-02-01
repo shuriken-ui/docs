@@ -15,7 +15,7 @@ const url = computed(() => {
 <template>
   <Section>
     <div class="relative -mt-12">
-      <div class="sticky top-0 z-10 mb-8 flex justify-center gap-10 border-b border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900">
+      <div class="sticky top-14 z-20 mb-8 flex justify-center gap-10 border-b border-muted-200 bg-white dark:border-muted-800 dark:bg-muted-900 lg:top-0 lg:z-10">
         <button
           type="button"
           class="flex items-center gap-2 border-b-2 py-4 pe-2 transition-all duration-300"

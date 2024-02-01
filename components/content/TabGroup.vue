@@ -37,7 +37,7 @@ export default defineComponent({
       return h(
         'div',
         {
-          class: 'py-6',
+          class: 'py-6 relative z-0',
         },
         [
           h(
