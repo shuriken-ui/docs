@@ -176,7 +176,7 @@ const customers = [
           </BaseHeading>
           <div class="mt-8">
             <BaseButton
-              to="/docs"
+              to="/docs/guide"
               size="lg"
               color="none"
               rounded="lg"

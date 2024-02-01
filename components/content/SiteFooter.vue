@@ -61,32 +61,16 @@ const appConfig = useAppConfig()
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/docs" class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400">
-                  Documentation
+                <NuxtLink to="/docs/guide" class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400">
+                  Guide
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink
-                  to="/docs/nuxt"
+                  to="/docs/reference"
                   class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400"
                 >
-                  Nuxt version
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink
-                  to="/docs/react"
-                  class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400"
-                >
-                  React version
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink
-                  to="/docs/tailwind"
-                  class="text-muted-500 underline-offset-4 transition-colors duration-200 hover:text-primary-600 hover:underline dark:text-muted-400 dark:hover:text-primary-400"
-                >
-                  Html version
+                  Reference
                 </NuxtLink>
               </li>
               <li>

@@ -42,7 +42,7 @@ const props = defineProps<{
           </template>
           <BaseDropdownItem
             v-if="props.availableIn?.includes('nuxt')"
-            :to="`/docs/nuxt/${props.category}/${props.component.toLowerCase()}`"
+            :to="`/docs/reference/nuxt/components/${props.component.toLowerCase()}`"
             :title="`<${props.component.split('-').join('')} />`"
             text="Nuxt documentation"
             color="default"
@@ -54,7 +54,7 @@ const props = defineProps<{
           </BaseDropdownItem>
           <BaseDropdownItem
             v-if="props.availableIn?.includes('react')"
-            :to="`/docs/react/${props.category}/${props.component.toLowerCase()}`"
+            :to="`/docs/reference/react/components/${props.component.toLowerCase()}`"
             :title="`<${props.component.split('-').join('')} />`"
             text="React documentation"
             color="default"
@@ -66,7 +66,7 @@ const props = defineProps<{
           </BaseDropdownItem>
           <BaseDropdownItem
             v-if="props.availableIn?.includes('tailwind')"
-            :to="`/docs/tailwind/${props.category}/${props.component.toLowerCase()}`"
+            :to="`/docs/reference/tailwind/components/${props.component.toLowerCase()}`"
             :title="`<${props.component.split('-').join('')} />`"
             text="Tailwind documentation"
             color="default"

@@ -66,7 +66,7 @@
 
       <div class="mt-6 flex flex-col gap-3 px-8 sm:flex-row sm:items-center sm:justify-center sm:gap-5 sm:px-0">
         <BaseButton
-          to="/docs"
+          to="/docs/guide"
           size="lg"
           color="none"
           rounded="lg"

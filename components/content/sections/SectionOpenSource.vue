@@ -133,7 +133,7 @@
             </BaseParagraph>
 
             <BaseButton
-              to="https://github.com/shuriken-ui/tailwind/blob/main/CONTRIBUTING.md"
+              to="/docs/guide/advanced/contributing"
               target="_blank"
               rel="noopener"
               size="lg"
