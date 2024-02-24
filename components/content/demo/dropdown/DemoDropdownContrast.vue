@@ -7,7 +7,7 @@
             variant="button"
             label="White default"
             orientation="start"
-            color="white"
+            color="default"
             size="md"
           >
             <BaseDropdownItem
@@ -44,7 +44,7 @@
             variant="button"
             label="White contrast"
             orientation="start"
-            color="white-contrast"
+            color="default-contrast"
             size="md"
           >
             <BaseDropdownItem

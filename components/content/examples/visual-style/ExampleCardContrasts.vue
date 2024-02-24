@@ -3,7 +3,7 @@ import type { BaseParagraph } from '#build/components'; import type { BaseHeadin
   <div class="flex items-center justify-center px-4 pb-0 pt-4">
     <div class="w-full rounded-xl bg-muted-50 p-8 dark:bg-muted-900">
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <BaseCard color="white" class="flex items-center gap-2 p-4">
+        <BaseCard color="default" class="flex items-center gap-2 p-4">
           <BaseAvatar src="/img/avatars/15.svg" />
           <div>
             <BaseHeading
@@ -37,7 +37,7 @@ import type { BaseParagraph } from '#build/components'; import type { BaseHeadin
             </BaseParagraph>
           </div>
         </BaseCard>
-        <BaseCard color="white-contrast" class="flex items-center gap-2 p-4">
+        <BaseCard color="default-contrast" class="flex items-center gap-2 p-4">
           <BaseAvatar src="/img/avatars/24.svg" />
           <div>
             <BaseHeading

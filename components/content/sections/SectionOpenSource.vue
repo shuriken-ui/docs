@@ -32,7 +32,7 @@
 
       <div class="relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 ltablet:grid-cols-3">
         <BaseCard
-          color="white-contrast"
+          color="default-contrast"
           rounded="lg"
           shadow="flat"
         >
@@ -84,7 +84,7 @@
         </BaseCard>
 
         <BaseCard
-          color="white-contrast"
+          color="default-contrast"
           rounded="lg"
           shadow="flat"
         >
@@ -148,7 +148,7 @@
         </BaseCard>
 
         <BaseCard
-          color="white-contrast"
+          color="default-contrast"
           rounded="lg"
           shadow="flat"
           class="ptablet:col-span-2"
@@ -244,7 +244,7 @@
             class="group/link"
           >
             <BaseCard
-              color="white-contrast"
+              color="default-contrast"
               rounded="lg"
               shadow="flat"
               class="group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100"
@@ -277,7 +277,7 @@
             class="group/link"
           >
             <BaseCard
-              color="white-contrast"
+              color="default-contrast"
               rounded="lg"
               shadow="flat"
               class="group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100"

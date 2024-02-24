@@ -56,6 +56,20 @@ const value = ref('Option 1')
             label="Option 7"
             color="danger"
           />
+          <BaseRadio
+            v-model="value"
+            name="radio_base"
+            value="Option 8"
+            label="Option 8"
+            color="dark"
+          />
+          <BaseRadio
+            v-model="value"
+            name="radio_base"
+            value="Option 9"
+            label="Option 9"
+            color="black"
+          />
         </div>
       </PlaygroundSampleRow>
     </div>

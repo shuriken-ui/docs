@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { rounded } = usePlayground()
 
-const options = ref(['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'])
+const options = ref(['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5', 'Option 6', 'Option 7'])
 </script>
 
 <template>
@@ -33,6 +33,16 @@ const options = ref(['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5']
             v-model="options"
             value="Option 5"
             color="danger"
+          />
+          <BaseCheckboxAnimated
+            v-model="options"
+            value="Option 6"
+            color="dark"
+          />
+          <BaseCheckboxAnimated
+            v-model="options"
+            value="Option 7"
+            color="black"
           />
         </div>
       </PlaygroundSampleRow>

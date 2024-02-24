@@ -2,7 +2,7 @@
   <div class="py-6">
     <div class="flex w-full flex-col overflow-hidden rounded-xl md:flex-row">
       <div class="w-full bg-muted-50 p-6 dark:bg-muted-950">
-        <BaseCard color="white" class="flex flex-col items-center !border-muted-300 p-6 dark:!border-muted-700">
+        <BaseCard color="default" class="flex flex-col items-center !border-muted-300 p-6 dark:!border-muted-700">
           <BaseAvatar
             src="/img/avatars/11.svg"
             size="xl"
@@ -55,7 +55,7 @@
         </BaseCard>
       </div>
       <div class="dark w-full bg-muted-950 p-6 dark:bg-muted-950/60">
-        <BaseCard color="white" class="flex flex-col items-center !border-muted-300 p-6 dark:!border-muted-700">
+        <BaseCard color="default" class="flex flex-col items-center !border-muted-300 p-6 dark:!border-muted-700">
           <BaseAvatar
             src="/img/avatars/11.svg"
             size="xl"

@@ -12,7 +12,7 @@ import type { BaseButton } from '#build/components'; import type { BaseCheckbox 
             <code class="rounded bg-primary-500/10 px-1 py-0.5 text-sm text-primary-600">rounded="none"</code>
           </div>
           <BaseCard
-            color="white-contrast"
+            color="default-contrast"
             rounded="none"
             class="border-muted-300 p-4 dark:!border-muted-800 md:p-6"
           >
@@ -54,7 +54,7 @@ import type { BaseButton } from '#build/components'; import type { BaseCheckbox 
             <code class="rounded bg-primary-500/10 px-1 py-0.5 text-sm text-primary-600">rounded="sm"</code>
           </div>
           <BaseCard
-            color="white-contrast"
+            color="default-contrast"
             rounded="sm"
             class="border-muted-300 p-4 dark:!border-muted-800 md:p-6"
           >
@@ -96,7 +96,7 @@ import type { BaseButton } from '#build/components'; import type { BaseCheckbox 
             <code class="rounded bg-primary-500/10 px-1 py-0.5 text-sm text-primary-600">rounded="md"</code>
           </div>
           <BaseCard
-            color="white-contrast"
+            color="default-contrast"
             rounded="md"
             class="border-muted-300 p-4 dark:!border-muted-800 md:p-6"
           >
@@ -138,7 +138,7 @@ import type { BaseButton } from '#build/components'; import type { BaseCheckbox 
             <code class="rounded bg-primary-500/10 px-1 py-0.5 text-sm text-primary-600">rounded="lg"</code>
           </div>
           <BaseCard
-            color="white-contrast"
+            color="default-contrast"
             rounded="lg"
             class="border-muted-300 p-4 dark:!border-muted-800 md:p-6"
           >
@@ -180,7 +180,7 @@ import type { BaseButton } from '#build/components'; import type { BaseCheckbox 
             <code class="rounded bg-primary-500/10 px-1 py-0.5 text-sm text-primary-600">rounded="full"</code>
           </div>
           <BaseCard
-            color="white-contrast"
+            color="default-contrast"
             rounded="lg"
             class="border-muted-300 p-4 dark:!border-muted-800 md:p-6"
           >

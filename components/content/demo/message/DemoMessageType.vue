@@ -3,22 +3,22 @@
     <div class="w-full rounded-xl bg-muted-50 p-4 dark:bg-muted-900 md:p-6">
       <div class="flex items-center p-4">
         <div class="grid w-full max-w-2xl grid-cols-1 gap-4 md:grid-cols-2">
-          <BaseMessage type="default">
+          <BaseMessage color="default">
             A default message.
           </BaseMessage>
-          <BaseMessage type="primary">
+          <BaseMessage color="primary">
             A primary message.
           </BaseMessage>
-          <BaseMessage type="success">
+          <BaseMessage color="success">
             A successful message.
           </BaseMessage>
-          <BaseMessage type="info">
+          <BaseMessage color="info">
             An information message.
           </BaseMessage>
-          <BaseMessage type="warning">
+          <BaseMessage color="warning">
             A warning message.
           </BaseMessage>
-          <BaseMessage type="danger">
+          <BaseMessage color="danger">
             A destructive message.
           </BaseMessage>
         </div>

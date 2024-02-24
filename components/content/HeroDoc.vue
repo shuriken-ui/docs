@@ -101,7 +101,7 @@ const appConfig = useAppConfig()
             <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
             <NuxtLink to="/docs/nuxt">
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 class="!border-muted-300 p-6 dark:!border-muted-800"
               >
@@ -126,7 +126,7 @@ const appConfig = useAppConfig()
             <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
             <NuxtLink to="/docs/react">
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 class="!border-muted-300 p-6 dark:!border-muted-800"
               >
@@ -151,7 +151,7 @@ const appConfig = useAppConfig()
             <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
             <NuxtLink to="/docs/tailwind">
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 class="!border-muted-300 p-6 dark:!border-muted-800"
               >

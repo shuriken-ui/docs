@@ -59,7 +59,7 @@ const url = computed(() => {
           :class="component.availableIn.includes(activeTab) ? '' : 'hidden'"
         >
           <BaseCard
-            color="white-contrast"
+            color="default-contrast"
             rounded="lg"
             shadow="hover"
             class="relative p-4 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100"

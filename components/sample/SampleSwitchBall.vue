@@ -7,6 +7,7 @@ const values = reactive({
   success: true,
   warning: true,
   danger: true,
+  dark: true,
 })
 
 const value = ref(true)
@@ -50,6 +51,11 @@ const value = ref(true)
                 v-model="values.danger"
                 label="Danger"
                 color="danger"
+              />
+              <BaseSwitchBall
+                v-model="values.dark"
+                label="Dark"
+                color="dark"
               />
             </div>
           </PlaygroundSampleRow>

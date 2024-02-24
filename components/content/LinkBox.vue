@@ -9,7 +9,7 @@ const props = defineProps<{
 <template>
   <NuxtLink :to="props.to" class="group/link">
     <BaseCard
-      color="white-contrast"
+      color="default-contrast"
       rounded="md"
       class="flex gap-3 !border-muted-300 p-4 group-hover/link:!border-muted-800 group-hover/link:shadow-lg group-hover/link:shadow-muted-300/30 dark:!border-muted-800 dark:group-hover/link:border-muted-100 dark:group-hover/link:shadow-muted-800/20"
     >

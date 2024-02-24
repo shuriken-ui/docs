@@ -2,7 +2,7 @@ import type { BaseParagraph } from '#build/components';
 <template>
   <BaseCard
     rounded="lg"
-    color="white-contrast"
+    color="default-contrast"
     shadow="flat"
     class="hidden w-64 shrink-0 flex-col px-6 py-8 md:flex"
   >

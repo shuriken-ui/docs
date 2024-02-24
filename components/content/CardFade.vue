@@ -11,7 +11,7 @@ const props = defineProps<{
 <template>
   <div class="py-6">
     <BaseCard
-      color="white-contrast"
+      color="default-contrast"
       rounded="md"
       class="relative flex flex-col overflow-hidden rounded-xl !border-muted-300 text-start dark:!border-muted-800"
     >

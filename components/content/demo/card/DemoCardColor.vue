@@ -4,7 +4,7 @@
       <div class="grid max-w-3xl gap-4 md:grid-cols-2">
         <BaseCard
           rounded="md"
-          color="white"
+          color="default"
           class="p-6"
         >
           <BaseHeading

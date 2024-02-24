@@ -67,6 +67,7 @@ const { rounded } = usePlayground()
             <div class="flex items-center">
               <BaseTabs
                 model-value="team"
+                color="dark"
                 :tabs="[
                   {
                     label: 'Team',
@@ -107,6 +108,7 @@ const { rounded } = usePlayground()
             <div class="flex items-center">
               <BaseTabs
                 type="box"
+                color="dark"
                 model-value="team"
                 :tabs="[
                   {

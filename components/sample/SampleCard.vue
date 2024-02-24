@@ -93,7 +93,7 @@ const { rounded } = usePlayground()
         <div class="space-y-4">
           <PlaygroundSampleRow label="White">
             <div class="max-w-xs">
-              <BaseCard color="white" class="flex items-center gap-2 p-3">
+              <BaseCard color="default" class="flex items-center gap-2 p-3">
                 <BaseAvatar
                   src="/img/photo/avatars/35.jpg"
                   size="sm"
@@ -117,7 +117,7 @@ const { rounded } = usePlayground()
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Contrast">
             <div class="max-w-xs">
-              <BaseCard color="white-contrast" class="flex items-center gap-2 p-3">
+              <BaseCard color="default-contrast" class="flex items-center gap-2 p-3">
                 <BaseAvatar
                   src="/img/photo/avatars/36.jpg"
                   size="sm"
@@ -306,6 +306,54 @@ const { rounded } = usePlayground()
                   </BaseHeading>
                   <BaseParagraph size="xs" class="text-muted-400">
                     UI/UX Designer
+                  </BaseParagraph>
+                </div>
+              </BaseCard>
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Dark">
+            <div class="max-w-xs">
+              <BaseCard color="dark" class="flex items-center gap-2 p-3">
+                <BaseAvatar
+                  src="/img/photo/avatars/25.jpg"
+                  size="sm"
+                  :rounded="rounded"
+                />
+                <div>
+                  <BaseHeading
+                    as="h3"
+                    size="sm"
+                    lead="tight"
+                    class="text-muted-100 dark:text-muted-900"
+                  >
+                    Harold Stevens
+                  </BaseHeading>
+                  <BaseParagraph size="xs" class="text-muted-400">
+                    Software Engineer
+                  </BaseParagraph>
+                </div>
+              </BaseCard>
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Black">
+            <div class="max-w-xs">
+              <BaseCard color="black" class="flex items-center gap-2 p-3">
+                <BaseAvatar
+                  src="/img/photo/avatars/33.jpg"
+                  size="sm"
+                  :rounded="rounded"
+                />
+                <div>
+                  <BaseHeading
+                    as="h3"
+                    size="sm"
+                    lead="tight"
+                    class="text-white dark:text-black"
+                  >
+                    Anthony Ricketts
+                  </BaseHeading>
+                  <BaseParagraph size="xs" class="text-muted-400">
+                    Product Manager
                   </BaseParagraph>
                 </div>
               </BaseCard>

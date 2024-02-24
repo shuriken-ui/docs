@@ -37,6 +37,12 @@ const { rounded } = usePlayground()
               <BaseButtonAction :rounded="rounded" color="danger">
                 Action
               </BaseButtonAction>
+              <BaseButtonAction :rounded="rounded" color="dark">
+                Action
+              </BaseButtonAction>
+              <BaseButtonAction :rounded="rounded" color="black">
+                Action
+              </BaseButtonAction>
             </div>
           </PlaygroundSampleRow>
         </div>

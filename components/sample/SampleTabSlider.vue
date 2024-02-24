@@ -69,6 +69,7 @@ const { rounded } = usePlayground()
                 v-slot="{ activeValue: activeChildValue }"
                 model-value="team"
                 :rounded="rounded"
+                color="dark"
                 :tabs="[
                   { label: 'Team', value: 'team' },
                   { label: 'Projects', value: 'projects' },
@@ -95,6 +96,7 @@ const { rounded } = usePlayground()
                 model-value="team"
                 :rounded="rounded"
                 size="sm"
+                color="dark"
                 :tabs="[
                   { label: 'Team', value: 'team' },
                   { label: 'Projects', value: 'projects' },

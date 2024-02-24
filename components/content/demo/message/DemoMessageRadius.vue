@@ -7,21 +7,21 @@
             A successful message.
           </BaseMessage>
           <BaseMessage
-            type="info"
+            color="info"
             icon
             rounded="md"
           >
             An information message.
           </BaseMessage>
           <BaseMessage
-            type="warning"
+            color="warning"
             icon
             rounded="lg"
           >
             A warning message.
           </BaseMessage>
           <BaseMessage
-            type="danger"
+            color="danger"
             icon
             rounded="full"
           >

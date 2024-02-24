@@ -24,6 +24,26 @@ const currentPage = computed(() => {
           :rounded="rounded"
         />
       </PlaygroundSampleRow>
+      <PlaygroundSampleRow label="Dark" label-align="center">
+        <BasePagination
+          :item-per-page="8"
+          :total-items="512"
+          :current-page="currentPage"
+          :max-links-displayed="5"
+          :rounded="rounded"
+          color="dark"
+        />
+      </PlaygroundSampleRow>
+      <PlaygroundSampleRow label="Black" label-align="center">
+        <BasePagination
+          :item-per-page="8"
+          :total-items="512"
+          :current-page="currentPage"
+          :max-links-displayed="5"
+          :rounded="rounded"
+          color="black"
+        />
+      </PlaygroundSampleRow>
     </div>
   </div>
 </template>
