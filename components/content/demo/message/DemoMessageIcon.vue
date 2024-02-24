@@ -4,42 +4,42 @@
       <div class="flex items-center p-4">
         <div class="grid w-full max-w-2xl grid-cols-1 gap-4 md:grid-cols-2">
           <BaseMessage
-            type="muted"
+            color="muted"
             icon="mingcute:globe-fill"
             rounded="md"
           >
             A muted message.
           </BaseMessage>
           <BaseMessage
-            type="primary"
+            color="primary"
             icon="mingcute:bling-fill"
             rounded="md"
           >
             A primary message.
           </BaseMessage>
           <BaseMessage
-            type="success"
+            color="success"
             icon
             rounded="md"
           >
             A successful message.
           </BaseMessage>
           <BaseMessage
-            type="info"
+            color="info"
             icon
             rounded="md"
           >
             An information message.
           </BaseMessage>
           <BaseMessage
-            type="warning"
+            color="warning"
             icon
             rounded="md"
           >
             A warning message.
           </BaseMessage>
           <BaseMessage
-            type="danger"
+            color="danger"
             icon
             rounded="md"
           >
