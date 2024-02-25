@@ -25,6 +25,16 @@
       value="Option 5"
       color="danger"
     />
+    <BaseCheckboxAnimated
+      v-model="options"
+      value="Option 6"
+      color="dark"
+    />
+    <BaseCheckboxAnimated
+      v-model="options"
+      value="Option 7"
+      color="black"
+    />
   </div>
 </template>
 
@@ -35,5 +45,7 @@ const options = ref([
   'Option 3',
   'Option 4',
   'Option 5',
+  'Option 6',
+  'Option 7',
 ])
 </script>
