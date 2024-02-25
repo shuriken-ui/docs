@@ -95,7 +95,6 @@ const { x, y } = useWindowScroll()
               :to="project.repo"
               :title="project.packageName"
               :text="project.version"
-              color="default"
               rounded="sm"
             >
               <template #start>
