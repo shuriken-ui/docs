@@ -175,49 +175,49 @@ const { rounded } = usePlayground()
                 text="J"
                 :rounded="rounded"
                 size="sm"
-                class="bg-muted-900 text-muted-100 dark:bg-muted-100 dark:text-muted-700"
+                class="!bg-muted-900 !text-muted-100 dark:!bg-muted-100 dark:!text-muted-700"
               />
               <BaseAvatar
                 text="A"
                 :rounded="rounded"
                 size="sm"
-                class="bg-primary-500 text-white"
+                class="!bg-primary-500 !text-white"
               />
               <BaseAvatar
                 text="F"
                 :rounded="rounded"
                 size="sm"
-                class="bg-info-500 text-white"
+                class="!bg-info-500 !text-white"
               />
               <BaseAvatar
                 text="H"
                 :rounded="rounded"
                 size="sm"
-                class="bg-success-500 text-white"
+                class="!bg-success-500 !text-white"
               />
               <BaseAvatar
                 text="T"
                 :rounded="rounded"
                 size="sm"
-                class="bg-warning-500 text-white"
+                class="!bg-warning-500 !text-white"
               />
               <BaseAvatar
                 text="X"
                 :rounded="rounded"
                 size="sm"
-                class="bg-danger-500 text-white"
+                class="!bg-danger-500 !text-white"
               />
               <BaseAvatar
                 text="C"
                 :rounded="rounded"
                 size="sm"
-                class="bg-yellow-400 text-white"
+                class="!bg-yellow-400 !text-white"
               />
               <BaseAvatar
                 text="P"
                 :rounded="rounded"
                 size="sm"
-                class="bg-indigo-500 text-white"
+                class="!bg-indigo-500 !text-white"
               />
             </div>
           </PlaygroundSampleRow>
@@ -227,49 +227,49 @@ const { rounded } = usePlayground()
                 text="J"
                 :rounded="rounded"
                 size="sm"
-                class="bg-muted-100 text-muted-700 dark:bg-muted-800 dark:text-muted-100"
+                class="!bg-muted-100 !text-muted-700 dark:!bg-muted-800 dark:!text-muted-100"
               />
               <BaseAvatar
                 text="A"
                 :rounded="rounded"
                 size="sm"
-                class="bg-primary-500/20 text-primary-600"
+                class="!bg-primary-500/20 !text-primary-600"
               />
               <BaseAvatar
                 text="F"
                 :rounded="rounded"
                 size="sm"
-                class="bg-info-500/20 text-info-600"
+                class="!bg-info-500/20 !text-info-600"
               />
               <BaseAvatar
                 text="H"
                 :rounded="rounded"
                 size="sm"
-                class="bg-success-500/20 text-success-600"
+                class="!bg-success-500/20 !text-success-600"
               />
               <BaseAvatar
                 text="T"
                 :rounded="rounded"
                 size="sm"
-                class="bg-warning-500/20 text-warning-600"
+                class="!bg-warning-500/20 !text-warning-600"
               />
               <BaseAvatar
                 text="X"
                 :rounded="rounded"
                 size="sm"
-                class="bg-danger-500/20 text-danger-600"
+                class="!bg-danger-500/20 !text-danger-600"
               />
               <BaseAvatar
                 text="C"
                 :rounded="rounded"
                 size="sm"
-                class="bg-yellow-400/20 text-yellow-500"
+                class="!bg-yellow-400/20 !text-yellow-500"
               />
               <BaseAvatar
                 text="P"
                 :rounded="rounded"
                 size="sm"
-                class="bg-indigo-500/20 text-indigo-600"
+                class="!bg-indigo-500/20 !text-indigo-600"
               />
             </div>
           </PlaygroundSampleRow>
@@ -279,49 +279,49 @@ const { rounded } = usePlayground()
                 text="J"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-muted-100 text-muted-700 dark:bg-muted-800 dark:text-muted-100"
+                class="border-2 border-current !bg-muted-100 !text-muted-700 dark:!bg-muted-800 dark:!text-muted-100"
               />
               <BaseAvatar
                 text="A"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-primary-500/20 text-primary-600"
+                class="border-2 border-current !bg-primary-500/20 !text-primary-600"
               />
               <BaseAvatar
                 text="F"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-info-500/20 text-info-600"
+                class="border-2 border-current !bg-info-500/20 !text-info-600"
               />
               <BaseAvatar
                 text="H"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-success-500/20 text-success-600"
+                class="border-2 border-current !bg-success-500/20 !text-success-600"
               />
               <BaseAvatar
                 text="T"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-warning-500/20 text-warning-600"
+                class="border-2 border-current !bg-warning-500/20 !text-warning-600"
               />
               <BaseAvatar
                 text="X"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-danger-500/20 text-danger-600"
+                class="border-2 border-current !bg-danger-500/20 !text-danger-600"
               />
               <BaseAvatar
                 text="C"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-yellow-400/20 text-yellow-500"
+                class="border-2 border-current !bg-yellow-400/20 !text-yellow-500"
               />
               <BaseAvatar
                 text="P"
                 :rounded="rounded"
                 size="sm"
-                class="border-2 border-current bg-indigo-500/20 text-indigo-600"
+                class="border-2 border-current !bg-indigo-500/20 !text-indigo-600"
               />
             </div>
           </PlaygroundSampleRow>
@@ -361,28 +361,28 @@ const { rounded } = usePlayground()
                 rounded="none"
                 mask="hex"
                 size="sm"
-                class="bg-muted-900 text-muted-100 dark:bg-muted-100 dark:text-muted-700"
+                class="!bg-muted-900 !text-muted-100 dark:!bg-muted-100 dark:!text-muted-700"
               />
               <BaseAvatar
                 text="A"
                 rounded="none"
                 mask="hex"
                 size="sm"
-                class="bg-primary-500 text-white"
+                class="!bg-primary-500 !text-white"
               />
               <BaseAvatar
                 text="F"
                 rounded="none"
                 mask="hex"
                 size="sm"
-                class="bg-info-500 text-white"
+                class="!bg-info-500 !text-white"
               />
               <BaseAvatar
                 text="H"
                 rounded="none"
                 mask="hex"
                 size="sm"
-                class="bg-success-500 text-white"
+                class="!bg-success-500 !text-white"
               />
             </div>
           </PlaygroundSampleRow>
@@ -417,28 +417,28 @@ const { rounded } = usePlayground()
                 rounded="none"
                 mask="hexed"
                 size="sm"
-                class="bg-muted-900 text-muted-100 dark:bg-muted-100 dark:text-muted-700"
+                class="!bg-muted-900 !text-muted-100 dark:!bg-muted-100 dark:!text-muted-700"
               />
               <BaseAvatar
                 text="A"
                 rounded="none"
                 mask="hexed"
                 size="sm"
-                class="bg-primary-500 text-white"
+                class="!bg-primary-500 !text-white"
               />
               <BaseAvatar
                 text="F"
                 rounded="none"
                 mask="hexed"
                 size="sm"
-                class="bg-info-500 text-white"
+                class="!bg-info-500 !text-white"
               />
               <BaseAvatar
                 text="H"
                 rounded="none"
                 mask="hexed"
                 size="sm"
-                class="bg-success-500 text-white"
+                class="!bg-success-500 !text-white"
               />
             </div>
           </PlaygroundSampleRow>
@@ -473,28 +473,28 @@ const { rounded } = usePlayground()
                 rounded="none"
                 mask="blob"
                 size="sm"
-                class="bg-muted-900 text-muted-100 dark:bg-muted-100 dark:text-muted-700"
+                class="!bg-muted-900 !text-muted-100 dark:!bg-muted-100 dark:!text-muted-700"
               />
               <BaseAvatar
                 text="A"
                 rounded="none"
                 mask="blob"
                 size="sm"
-                class="bg-primary-500 text-white"
+                class="!bg-primary-500 !text-white"
               />
               <BaseAvatar
                 text="F"
                 rounded="none"
                 mask="blob"
                 size="sm"
-                class="bg-info-500 text-white"
+                class="!bg-info-500 !text-white"
               />
               <BaseAvatar
                 text="H"
                 rounded="none"
                 mask="blob"
                 size="sm"
-                class="bg-success-500 text-white"
+                class="!bg-success-500 !text-white"
               />
             </div>
           </PlaygroundSampleRow>
@@ -529,28 +529,28 @@ const { rounded } = usePlayground()
                 rounded="none"
                 mask="deca"
                 size="sm"
-                class="bg-muted-900 text-muted-100 dark:bg-muted-100 dark:text-muted-700"
+                class="!bg-muted-900 !text-muted-100 dark:!bg-muted-100 dark:!text-muted-700"
               />
               <BaseAvatar
                 text="A"
                 rounded="none"
                 mask="deca"
                 size="sm"
-                class="bg-primary-500 text-white"
+                class="!bg-primary-500 !text-white"
               />
               <BaseAvatar
                 text="F"
                 rounded="none"
                 mask="deca"
                 size="sm"
-                class="bg-info-500 text-white"
+                class="!bg-info-500 !text-white"
               />
               <BaseAvatar
                 text="H"
                 rounded="none"
                 mask="deca"
                 size="sm"
-                class="bg-success-500 text-white"
+                class="!bg-success-500 !text-white"
               />
             </div>
           </PlaygroundSampleRow>
@@ -585,28 +585,28 @@ const { rounded } = usePlayground()
                 rounded="none"
                 mask="diamond"
                 size="sm"
-                class="bg-muted-900 text-muted-100 dark:bg-muted-100 dark:text-muted-700"
+                class="!bg-muted-900 !text-muted-100 dark:!bg-muted-100 dark:!text-muted-700"
               />
               <BaseAvatar
                 text="A"
                 rounded="none"
                 mask="diamond"
                 size="sm"
-                class="bg-primary-500 text-white"
+                class="!bg-primary-500 !text-white"
               />
               <BaseAvatar
                 text="F"
                 rounded="none"
                 mask="diamond"
                 size="sm"
-                class="bg-info-500 text-white"
+                class="!bg-info-500 !text-white"
               />
               <BaseAvatar
                 text="H"
                 rounded="none"
                 mask="diamond"
                 size="sm"
-                class="bg-success-500 text-white"
+                class="!bg-success-500 !text-white"
               />
             </div>
           </PlaygroundSampleRow>
