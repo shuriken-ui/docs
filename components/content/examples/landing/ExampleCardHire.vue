@@ -1,6 +1,6 @@
 <template>
   <BaseCard
-    color="white-contrast"
+    color="default-contrast"
     rounded="lg"
     shadow="flat"
     class="relative -end-20 z-10 p-4"

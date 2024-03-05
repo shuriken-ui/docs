@@ -4,7 +4,7 @@
       <div class="grid max-w-3xl gap-4 md:grid-cols-2">
         <BaseCard
           rounded="md"
-          color="white"
+          color="default"
           class="p-6"
         >
           <BaseHeading
@@ -133,6 +133,54 @@
             weight="semibold"
             lead="tight"
             class="mb-2 text-muted-800 dark:text-white"
+          >
+            Iam a card
+          </BaseHeading>
+
+          <BaseParagraph
+            size="sm"
+            lead="tight"
+            class="text-muted-400"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </BaseParagraph>
+        </BaseCard>
+
+        <BaseCard
+          rounded="md"
+          color="dark"
+          class="p-6"
+        >
+          <BaseHeading
+            as="h4"
+            size="sm"
+            weight="semibold"
+            lead="tight"
+            class="mb-2 text-muted-100 dark:text-muted-100"
+          >
+            Iam a card
+          </BaseHeading>
+
+          <BaseParagraph
+            size="sm"
+            lead="tight"
+            class="text-muted-400"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </BaseParagraph>
+        </BaseCard>
+
+        <BaseCard
+          rounded="md"
+          color="black"
+          class="p-6"
+        >
+          <BaseHeading
+            as="h4"
+            size="sm"
+            weight="semibold"
+            lead="tight"
+            class="mb-2 text-white dark:text-black"
           >
             Iam a card
           </BaseHeading>

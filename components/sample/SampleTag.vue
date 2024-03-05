@@ -65,6 +65,20 @@ const { rounded } = usePlayground()
               >
                 Label
               </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="dark"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="solid"
+                color="black"
+              >
+                Label
+              </BaseTag>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Pastel">
@@ -118,6 +132,20 @@ const { rounded } = usePlayground()
               >
                 Label
               </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="dark"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="pastel"
+                color="black"
+              >
+                Label
+              </BaseTag>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Outline">
@@ -168,6 +196,20 @@ const { rounded } = usePlayground()
                 :rounded="rounded"
                 variant="outline"
                 color="danger"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="dark"
+              >
+                Label
+              </BaseTag>
+              <BaseTag
+                :rounded="rounded"
+                variant="outline"
+                color="black"
               >
                 Label
               </BaseTag>

@@ -38,6 +38,12 @@ const { rounded } = usePlayground()
               <BaseButtonIcon :rounded="rounded" color="danger">
                 <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
               </BaseButtonIcon>
+              <BaseButtonIcon :rounded="rounded" color="dark">
+                <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
+              </BaseButtonIcon>
+              <BaseButtonIcon :rounded="rounded" color="black">
+                <Icon name="ph:game-controller-duotone" class="h-5 w-5" />
+              </BaseButtonIcon>
             </div>
           </PlaygroundSampleRow>
         </div>

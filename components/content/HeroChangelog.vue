@@ -119,7 +119,7 @@ const { data } = await useFetch('/api/versions')
               class="group/link mx-auto block w-full max-w-sm"
             >
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 shadow="hover"
                 class="p-6 group-hover/link:!border-muted-900 dark:group-hover/link:!border-muted-100"

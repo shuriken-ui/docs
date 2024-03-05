@@ -9,6 +9,7 @@ const options = reactive({
   fifth: true,
   sixth: true,
   seventh: true,
+  eighth: true,
 })
 </script>
 
@@ -58,6 +59,12 @@ const options = reactive({
             label="Label"
             :rounded="rounded"
             color="danger"
+          />
+          <BaseCheckbox
+            v-model="options.eighth"
+            label="Label"
+            :rounded="rounded"
+            color="dark"
           />
         </div>
       </div>

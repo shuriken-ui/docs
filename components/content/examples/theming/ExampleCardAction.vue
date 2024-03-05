@@ -4,7 +4,7 @@
       <div class="mx-auto w-full max-w-md ">
         <BaseCard
           class="!border-muted-300 p-4 dark:!border-muted-800 md:p-6"
-          color="white-contrast"
+          color="default-contrast"
           rounded="md"
         >
           <div class="flex flex-col py-2">

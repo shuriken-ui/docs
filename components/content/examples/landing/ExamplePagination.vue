@@ -1,5 +1,5 @@
 <template>
-  <div class="nui-pagination nui-pagination-smooth shrink-0">
+  <div class="nui-pagination nui-pagination-rounded-md shrink-0">
     <ul class="nui-pagination-list dark:!border-muted-800 dark:!bg-muted-950">
       <li>
         <a class="nui-pagination-link !border-muted-900 !bg-muted-900 !text-white dark:!border-primary-500 dark:!bg-primary-500 dark:!text-white">

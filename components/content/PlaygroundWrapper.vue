@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { UseClipboard } from '@vueuse/components'
 const { rounded } = usePlayground()
 
 const isPanelOpen = ref(false)
@@ -16,198 +17,218 @@ const generate = () => {
   }, 1000)
 }
 
-const tailwindConfig = ref(`
-import { withShurikenUI } from '@shuriken-ui/tailwind'
-import colors from 'tailwindcss/colors'
+const tailwindConfig = computed(() => {
+  return `
+  import { withShurikenUI } from '@shuriken-ui/tailwind'
+  import colors from 'tailwindcss/colors'
 
-export default withShurikenUI({
-  content: [],
-  theme: {
-    extend: {
-      colors: {
-        'primary-invert': colors.white,
-        primary: colors.${currentPrimary.value},
-        muted: colors.${currentMuted.value},
-        info: colors.sky,
-        success: colors.teal,
-        warning: colors.amber,
-        danger: colors.rose,
+  export default withShurikenUI({
+    content: [],
+    theme: {
+      extend: {
+        colors: {
+          'primary-invert': colors.white,
+          primary: colors.${currentPrimary.value},
+          muted: colors.${currentMuted.value},
+          info: colors.sky,
+          success: colors.teal,
+          warning: colors.amber,
+          danger: colors.rose,
+        },
       },
     },
-  },
-})`)
-
-const appConfig = ref(`
-export default defineAppConfig({
-  nui: {
-    BaseAccordion: {
-      rounded: '${rounded.value}',
-      action: 'dot',
-    },
-    BaseAutocomplete: {
-      rounded: '${rounded.value}',
-      size: 'md',
-      contrast: 'default',
-    },
-    BaseAutocompleteItem: {
-      rounded: '${rounded.value}',
-    },
-    BaseAvatar: {
-      size: 'sm',
-      rounded: '${rounded.value}',
-    },
-    BaseAvatarGroup: {
-      limit: 4,
-      size: 'sm',
-    },
-    BaseButton: {
-      variant: 'solid',
-      rounded: '${rounded.value}',
-      color: 'default',
-      size: 'md',
-    },
-    BaseButtonAction: {
-      rounded: '${rounded.value}',
-      color: 'default',
-    },
-    BaseButtonClose: {
-      rounded: 'full',
-    },
-    BaseButtonIcon: {
-      rounded: '${rounded.value}',
-      color: 'default',
-      size: 'md',
-    },
-    BaseCard: {
-      rounded: '${rounded.value}',
-      color: 'white',
-    },
-    BaseCheckbox: {
-      rounded: '${rounded.value}',
-      color: 'default',
-    },
-    BaseCheckboxAnimated: {
-      color: 'primary',
-    },
-    BaseDropdown: {
-      variant: 'button',
-      buttonColor: 'default',
-      color: 'white',
-      rounded: '${rounded.value}',
-      size: 'md',
-    },
-    BaseDropdownItem: {
-      rounded: '${rounded.value}',
-      color: 'default',
-    },
-    BaseHeading: {
-      as: 'p',
-      size: 'xl',
-      weight: 'semibold',
-      lead: 'normal',
-    },
-    BaseIconBox: {
-      variant: 'solid',
-      color: 'default',
-      size: 'xs',
-      rounded: '${rounded.value}',
-    },
-    BaseInput: {
-      rounded: '${rounded.value}',
-      size: 'md',
-      contrast: 'default',
-    },
-    BaseInputFile: {
-      rounded: '${rounded.value}',
-      size: 'md',
-      contrast: 'default',
-    },
-    BaseInputNumber: {
-      inputmode: 'numeric',
-      rounded: '${rounded.value}',
-      size: 'md',
-      contrast: 'default',
-    },
-    BaseListbox: {
-      rounded: '${rounded.value}',
-      size: 'md',
-      contrast: 'default',
-    },
-    BaseMessage: {
-      type: 'success',
-      rounded: '${rounded.value}',
-      closable: false,
-    },
-    BasePagination: {
-      rounded: '${rounded.value}',
-    },
-    BaseParagraph: {
-      as: 'p',
-      size: 'md',
-      weight: 'normal',
-      lead: 'normal',
-    },
-    BasePlaceholderPage: {
-      imageSize: 'xs',
-    },
-    BaseProgress: {
-      size: 'sm',
-      contrast: 'default',
-      color: 'primary',
-      rounded: '${rounded.value}',
-    },
-    BaseProse: {
-      rounded: 'md',
-    },
-    BaseRadio: {
-      color: 'default',
-    },
-    BaseSelect: {
-      rounded: '${rounded.value}',
-      size: 'md',
-      contrast: 'default',
-    },
-    BaseSnack: {
-      size: 'md',
-      color: 'muted',
-    },
-    BaseSwitchBall: {
-      color: 'primary',
-    },
-    BaseSwitchThin: {
-      color: 'primary',
-    },
-    BaseTabs: {
-      type: 'tabs',
-      justify: 'start',
-    },
-    BaseTabSlider: {
-      justify: 'start',
-      size: 'md',
-      rounded: '${rounded.value}',
-    },
-    BaseTag: {
-      variant: 'solid',
-      color: 'default',
-      size: 'md',
-      rounded: '${rounded.value}',
-    },
-    BaseText: {
-      size: 'md',
-      weight: 'normal',
-      lead: 'normal',
-    },
-    BaseTextarea: {
-      rounded: '${rounded.value}',
-      size: 'md',
-      contrast: 'default',
-    },
-    BaseTreeSelectItem: {
-      rounded: '${rounded.value}',
-    },
-  },
+  })`
 })
-`)
+
+const appConfig = computed(() => {
+  return `
+    export default defineAppConfig({
+      nui: {
+        BaseAccordion: {
+          color: 'default',
+          rounded: '${rounded.value}',
+          action: 'dot',
+          dotColor: 'primary',
+        },
+        BaseAutocomplete: {
+          rounded: '${rounded.value}',
+          size: 'md',
+          contrast: 'default',
+        },
+        BaseAutocompleteItem: {
+          rounded: '${rounded.value}',
+        },
+        BaseAvatar: {
+          size: 'sm',
+          rounded: '${rounded.value}',
+          color: 'muted',
+        },
+        BaseAvatarGroup: {
+          limit: 4,
+          size: 'sm',
+        },
+        BaseBreadcrumb: {
+          color: 'primary',
+        },
+        BaseButton: {
+          variant: 'solid',
+          rounded: '${rounded.value}',
+          color: 'default',
+          size: 'md',
+        },
+        BaseButtonAction: {
+          rounded: '${rounded.value}',
+          color: 'default',
+        },
+        BaseButtonClose: {
+          rounded: '${rounded.value}',
+        },
+        BaseButtonIcon: {
+          rounded: '${rounded.value}',
+          color: 'default',
+          size: 'md',
+        },
+        BaseCard: {
+          rounded: '${rounded.value}',
+          color: 'default',
+        },
+        BaseCheckbox: {
+          rounded: '${rounded.value}',
+          color: 'default',
+        },
+        BaseCheckboxAnimated: {
+          color: 'primary',
+        },
+        BaseDropdown: {
+          variant: 'button',
+          buttonColor: 'default',
+          color: 'default',
+          rounded: '${rounded.value}',
+          size: 'md',
+        },
+        BaseDropdownItem: {
+          rounded: '${rounded.value}',
+          contrast: 'default',
+          color: 'primary',
+        },
+        BaseFullscreenDropfile: {
+          color: 'primary',
+        },
+        BaseHeading: {
+          as: 'p',
+          size: 'xl',
+          weight: 'semibold',
+          lead: 'normal',
+        },
+        BaseIconBox: {
+          variant: 'solid',
+          color: 'default',
+          size: 'xs',
+          rounded: '${rounded.value}',
+        },
+        BaseInput: {
+          rounded: '${rounded.value}',
+          size: 'md',
+          contrast: 'default',
+        },
+        BaseInputFile: {
+          rounded: '${rounded.value}',
+          size: 'md',
+          contrast: 'default',
+        },
+        BaseInputNumber: {
+          inputmode: 'numeric',
+          rounded: '${rounded.value}',
+          size: 'md',
+          contrast: 'default',
+        },
+        BaseListbox: {
+          rounded: '${rounded.value}',
+          size: 'md',
+          contrast: 'default',
+        },
+        BaseMessage: {
+          color: 'success',
+          rounded: '${rounded.value}',
+          closable: false,
+        },
+        BasePagination: {
+          color: 'primary',
+          rounded: '${rounded.value}',
+        },
+        BaseParagraph: {
+          as: 'p',
+          size: 'md',
+          weight: 'normal',
+          lead: 'normal',
+        },
+        BasePlaceholderPage: {
+          imageSize: 'xs',
+        },
+        BaseProgress: {
+          size: 'sm',
+          contrast: 'default',
+          color: 'primary',
+          rounded: '${rounded.value}',
+        },
+        BaseProgressCircle: {
+          color: 'primary',
+        },
+        BaseProse: {
+          rounded: '${rounded.value}',
+        },
+        BaseRadio: {
+          color: 'default',
+        },
+        BaseSelect: {
+          rounded: '${rounded.value}',
+          size: 'md',
+          contrast: 'default',
+        },
+        BaseSnack: {
+          size: 'md',
+          color: 'muted',
+        },
+        BaseSwitchBall: {
+          color: 'primary',
+        },
+        BaseSwitchThin: {
+          color: 'primary',
+        },
+        BaseTabs: {
+          type: 'tabs',
+          justify: 'start',
+          color: 'primary',
+        },
+        BaseTabSlider: {
+          color: 'primary',
+          justify: 'start',
+          size: 'md',
+          rounded: '${rounded.value}',
+        },
+        BaseTag: {
+          variant: 'solid',
+          color: 'default',
+          size: 'md',
+          rounded: '${rounded.value}',
+        },
+        BaseText: {
+          size: 'md',
+          weight: 'normal',
+          lead: 'normal',
+        },
+        BaseTextarea: {
+          rounded: '${rounded.value}',
+          size: 'md',
+          contrast: 'default',
+        },
+        BaseTreeSelectItem: {
+          rounded: '${rounded.value}',
+        },
+      },
+    })
+  `
+})
 </script>
 
 <template>
@@ -643,13 +664,58 @@ export default defineAppConfig({
               <pre class="rounded-xl bg-muted-100 px-6 dark:bg-muted-950">
                 {{ tailwindConfig }}
               </pre>
-              <div class="absolute end-6 top-6" />
+              <div class="absolute end-3 top-3">
+                <UseClipboard v-slot="{ copy, copied }" :source="tailwindConfig">
+                  <BaseButtonIcon
+                    size="sm"
+                    rounded="md"
+                    :data-nui-tooltip="copied ? 'Copied!' : 'Copy'"
+                    data-nui-tooltip-position="start"
+                    :aria-label="copied ? 'Copied!' : 'Copy'"
+                    @click="() => copy()"
+                  >
+                    <Icon
+                      v-if="!copied"
+                      name="lucide:copy"
+                      class="h-4 w-4"
+                    />
+                    <Icon
+                      v-else
+                      name="lucide:check"
+                      class="h-4 w-4 text-success-500"
+                    />
+                  </BaseButtonIcon>
+                </UseClipboard>
+              </div>
             </div>
 
             <div v-else-if="activeValue === 'config'" class="relative font-mono text-sm text-muted-500 dark:text-muted-400">
               <pre class="rounded-xl bg-muted-100 px-6 dark:bg-muted-950">
                 {{ appConfig }}
               </pre>
+              <div class="absolute end-3 top-3">
+                <UseClipboard v-slot="{ copy, copied }" :source="appConfig">
+                  <BaseButtonIcon
+                    size="sm"
+                    rounded="md"
+                    :data-nui-tooltip="copied ? 'Copied!' : 'Copy'"
+                    data-nui-tooltip-position="start"
+                    :aria-label="copied ? 'Copied!' : 'Copy'"
+                    @click="() => copy()"
+                  >
+                    <Icon
+                      v-if="!copied"
+                      name="lucide:copy"
+                      class="h-4 w-4"
+                    />
+                    <Icon
+                      v-else
+                      name="lucide:check"
+                      class="h-4 w-4 text-success-500"
+                    />
+                  </BaseButtonIcon>
+                </UseClipboard>
+              </div>
             </div>
           </template>
         </BaseTabs>

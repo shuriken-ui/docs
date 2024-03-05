@@ -21,37 +21,37 @@ const { rounded } = usePlayground()
                 title="Primary circle progress bar"
                 :size="55"
                 :value="65"
-                class="text-primary-500"
+                color="primary"
               />
               <BaseProgressCircle
                 title="Yellow circle progress bar"
                 :size="55"
                 :value="65"
-                class="text-yellow-500"
+                color="warning"
               />
               <BaseProgressCircle
                 title="Pink circle progress bar"
                 :size="55"
                 :value="65"
-                class="text-pink-500"
+                color="success"
               />
               <BaseProgressCircle
                 title="Indigo circle progress bar"
                 :size="55"
                 :value="65"
-                class="text-indigo-400"
+                color="info"
               />
               <BaseProgressCircle
                 title="Pink circle progress bar"
                 :size="55"
                 :value="65"
-                class="text-lime-500"
+                color="danger"
               />
               <BaseProgressCircle
                 title="Pink circle progress bar"
                 :size="55"
                 :value="65"
-                class="text-sky-500"
+                color="dark"
               />
             </div>
           </PlaygroundSampleRow>

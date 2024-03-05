@@ -1,7 +1,7 @@
 <template>
   <div class="py-6">
     <BaseCard
-      color="white-contrast"
+      color="default-contrast"
       rounded="md"
       class="space-y-1 p-6"
     >

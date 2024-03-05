@@ -96,7 +96,7 @@ const customers = [
               </div>
             </BaseCard>
             <BaseCard
-              color="white-contrast"
+              color="default-contrast"
               rounded="lg"
               shadow="flat"
               class="group/ui-card relative z-10 -mb-16 p-4 group-hover/ui:translate-x-4 md:p-6"

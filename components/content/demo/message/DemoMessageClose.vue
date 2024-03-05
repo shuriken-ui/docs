@@ -11,7 +11,7 @@
             A successful message.
           </BaseMessage>
           <BaseMessage
-            type="info"
+            color="info"
             icon
             rounded="md"
             closable
@@ -19,7 +19,7 @@
             An information message.
           </BaseMessage>
           <BaseMessage
-            type="warning"
+            color="warning"
             icon
             rounded="md"
             closable
@@ -27,7 +27,7 @@
             A warning message.
           </BaseMessage>
           <BaseMessage
-            type="danger"
+            color="danger"
             icon
             rounded="md"
             closable

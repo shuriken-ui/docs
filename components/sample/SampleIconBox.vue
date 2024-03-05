@@ -65,6 +65,22 @@ const { rounded } = usePlayground()
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
               </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                :rounded="rounded"
+                variant="solid"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                :rounded="rounded"
+                variant="solid"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
+              </BaseIconBox>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Pastel">
@@ -117,6 +133,22 @@ const { rounded } = usePlayground()
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
               </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                :rounded="rounded"
+                variant="pastel"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                :rounded="rounded"
+                variant="pastel"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
+              </BaseIconBox>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Outline">
@@ -168,6 +200,22 @@ const { rounded } = usePlayground()
                 color="danger"
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                :rounded="rounded"
+                variant="outline"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                :rounded="rounded"
+                variant="outline"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
               </BaseIconBox>
             </div>
           </PlaygroundSampleRow>
@@ -287,6 +335,24 @@ const { rounded } = usePlayground()
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
               </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="hex"
+                variant="solid"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="hex"
+                variant="solid"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
+              </BaseIconBox>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Hexed">
@@ -344,6 +410,24 @@ const { rounded } = usePlayground()
                 color="danger"
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="hexed"
+                variant="pastel"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="hexed"
+                variant="pastel"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
               </BaseIconBox>
             </div>
           </PlaygroundSampleRow>
@@ -403,6 +487,24 @@ const { rounded } = usePlayground()
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
               </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="blob"
+                variant="solid"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="blob"
+                variant="solid"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
+              </BaseIconBox>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Deca">
@@ -461,6 +563,24 @@ const { rounded } = usePlayground()
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
               </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="deca"
+                variant="pastel"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="deca"
+                variant="pastel"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
+              </BaseIconBox>
             </div>
           </PlaygroundSampleRow>
           <PlaygroundSampleRow label="Diamond">
@@ -518,6 +638,24 @@ const { rounded } = usePlayground()
                 color="danger"
               >
                 <Icon name="ph:skull-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="diamond"
+                variant="solid"
+                color="dark"
+              >
+                <Icon name="ph:bell-duotone" class="h-5 w-5" />
+              </BaseIconBox>
+              <BaseIconBox
+                size="sm"
+                rounded="none"
+                mask="diamond"
+                variant="solid"
+                color="black"
+              >
+                <Icon name="ph:spade-duotone" class="h-5 w-5" />
               </BaseIconBox>
             </div>
           </PlaygroundSampleRow>

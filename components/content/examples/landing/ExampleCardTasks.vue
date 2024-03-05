@@ -1,7 +1,7 @@
 import type { BaseParagraph } from '#build/components'; import type { BaseParagraph } from '#build/components'; import type { BaseParagraph } from '#build/components';
 <template>
   <BaseCard
-    color="white-contrast"
+    color="default-contrast"
     rounded="lg"
     shadow="flat"
     class="relative max-w-xs p-6 md:hidden xl:block"

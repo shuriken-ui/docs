@@ -178,7 +178,7 @@ function switchMuted(color: (typeof mutedPresets)[number]) {
 
 <template>
   <BaseCard
-    color="white-contrast"
+    color="default-contrast"
     rounded="lg"
     shadow="flat"
     class="fixed end-4 top-20 z-40 w-[calc(100%_-_32px)] p-6 md:end-6 md:top-20 md:w-[380px] lg:static lg:w-full"

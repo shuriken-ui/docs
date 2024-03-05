@@ -65,6 +65,26 @@ const { rounded } = usePlayground()
               />
             </div>
           </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Dark" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress
+                title="Dark progress bar"
+                size="sm"
+                :value="85"
+                color="dark"
+              />
+            </div>
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Black" label-align="start">
+            <div class="max-w-sm pt-2">
+              <BaseProgress
+                title="Black progress bar"
+                size="sm"
+                :value="85"
+                color="black"
+              />
+            </div>
+          </PlaygroundSampleRow>
         </div>
       </div>
       <div v-if="activeValue === 'sizes'" class="relative pb-4">

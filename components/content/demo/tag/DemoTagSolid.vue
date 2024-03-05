@@ -50,6 +50,20 @@
       >
         Label
       </BaseTag>
+      <BaseTag
+        rounded="md"
+        variant="solid"
+        color="dark"
+      >
+        Label
+      </BaseTag>
+      <BaseTag
+        rounded="md"
+        variant="solid"
+        color="black"
+      >
+        Label
+      </BaseTag>
     </div>
   </div>
 </template>

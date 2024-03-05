@@ -48,7 +48,7 @@ import type { BaseSwitchBall } from '#build/components';
       <div>
         <BaseCard
           rounded="md"
-          color="white-contrast"
+          color="default-contrast"
           class="!border-muted-300 p-6 dark:!border-muted-800"
         >
           <div class="mb-4">

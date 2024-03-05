@@ -6,37 +6,43 @@
           title="Primary circle progress bar"
           :size="55"
           :value="65"
-          class="text-primary-500"
+          color="primary"
         />
         <BaseProgressCircle
-          title="Yellow circle progress bar"
+          title="Info circle progress bar"
           :size="55"
           :value="65"
-          class="text-yellow-500"
+          color="info"
         />
         <BaseProgressCircle
-          title="Pink circle progress bar"
+          title="Success circle progress bar"
           :size="55"
           :value="65"
-          class="text-pink-500"
+          color="success"
         />
         <BaseProgressCircle
-          title="Indigo circle progress bar"
+          title="Warning circle progress bar"
           :size="55"
           :value="65"
-          class="text-indigo-400"
+          color="warning"
         />
         <BaseProgressCircle
-          title="Pink circle progress bar"
+          title="Danger circle progress bar"
           :size="55"
           :value="65"
-          class="text-lime-500"
+          color="danger"
         />
         <BaseProgressCircle
-          title="Pink circle progress bar"
+          title="Dark circle progress bar"
           :size="55"
           :value="65"
-          class="text-sky-500"
+          color="dark"
+        />
+        <BaseProgressCircle
+          title="Black circle progress bar"
+          :size="55"
+          :value="65"
+          color="black"
         />
       </div>
     </div>

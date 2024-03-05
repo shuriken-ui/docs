@@ -1,7 +1,7 @@
 import type { BaseParagraph } from '#build/components'; import type { BaseAvatar } from '#build/components';
 <template>
   <BaseCard
-    color="white-contrast"
+    color="default-contrast"
     rounded="lg"
     shadow="flat"
     class="relative p-6"

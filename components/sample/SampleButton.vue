@@ -164,6 +164,52 @@ const { rounded } = usePlayground()
               </BaseButton>
             </div>
           </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Mono">
+            <div class="flex flex-wrap items-end gap-2">
+              <BaseButton
+                :rounded="rounded"
+                variant="solid"
+                color="dark"
+              >
+                Button
+              </BaseButton>
+              <BaseButton
+                :rounded="rounded"
+                variant="solid"
+                color="black"
+              >
+                Button
+              </BaseButton>
+              <BaseButton
+                :rounded="rounded"
+                variant="pastel"
+                color="dark"
+              >
+                Button
+              </BaseButton>
+              <BaseButton
+                :rounded="rounded"
+                variant="pastel"
+                color="black"
+              >
+                Button
+              </BaseButton>
+              <BaseButton
+                :rounded="rounded"
+                variant="outline"
+                color="dark"
+              >
+                Button
+              </BaseButton>
+              <BaseButton
+                :rounded="rounded"
+                variant="outline"
+                color="black"
+              >
+                Button
+              </BaseButton>
+            </div>
+          </PlaygroundSampleRow>
         </div>
       </div>
       <div v-if="activeValue === 'sizes'" class="relative pb-4">

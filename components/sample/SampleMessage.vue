@@ -4,35 +4,35 @@ const { rounded } = usePlayground()
 
 <template>
   <BaseTabs
-    model-value="types"
+    model-value="colors"
     :tabs="[
-      { label: 'Types', value: 'types' },
+      { label: 'Colors', value: 'colors' },
       { label: 'Icons', value: 'icons' },
       { label: 'Closable', value: 'closable' },
     ]"
     class="[&>div:first-of-type]:border-b [&>div:first-of-type]:border-muted-200 dark:[&>div:first-of-type]:border-muted-800"
   >
     <template #tab="{ activeValue }">
-      <div v-if="activeValue === 'types'" class="relative pb-4">
+      <div v-if="activeValue === 'colors'" class="relative pb-4">
         <div class="space-y-4">
-          <PlaygroundSampleRow label="Types" label-align="start">
+          <PlaygroundSampleRow label="Colors" label-align="start">
             <div class="grid w-full max-w-xl grid-cols-1 gap-4 md:grid-cols-2">
-              <BaseMessage :rounded="rounded" type="default">
+              <BaseMessage :rounded="rounded" color="default">
                 A default message.
               </BaseMessage>
-              <BaseMessage :rounded="rounded" type="primary">
+              <BaseMessage :rounded="rounded" color="primary">
                 A primary message.
               </BaseMessage>
-              <BaseMessage :rounded="rounded" type="success">
+              <BaseMessage :rounded="rounded" color="success">
                 A successful message.
               </BaseMessage>
-              <BaseMessage :rounded="rounded" type="info">
+              <BaseMessage :rounded="rounded" color="info">
                 An information message.
               </BaseMessage>
-              <BaseMessage :rounded="rounded" type="warning">
+              <BaseMessage :rounded="rounded" color="warning">
                 A warning message.
               </BaseMessage>
-              <BaseMessage :rounded="rounded" type="danger">
+              <BaseMessage :rounded="rounded" color="danger">
                 A destructive message.
               </BaseMessage>
             </div>
@@ -44,42 +44,42 @@ const { rounded } = usePlayground()
           <PlaygroundSampleRow label="Icons" label-align="start">
             <div class="grid w-full max-w-xl grid-cols-1 gap-4 md:grid-cols-2">
               <BaseMessage
-                type="muted"
+                color="muted"
                 icon="mingcute:globe-fill"
                 :rounded="rounded"
               >
                 A muted message.
               </BaseMessage>
               <BaseMessage
-                type="primary"
+                color="primary"
                 icon="mingcute:bling-fill"
                 :rounded="rounded"
               >
                 A primary message.
               </BaseMessage>
               <BaseMessage
-                type="success"
+                color="success"
                 icon
                 :rounded="rounded"
               >
                 A successful message.
               </BaseMessage>
               <BaseMessage
-                type="info"
+                color="info"
                 icon
                 :rounded="rounded"
               >
                 An information message.
               </BaseMessage>
               <BaseMessage
-                type="warning"
+                color="warning"
                 icon
                 :rounded="rounded"
               >
                 A warning message.
               </BaseMessage>
               <BaseMessage
-                type="danger"
+                color="danger"
                 icon
                 :rounded="rounded"
               >
@@ -94,7 +94,7 @@ const { rounded } = usePlayground()
           <PlaygroundSampleRow label="Types" label-align="start">
             <div class="grid w-full max-w-xl grid-cols-1 gap-4 md:grid-cols-2">
               <BaseMessage
-                type="muted"
+                color="muted"
                 icon="mingcute:globe-fill"
                 :rounded="rounded"
                 closable
@@ -102,7 +102,7 @@ const { rounded } = usePlayground()
                 A muted message.
               </BaseMessage>
               <BaseMessage
-                type="primary"
+                color="primary"
                 icon="mingcute:bling-fill"
                 :rounded="rounded"
                 closable
@@ -110,7 +110,7 @@ const { rounded } = usePlayground()
                 A primary message.
               </BaseMessage>
               <BaseMessage
-                type="success"
+                color="success"
                 icon
                 :rounded="rounded"
                 closable
@@ -118,7 +118,7 @@ const { rounded } = usePlayground()
                 A successful message.
               </BaseMessage>
               <BaseMessage
-                type="info"
+                color="info"
                 icon
                 :rounded="rounded"
                 closable
@@ -126,7 +126,7 @@ const { rounded } = usePlayground()
                 An information message.
               </BaseMessage>
               <BaseMessage
-                type="warning"
+                color="warning"
                 icon
                 :rounded="rounded"
                 closable
@@ -134,7 +134,7 @@ const { rounded } = usePlayground()
                 A warning message.
               </BaseMessage>
               <BaseMessage
-                type="danger"
+                color="danger"
                 icon
                 :rounded="rounded"
                 closable

@@ -41,6 +41,22 @@
       >
         <Icon name="ph:skull-duotone" class="h-5 w-5" />
       </BaseIconBox>
+      <BaseIconBox
+        size="md"
+        rounded="full"
+        variant="outline"
+        color="dark"
+      >
+        <Icon name="ph:lightning-duotone" class="h-5 w-5" />
+      </BaseIconBox>
+      <BaseIconBox
+        size="md"
+        rounded="full"
+        variant="outline"
+        color="black"
+      >
+        <Icon name="ph:gauge-duotone" class="h-5 w-5" />
+      </BaseIconBox>
     </div>
   </div>
 </template>

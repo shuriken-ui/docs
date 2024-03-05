@@ -66,7 +66,7 @@ const team = [
             <div class="relative mx-auto flex h-full w-full max-w-[300px] flex-col">
               <!--Regular card-->
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 shadow="flat"
                 class="absolute start-0 top-6 p-4 text-start opacity-100 !duration-500 group-hover/ui:-translate-x-full group-hover/ui:opacity-0 md:p-6"
@@ -116,7 +116,7 @@ const team = [
               </BaseCard>
               <!--Customized card-->
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 shadow="flat"
                 class="absolute start-0 top-6 translate-x-full p-4 text-start opacity-0 !duration-500 group-hover/ui:translate-x-0 group-hover/ui:opacity-100 md:p-6"
@@ -203,7 +203,7 @@ const team = [
             <div class="relative mx-auto flex w-full max-w-[320px] flex-col">
               <!--Regular card-->
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 shadow="flat"
                 class="relative -mb-2 p-4 text-start md:p-6"
@@ -295,7 +295,7 @@ const team = [
             <div class="relative mx-auto flex w-full max-w-[420px] shrink-0 flex-col lg:start-8 lg:mx-0 ltablet:start-8 ltablet:mx-0">
               <!--Regular card-->
               <BaseCard
-                color="white-contrast"
+                color="default-contrast"
                 rounded="lg"
                 shadow="flat"
                 class="-mb-14 space-y-6 p-4 text-start group-hover/ui:!border-muted-800 group-hover/ui:!bg-muted-950 dark:group-hover/ui:!border-muted-300 dark:group-hover/ui:!bg-white md:p-6"

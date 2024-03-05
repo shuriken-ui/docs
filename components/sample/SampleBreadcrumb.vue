@@ -48,6 +48,7 @@ const breadcrumbIcon = [
     :tabs="[
       { label: 'Basic', value: 'basic' },
       { label: 'Separator', value: 'separator' },
+      { label: 'Colors', value: 'colors' },
     ]"
     class="[&>div:first-of-type]:border-b [&>div:first-of-type]:border-muted-200 dark:[&>div:first-of-type]:border-muted-800"
   >
@@ -83,6 +84,19 @@ const breadcrumbIcon = [
             <BaseBreadcrumb :items="breadcrumb">
               <Icon name="lucide:move-right" class="block h-3 w-3" />
             </BaseBreadcrumb>
+          </PlaygroundSampleRow>
+        </div>
+      </div>
+      <div v-if="activeValue === 'colors'" class="relative pb-4">
+        <div class="space-y-4">
+          <PlaygroundSampleRow label="Primary" label-align="start">
+            <BaseBreadcrumb :items="breadcrumb" />
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Dark" label-align="start">
+            <BaseBreadcrumb :items="breadcrumb" color="dark" />
+          </PlaygroundSampleRow>
+          <PlaygroundSampleRow label="Black" label-align="start">
+            <BaseBreadcrumb :items="breadcrumb" color="black" />
           </PlaygroundSampleRow>
         </div>
       </div>

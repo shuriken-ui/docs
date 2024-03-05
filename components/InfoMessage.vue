@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const props = defineProps<{
   icon?: string | boolean
-  type?: 'default' | 'primary' | 'success' | 'info' | 'warning' | 'danger' | 'muted' | undefined
+  color?: 'default' | 'default-contrast' | 'muted' | 'muted-contrast' | 'primary' | 'success' | 'info' | 'warning' | 'danger' | undefined
 }>()
 </script>
 
 <template>
   <div class="py-6">
     <BaseMessage
-      :type="props.type"
+      :color="props.color"
       :icon="props.icon ? props.icon : false"
       rounded="md"
     >
