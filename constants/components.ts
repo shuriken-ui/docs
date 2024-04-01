@@ -416,6 +416,18 @@ export const components: Component[] = [
     requiresTailwind: true,
   },
   {
+    name: 'input help text',
+    description: 'An agnostic help text component used to show errors or addtional info.',
+    category: 'form',
+    url: '/components/input-help-text',
+    image: {
+      light: '/img/illustrations/components/icon-input-help.svg',
+      dark: '/img/illustrations/components/icon-input-help-dark.svg',
+    },
+    availableIn: ['nuxt', 'react', 'tailwind'],
+    requiresTailwind: true,
+  },
+  {
     name: 'listbox',
     description: 'A customizable select component that can be used to display enhanced results.',
     category: 'form',
