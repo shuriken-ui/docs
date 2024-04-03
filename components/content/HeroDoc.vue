@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
+
+const { data } = await useFetch('/api/versions')
 </script>
 
 <template>
@@ -91,15 +93,55 @@ const appConfig = useAppConfig()
           Documentation
         </h1>
         <p class="mt-5 px-6 text-sm font-medium uppercase text-muted-600 dark:text-muted-400">
-          Select a Framework
+          Select a Documentation Section
         </p>
       </div>
 
       <div class="w-full py-10">
-        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ltablet:grid-cols-3">
-          <div class="group/stack relative p-0.5">
+        <div class="grid grid-cols-12 gap-5">
+          <div class="group/stack relative col-span-12 p-0.5 md:col-span-6 lg:col-span-6 ltablet:col-span-6">
             <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
-            <NuxtLink to="/docs/nuxt">
+            <NuxtLink to="/docs/guide">
+              <BaseCard
+                color="default-contrast"
+                rounded="lg"
+                class="flex flex-col items-start gap-6 !border-muted-300 p-6 dark:!border-muted-800 md:flex-row"
+              >
+                <Icon name="circum:palette" class="h-auto w-14 shrink-0 text-muted-300 transition-colors duration-300 group-hover/stack:text-primary-500 dark:text-muted-700 dark:group-hover/stack:text-primary-500 md:w-14 lg:w-14 ltablet:w-12" />
+                <div class="block">
+                  <h3 class="font-sans text-lg font-medium text-muted-800 dark:text-muted-100">
+                    Guide
+                  </h3>
+                  <p class="font-alt text-sm text-muted-500 dark:text-muted-400 ltablet:text-xs">
+                    Discover how to intall and use Shuriken UI in your project. Explore its theming concepts to create a consistent design system.
+                  </p>
+                </div>
+              </BaseCard>
+            </NuxtLink>
+          </div>
+          <div class="group/stack relative col-span-12 p-0.5 md:col-span-6 lg:col-span-6 ltablet:col-span-6">
+            <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
+            <NuxtLink to="/docs/reference">
+              <BaseCard
+                color="default-contrast"
+                rounded="lg"
+                class="flex flex-col items-start gap-6 !border-muted-300 p-6 dark:!border-muted-800 md:flex-row"
+              >
+                <Icon name="circum:grid-4-1" class="h-auto w-14 shrink-0 text-muted-300 transition-colors duration-300 group-hover/stack:text-primary-500 dark:text-muted-700 dark:group-hover/stack:text-primary-500 md:w-14 lg:w-14 ltablet:w-12" />
+                <div class="block">
+                  <h3 class="font-sans text-lg font-medium text-muted-800 dark:text-muted-100">
+                    Reference
+                  </h3>
+                  <p class="font-alt text-sm text-muted-500 dark:text-muted-400 ltablet:text-xs">
+                    Explore the components, directives, and utilities that Shuriken UI provides to build your application, and learn to use them.
+                  </p>
+                </div>
+              </BaseCard>
+            </NuxtLink>
+          </div>
+          <div class="group/stack relative col-span-12 p-0.5 md:col-span-6 lg:col-span-4 ltablet:col-span-4">
+            <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
+            <NuxtLink to="/docs/reference/nuxt">
               <BaseCard
                 color="default-contrast"
                 rounded="lg"
@@ -112,7 +154,7 @@ const appConfig = useAppConfig()
                       Nuxt
                     </h3>
                     <BaseTag size="sm" rounded="full">
-                      v2.0.0
+                      v{{ data ? data[0]?.version : '0.0.0' }}
                     </BaseTag>
                   </div>
                   <p class="font-alt text-sm text-muted-500 dark:text-muted-400 ltablet:text-xs">
@@ -122,9 +164,9 @@ const appConfig = useAppConfig()
               </BaseCard>
             </NuxtLink>
           </div>
-          <div class="group/stack relative p-0.5">
+          <div class="group/stack relative col-span-12 p-0.5 md:col-span-6 lg:col-span-4 ltablet:col-span-4">
             <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
-            <NuxtLink to="/docs/react">
+            <NuxtLink to="/docs/reference/react">
               <BaseCard
                 color="default-contrast"
                 rounded="lg"
@@ -137,19 +179,19 @@ const appConfig = useAppConfig()
                       React
                     </h3>
                     <BaseTag size="sm" rounded="full">
-                      v0.0.0
+                      v{{ data ? data[1]?.version : '0.0.0' }}
                     </BaseTag>
                   </div>
                   <p class="font-alt text-sm text-muted-500 dark:text-muted-400 ltablet:text-xs">
-                    Shuriken UI/React is a plugin built on top of Shuriken/Tailwind that provides a set of components and directives to work with React and Next.js.
+                    Shuriken UI/React is a plugin built on top of Shuriken/Tailwind that provides a set of components and directives to work with React.
                   </p>
                 </div>
               </BaseCard>
             </NuxtLink>
           </div>
-          <div class="group/stack relative p-0.5">
+          <div class="group/stack relative col-span-12 p-0.5 md:col-span-6 lg:col-span-4 ltablet:col-span-4">
             <span class="absolute inset-0 h-full w-full bg-gradient-to-r from-primary-500 to-info-400 opacity-0 blur-lg transition-opacity duration-500 group-hover/stack:opacity-30" />
-            <NuxtLink to="/docs/tailwind">
+            <NuxtLink to="/docs/reference/tailwind">
               <BaseCard
                 color="default-contrast"
                 rounded="lg"
@@ -162,7 +204,7 @@ const appConfig = useAppConfig()
                       Tailwind
                     </h3>
                     <BaseTag size="sm" rounded="full">
-                      v2.0.0
+                      v{{ data ? data[2]?.version : '0.0.0' }}
                     </BaseTag>
                   </div>
                   <p class="font-alt text-sm text-muted-500 dark:text-muted-400 ltablet:text-xs">
