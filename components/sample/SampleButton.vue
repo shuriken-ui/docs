@@ -225,6 +225,9 @@ const { rounded } = usePlayground()
               <BaseButton size="lg" :rounded="rounded">
                 Button
               </BaseButton>
+              <BaseButton size="xl" :rounded="rounded">
+                Button
+              </BaseButton>
             </div>
           </PlaygroundSampleRow>
         </div>

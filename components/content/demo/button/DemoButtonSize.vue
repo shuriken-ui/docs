@@ -12,6 +12,9 @@
           <BaseButton size="lg" rounded="md">
             Button
           </BaseButton>
+          <BaseButton size="xl" rounded="md">
+            Button
+          </BaseButton>
         </div>
       </div>
     </div>

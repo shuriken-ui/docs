@@ -27,6 +27,14 @@
           >
             Button
           </BaseButton>
+          <BaseButton
+            size="xl"
+            rounded="md"
+            badge
+            badge-pulse
+          >
+            Button
+          </BaseButton>
         </div>
       </div>
     </div>

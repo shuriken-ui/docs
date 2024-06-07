@@ -10,6 +10,9 @@
       <BaseButtonIcon size="lg" rounded="md">
         <Icon name="ph:game-controller-duotone" class="h-6 w-6" />
       </BaseButtonIcon>
+      <BaseButtonIcon size="xl" rounded="md">
+        <Icon name="ph:game-controller-duotone" class="h-7 w-7" />
+      </BaseButtonIcon>
     </div>
   </div>
 </template>

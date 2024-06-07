@@ -24,6 +24,13 @@
           >
             Button
           </BaseButton>
+          <BaseButton
+            size="xl"
+            rounded="md"
+            disabled
+          >
+            Button
+          </BaseButton>
         </div>
       </div>
     </div>

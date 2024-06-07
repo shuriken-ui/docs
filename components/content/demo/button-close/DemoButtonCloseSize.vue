@@ -21,6 +21,11 @@
         rounded="md"
         color="muted"
       />
+      <BaseButtonClose
+        size="xl"
+        rounded="md"
+        color="muted"
+      />
     </div>
   </div>
 </template>
