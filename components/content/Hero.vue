@@ -64,6 +64,10 @@
         </span>
       </p>
 
+      <div class="mx-4 mt-4">
+        ✨ <span class="font-bold">Shuriken UI v4</span> is live, built with <span class="whitespace-nowrap italic">Tailwind CSS 4</span> and <span class="whitespace-nowrap italic">Reka UI</span>, check it out <a class="font-bold underline" href="https://v4.shurikenui.com">here</a>!
+      </div>
+
       <div class="mt-6 flex flex-col gap-3 px-8 sm:flex-row sm:items-center sm:justify-center sm:gap-5 sm:px-0">
         <BaseButton
           to="/docs/guide"
