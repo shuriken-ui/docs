@@ -20,7 +20,13 @@ jobs:
         run: |
           echo "dockertags=digisquad/shuriken-ui-docs:latest" >> $GITHUB_ENV
 
+      - name: Update Node.js for corepack
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+
       - run: corepack enable
+      - run: corepack prepare pnpm@latest --activate
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm build
